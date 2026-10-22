@@ -1,0 +1,48 @@
+{
+  "nodes": 256,
+  "bones": 15,
+  "skins": 2,
+  "triangles": 13420,
+  "topologyIssues": [],
+  "maxMatrixError": 2.6798481092028814e-7,
+  "maxSkinPositionError": 2.1319382338189946e-7,
+  "maxGripError": 4.982493048981751e-16,
+  "maxPistonEndpointError": 0.00008862889960875907,
+  "maxLimbLengthError": 3.885780586188048e-16,
+  "minFootSurfaceY": -0.00013987960535025157,
+  "clips": [
+    {
+      "id": "run",
+      "duration": 1.600000023841858,
+      "sampledTimes": 11
+    },
+    {
+      "id": "run-forward",
+      "duration": 1.600000023841858,
+      "sampledTimes": 11
+    }
+  ],
+  "motion": {
+    "samples": 294,
+    "speed": 2.25,
+    "airborne": true,
+    "forwardDistance": 3.6,
+    "issues": [],
+    "feet": [
+      {
+        "id": "L",
+        "maxSlip": 0.00021353645958379616,
+        "maxSlipSpeed": 0.032030468937577834,
+        "maxGroundError": 0.0002545092315636016,
+        "maxPenetration": 0.00013754901435933387
+      },
+      {
+        "id": "R",
+        "maxSlip": 0.00021363318826364582,
+        "maxSlipSpeed": 0.03204497823957943,
+        "maxGroundError": 0.0002545316655964136,
+        "maxPenetration": 0.0001375527716578201
+      }
+    ]
+  }
+}

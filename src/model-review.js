@@ -316,7 +316,9 @@ export function auditLocomotion(
             c.worstTime = time;
           }
           c.maxGroundError = Math.max(c.maxGroundError, error);
-          if (c.previous && time > c.previousTime) {
+          // Key/contact times can differ by one ULP (e.g. .24 versus
+          // .24000000000000002). Do not divide rounding noise by that interval.
+          if (c.previous && time - c.previousTime > 1e-9 * Math.max(1, duration)) {
             const delta = p.clone().sub(c.previous);
             delta.y = 0;
             c.maxSlipSpeed = Math.max(

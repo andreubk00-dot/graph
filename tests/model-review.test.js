@@ -7,6 +7,19 @@ import { auditMeasurements, auditLocomotion } from "../src/model-review.js";
 import { applyCommands, validateDocument } from "../src/document.js";
 const near = (a, b, t = 1e-6) => assert.ok(Math.abs(a - b) < t, `${a} != ${b}`);
 
+test("contact speed does not amplify floating-point duplicate sample times", () => {
+  const d=motionStudy(),clip=d.clips.find(c=>c.id==='travel');
+  d.review.motion.requireFlight=false;
+  for(const side of ['left','right']) {
+    const keys=clip.tracks[side+'-sole'],x=side==='left'?-.15:.15;
+    for(const k of keys)k.position=[x,0,.1-k.time*.5];
+    const time=.6000000000000001;
+    keys.push({time,position:[x,0,.1-time*.5+1e-15],rotation:[0,0,0],scale:[1,1,1]});
+  }
+  const r=auditLocomotion(d);
+  for(const f of r.feet){assert.ok(f.maxSlip<1e-12);assert.ok(f.maxSlipSpeed<1e-8);}
+});
+
 test("reference distances and ratios distinguish rest and animated poses and stay valid under root scale", () => {
   const d = motionStudy(),
     r = auditMeasurements(d);

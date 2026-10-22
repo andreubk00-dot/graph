@@ -1,0 +1,32 @@
+{
+  "name": "VANGUARD M-07 · Armed cyborg run",
+  "nodes": 256,
+  "bones": 15,
+  "skins": 2,
+  "triangles": 13420,
+  "vertices": 18594,
+  "glbBytes": 1341600,
+  "cycle": 0.8,
+  "stride": 1.8,
+  "speed": 2.25,
+  "forward": "+Z",
+  "up": "+Y",
+  "grips": {
+    "R": [
+      0.108,
+      0.095,
+      0.34
+    ],
+    "L": [
+      0.002,
+      0.14,
+      0.52
+    ]
+  },
+  "lengths": {
+    "upper": 0.47,
+    "lower": 0.45,
+    "arm": 0.31,
+    "forearm": 0.3
+  }
+}
