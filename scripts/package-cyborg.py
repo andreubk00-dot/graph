@@ -9,7 +9,7 @@ for i in range(im.n_frames):im.seek(i);duration+=im.info['duration']
 assert duration==1600
 names=['README.md','cyborg.png','cyborg.gif','cyborg.glb','cyborg.graph.json','cyborg-viewer.html',
        'manifest.json','verification.json','motion-report.json','renderer-verification.json','motion-style.json']
-names += [name for name in ['run-before-after.gif','run-side-review.png','run-dynamics.png'] if (out/name).exists()]
+names += [name for name in ['run-before-after.gif','run-side-review.png','run-dynamics.png','run-upper-body.png','front.png','side.png','back.png'] if (out/name).exists()]
 with zipfile.ZipFile(out/'vanguard-m07.zip','w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
     for name in names:z.write(out/name,'vanguard-m07/'+name)
 print(f'{out}/vanguard-m07.zip · {len(names)} files · GIF {duration} ms')

@@ -17,7 +17,7 @@ if len(sys.argv)>2:
         canvas=Image.new('RGB',(1024,680),(18,25,32));draw=ImageDraw.Draw(canvas)
         canvas.paste(old.convert('RGB').resize((512,640)),(0,40));canvas.paste(new,(512,40))
         draw.text((18,9),'Было · прежний цикл',font=font,fill='white')
-        draw.text((530,9),'После · опора / перекат / перенос',font=font,fill='white')
+        draw.text((530,9),'После · хват у бедра / корпус',font=font,fill='white')
         comparison.append(canvas)
     comparison[0].save(out/'run-before-after.gif',save_all=True,append_images=comparison[1:],duration=50,loop=0,optimize=False,disposal=2)
 side=list((out/'side-frames').glob('*.png'))

@@ -1,15 +1,15 @@
 {
-  "nodes": 256,
-  "bones": 15,
+  "nodes": 258,
+  "bones": 16,
   "skins": 2,
-  "triangles": 13420,
+  "triangles": 13452,
   "topologyIssues": [],
-  "maxMatrixError": 2.7386442591481597e-7,
-  "maxSkinPositionError": 1.471789686286895e-7,
-  "maxGripError": 3.480466451275692e-7,
-  "maxPistonEndpointError": 0.00002077946109854,
+  "maxMatrixError": 3.135969228740265e-7,
+  "maxSkinPositionError": 2.3320627867246058e-7,
+  "maxGripError": 4.085764151944021e-7,
+  "maxPistonEndpointError": 0.000024839300484159833,
   "maxLimbLengthError": 2.220446049250313e-16,
-  "minFootSurfaceY": -0.00004408598365593375,
+  "minFootSurfaceY": -0.00004993462476035604,
   "clips": [
     {
       "id": "run",
@@ -22,6 +22,16 @@
       "sampledTimes": 11
     }
   ],
+  "carry": {
+    "minHeightAboveHip": 0.19173867932694555,
+    "maxHeightAboveHip": 0.20754327605615797,
+    "minRightOffset": 0.19200244292851343,
+    "maxArmExtension": 0.9536912399738309,
+    "minHeadPitch": 0.023003341258191316,
+    "maxHeadPitch": 0.04699665874180871,
+    "maxHeadRoll": 0.006827455069689122,
+    "standingPoseVerified": true
+  },
   "motion": {
     "samples": 526,
     "speed": 2.25,
@@ -31,17 +41,17 @@
     "feet": [
       {
         "id": "L",
-        "maxSlip": 0.00001100049612812905,
-        "maxSlipSpeed": 0.013304930730962715,
-        "maxGroundError": 0.0004728668314783746,
-        "maxPenetration": 0.000026601378397730913
+        "maxSlip": 0.000010998726123678513,
+        "maxSlipSpeed": 0.013412278547333517,
+        "maxGroundError": 0.0004738927214607558,
+        "maxPenetration": 0.000029108667757918316
       },
       {
         "id": "R",
-        "maxSlip": 0.00001100049612855262,
-        "maxSlipSpeed": 0.013304930730697412,
-        "maxGroundError": 0.00047286683147840236,
-        "maxPenetration": 0.00002660137839768928
+        "maxSlip": 0.000010998726123936903,
+        "maxSlipSpeed": 0.013412278547400973,
+        "maxGroundError": 0.0004738927214608113,
+        "maxPenetration": 0.00002910866775776566
       }
     ]
   }

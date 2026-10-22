@@ -1,6 +1,6 @@
 {
   "sampledFrames": 5,
   "meshesPerFrame": 7,
-  "maxWorldBoundsError": 2.3765130363617715e-07,
+  "maxWorldBoundsError": 3.108018244990518e-07,
   "renderer": "Blender GLB import, original animation"
 }

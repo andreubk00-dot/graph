@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import * as T from 'three';
 import {emptyDocument,validateDocument,applyCommands,poseFor} from '../src/document.js';
 import {geometryFor,createGLB} from '../src/scene.js';
-import {COMBAT_RUN_PROFILE,runningBody,runningFoot,createSoleRoll} from '../src/running-motion.js';
+import {COMBAT_RUN_PROFILE,runningBody,runningUpperBody,runningFoot,createSoleRoll} from '../src/running-motion.js';
 import {assetBuilder,loft,bodyRings,solveLimb,downTo,V,euler} from './lib/game-asset.js';
 const out=process.argv[2]??'examples/cyborg';await fs.mkdir(out,{recursive:true});
 let doc=emptyDocument();doc.name='VANGUARD M-07 · Armed cyborg run';doc.duration=1.6;doc.fps=30;
@@ -35,7 +35,8 @@ for(const s of [-1,1]) {
   cylinder(`hip-axle-${tag}`,'hips',.07,.085,'steel',[s*.15,-.015,0]);
   cylinder(`hip-cap-${tag}`,'hips',.048,.018,'orange',[s*.20,-.015,0]);
 }
-profile('torso-underframe','spine',[[.0,.125,.075],[.14,.16,.09],[.32,.22,.115],[.43,.225,.11],[.48,.13,.075]],'dark');
+profile('torso-underframe','spine',[[.0,.125,.075],[.14,.16,.09],[.24,.195,.105]],'dark');
+profile('chest-underframe','spine',[[.23,.19,.103],[.32,.22,.115],[.43,.225,.11],[.48,.13,.075]],'dark');
 for(const s of [-1,1]) {
   const tag=s<0?'L':'R';
   plate(`pectoral-${tag}`,'spine',[[.018,.26],[.045,.42],[.16,.45],[.235,.37],[.20,.23],[.055,.19]].map(([x,y])=>[s*x,y]),.055,'armor',[0,0,.112],.009);
@@ -196,9 +197,43 @@ plate('unit-badge','spine',[[-.152,.282],[-.063,.282],[-.063,.334],[-.152,.334]]
  mesh('unit-zero','spine',new T.ExtrudeGeometry(sh,{depth:.002,bevelEnabled:false,curveSegments:12}),'armor',{position:[-.128,.307,.157]});
  plate('unit-seven','spine',[[0,.016],[.019,.016],[.019,.009],[.010,-.016],[.003,-.016],[.012,.009],[0,.009]],.002,'armor',[-.108,.307,.158],0);
 }
+// Add a distinct thoracic pivot; preserve every mesh's standing world pose.
+// Lower abdomen/ribs remain lumbar. Upper armor, head and shoulders follow chest.
+const chestOffset=.23;
+bone('chest','spine',[0,chestOffset,0]);
+for(const n of doc.nodes)if(n.parent==='spine'&&(
+  /^(chest-|pectoral-|pack-|unit-|upperarm-)/.test(n.id)||['head','sternum','backpack'].includes(n.id)
+)) {n.parent='chest';n.position[1]-=chestOffset;}
+function carryArms(chestQ,chestPosition,gunQ,gunPosition) {
+  const pose={};
+  for(const s of [-1,1]) {
+    const tag=s<0?'L':'R';
+    const shoulder=V([s*.25,.38-chestOffset,.025]).applyQuaternion(chestQ).add(chestPosition);
+    const hand=V(grips[tag]).sub(V([.055,.20,.28])).applyQuaternion(gunQ).add(gunPosition);
+    const pole=V([s*.65,-.1,-.65]).applyQuaternion(chestQ);
+    const elbow=solveLimb(shoulder,hand,lengths.arm,lengths.forearm,pole);
+    const armQ=downTo(elbow.clone().sub(shoulder)),foreQ=downTo(hand.clone().sub(elbow));
+    pose[`upperarm-${tag}`]={rotation:euler(chestQ.clone().invert().multiply(armQ))};
+    pose[`forearm-${tag}`]={rotation:euler(armQ.clone().invert().multiply(foreQ))};
+    pose[`hand-${tag}`]={rotation:euler(foreQ.clone().invert().multiply(gunQ))};
+  }
+  return pose;
+}
+// Standing/bind pose also uses hip carry, so opening the asset without playing
+// an action never restores the obsolete chest-level weapon placement.
+const rifleNode=doc.nodes.find(n=>n.id==='rifle');
+rifleNode.parent='vanguard';rifleNode.position=[.195,1.235,.12];rifleNode.rotation=[.035,.025,-.035];
+doc.nodes.find(n=>n.id==='spine').rotation=[.08,0,0];
+doc.nodes.find(n=>n.id==='chest').rotation=[.04,.18,0];
+const restLumbarQ=new T.Quaternion().setFromEuler(new T.Euler(.08,0,0));
+const restChestQ=restLumbarQ.clone().multiply(new T.Quaternion().setFromEuler(new T.Euler(.04,.18,0)));
+const restChestPosition=V([0,chestOffset,0]).applyQuaternion(restLumbarQ).add(V([0,1.035+.12,0]));
+const restArms=carryArms(restChestQ,restChestPosition,new T.Quaternion().setFromEuler(new T.Euler(...rifleNode.rotation)),V(rifleNode.position));
+for(const [id,pose] of Object.entries(restArms))doc.nodes.find(n=>n.id===id).rotation=pose.rotation;
+doc.nodes.find(n=>n.id==='head').rotation=euler(restChestQ.clone().invert().multiply(new T.Quaternion().setFromEuler(new T.Euler(.035,.035,0))));
 // Capture bind matrices in the true standing rest pose, before adding animation.
 const bindings=[];
-// Export the complete fifteen-bone rig as glTF joints, including rigid armor
+// Export the complete rig as glTF joints, including rigid armor
 // bones with zero sleeve weight, so game importers retain the full skeleton.
 const jointNames=doc.nodes.filter(n=>n.type==='bone').map(n=>n.id);
 for(const n of doc.nodes)if(n._bind){
@@ -218,17 +253,22 @@ for(const tag of ['L','R']) {
   }
   soles[tag]=createSoleRoll(footPoints[tag].map(v=>v.toArray()));
 }
-const moving=['hips','spine','head','thigh-L','shin-L','foot-L','thigh-R','shin-R','foot-R','piston-L','pistonrod-L','piston-end-L','piston-R','pistonrod-R','piston-end-R','rifle','upperarm-L','forearm-L','hand-L','upperarm-R','forearm-R','hand-R'];
+const moving=['hips','spine','chest','head','thigh-L','shin-L','foot-L','thigh-R','shin-R','foot-R','piston-L','pistonrod-L','piston-end-L','piston-R','pistonrod-R','piston-end-R','rifle','upperarm-L','forearm-L','hand-L','upperarm-R','forearm-R','hand-R'];
 function motion(time,forward=false) {
-  const body=runningBody(time),hipRotation=[0,body.pelvisYaw,body.pelvisRoll];
+  const body=runningBody(time),upper=runningUpperBody(time),hipRotation=[body.pelvisPitch,body.pelvisYaw,body.pelvisRoll];
   const hipQ=new T.Quaternion().setFromEuler(new T.Euler(...hipRotation));
-  const hipPosition=V([body.lateral,body.height,0]);
-  const gunBase=V([.055,.20,.28]),gunPosition=gunBase.clone().add(V(body.weaponOffset));
-  const gunQ=new T.Quaternion().setFromEuler(new T.Euler(...body.weaponRotation));
+  const hipPosition=V([body.lateral,body.height,body.pelvisForward]);
+  const lumbarQ=hipQ.clone().multiply(new T.Quaternion().setFromEuler(new T.Euler(...upper.lumbarRotation)));
+  const chestQ=lumbarQ.clone().multiply(new T.Quaternion().setFromEuler(new T.Euler(...upper.chestRotation)));
+  const lumbarPosition=V([0,.12,0]).applyQuaternion(hipQ).add(hipPosition);
+  const chestPosition=V([0,chestOffset,0]).applyQuaternion(lumbarQ).add(lumbarPosition);
+  const gunPosition=V(upper.weaponAnchor).applyAxisAngle(V([0,1,0]),body.pelvisYaw*.35).add(hipPosition);
+  const gunQ=new T.Quaternion().setFromEuler(new T.Euler(...upper.weaponRotation));
+  const gazeQ=new T.Quaternion().setFromEuler(new T.Euler(.035+upper.headResidual[0],.035+upper.headResidual[1],upper.headResidual[2]));
   const result={hips:{position:hipPosition.toArray(),rotation:hipRotation},
-    spine:{rotation:[body.chestPitch,body.chestYaw,body.chestRoll]},
-    head:{rotation:[-.08,body.headYaw,body.headRoll]},
-    rifle:{position:gunPosition.toArray(),rotation:body.weaponRotation}};
+    spine:{rotation:upper.lumbarRotation},chest:{rotation:upper.chestRotation},
+    head:{rotation:euler(chestQ.clone().invert().multiply(gazeQ))},
+    rifle:{position:gunPosition.toArray(),rotation:upper.weaponRotation}};
   for(const s of [-1,1]) {
     const tag=s<0?'L':'R',gait=runningFoot(time,tag,soles[tag]);
     const footQ=new T.Quaternion().setFromAxisAngle(V([0,1,0]),gait.yaw).multiply(new T.Quaternion().setFromAxisAngle(V([1,0,0]),gait.pitch));
@@ -246,13 +286,8 @@ function motion(time,forward=false) {
     result[`piston-${tag}`]={rotation:euler(downTo(vector))};
     result[`pistonrod-${tag}`]={scale:[1,length-.14,1]};
     result[`piston-end-${tag}`]={position:[0,-length,0]};
-    const shoulder=V([s*.25,.38,.025]),hand=V(grips[tag]).sub(gunBase).applyQuaternion(gunQ).add(gunPosition);
-    const elbow=solveLimb(shoulder,hand,lengths.arm,lengths.forearm,V([s*.9,-.25,-.3]));
-    const armQ=downTo(elbow.clone().sub(shoulder)),foreQ=downTo(hand.clone().sub(elbow));
-    result[`upperarm-${tag}`]={rotation:euler(armQ)};
-    result[`forearm-${tag}`]={rotation:euler(armQ.clone().invert().multiply(foreQ))};
-    result[`hand-${tag}`]={rotation:euler(foreQ.clone().invert().multiply(gunQ))};
   }
+  Object.assign(result,carryArms(chestQ,chestPosition,gunQ,gunPosition));
   if(forward)result.vanguard={position:[0,0,time/cycle*stride]};
   return result;
 }
@@ -313,5 +348,5 @@ for(let i=0;i<32;i++)frames.push(Object.fromEntries(moving.map(id=>{const n=doc.
 await fs.writeFile(`${out}/run-samples.json`,JSON.stringify({fps:20,duration:1.6,cycle,stride,frames}));
 let triangles=0,vertices=0;for(const n of doc.nodes.filter(n=>n.type==='mesh')){const g=geometryFor(n);triangles+=(g.index?.count??g.attributes.position.count)/3;vertices+=g.attributes.position.count;g.dispose();}
 await fs.writeFile(`${out}/manifest.json`,JSON.stringify({name:doc.name,nodes:doc.nodes.length,bones:doc.nodes.filter(n=>n.type==='bone').length,skins:doc.nodes.filter(n=>n.skin).length,triangles,vertices,glbBytes:bytes.byteLength,cycle,stride,speed:stride/cycle,forward:'+Z',up:'+Y',grips,lengths},null,2));
-await fs.writeFile(`${out}/motion-style.json`,JSON.stringify({profile:COMBAT_RUN_PROFILE,model:'Authored stance-force / ballistic pelvis proxy; C2 foot arcs and sole rolling; baked 3D IK',samples:Array.from({length:121},(_,i)=>({time:i/120,...runningBody(i/120)}))},null,2));
+await fs.writeFile(`${out}/motion-style.json`,JSON.stringify({profile:COMBAT_RUN_PROFILE,carry:'right hip, two-handed; rifle independently animated under rig root',model:'Authored stance-force / ballistic pelvis proxy; C2 foot arcs and sole rolling; periodic second-order lumbar/thoracic/weapon response; world-space grip IK',samples:Array.from({length:193},(_,i)=>({time:i/120,...runningBody(i/120),upper:runningUpperBody(i/120)}))},null,2));
 console.log(JSON.stringify({out,nodes:doc.nodes.length,triangles,vertices,skins:2,bytes:bytes.byteLength}));

@@ -11,12 +11,25 @@ const d=validateDocument(JSON.parse(await fs.readFile(`${out}/cyborg.graph.json`
 const root=new T.Scene(),objects=new Map();buildContent(root,d,objects);
 const bytes=await fs.readFile(`${out}/cyborg.glb`),gltf=await new GLTFLoader().parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),'');
 const report={nodes:d.nodes.length,bones:d.nodes.filter(n=>n.type==='bone').length,skins:d.nodes.filter(n=>n.skin).length,triangles:0,topologyIssues:[],maxMatrixError:0,maxSkinPositionError:0,maxGripError:0,maxPistonEndpointError:0,maxLimbLengthError:0,minFootSurfaceY:Infinity,clips:[]};
+report.carry={minHeightAboveHip:Infinity,maxHeightAboveHip:-Infinity,minRightOffset:Infinity,maxArmExtension:0,minHeadPitch:Infinity,maxHeadPitch:-Infinity,maxHeadRoll:0};
 const point=(o,p=[0,0,0])=>new T.Vector3(...p).applyMatrix4(o.matrixWorld);
 function setPose(clip,time){for(const n of d.nodes){const p=poseFor(d,n,time,clip),o=objects.get(n.id);o.position.fromArray(p.position);o.rotation.set(...p.rotation);o.scale.fromArray(p.scale);}root.updateMatrixWorld(true);}
 try {
+  // Hip carry must also be present when opening the model without any action.
+  setPose(null,0);
+  assert.equal(d.nodes.find(n=>n.id==='rifle').parent,'vanguard');
+  assert.equal(d.nodes.find(n=>n.id==='chest').parent,'spine');
+  const standingOffset=point(objects.get('rifle')).sub(point(objects.get('hips')));
+  assert.ok(standingOffset.x>.17&&standingOffset.y>.16&&standingOffset.y<.23);
+  for(const tag of ['L','R']) {
+    const grip=d.review.landmarks[`${tag}-grip`];
+    assert.equal(d.nodes.find(n=>n.id===`upperarm-${tag}`).parent,'chest');
+    assert.ok(point(objects.get(`hand-${tag}`)).distanceTo(point(objects.get('rifle'),grip.point))<1e-8);
+  }
+  report.carry.standingPoseVerified=true;
   for(const n of d.nodes.filter(n=>n.skin)) {
     const exported=gltf.scene.getObjectByName(n.id).skeleton.bones.map(b=>b.name);
-    assert.equal(exported.length,15);
+    assert.equal(exported.length,d.nodes.filter(n=>n.type==='bone').length);
     assert.deepEqual(new Set(exported),new Set(d.nodes.filter(n=>n.type==='bone').map(n=>n.id)));
   }
   for(const n of d.nodes.filter(n=>n.type==='mesh')) {
@@ -55,8 +68,15 @@ try {
   // Dense checks include interpolated frames, complete boot surfaces and both grips.
   for(let i=0;i<=240;i++) {
     setPose('run',i/150);
+    const hip=point(objects.get('hips')),rifle=point(objects.get('rifle')),carry=report.carry;
+    carry.minHeightAboveHip=Math.min(carry.minHeightAboveHip,rifle.y-hip.y);
+    carry.maxHeightAboveHip=Math.max(carry.maxHeightAboveHip,rifle.y-hip.y);
+    carry.minRightOffset=Math.min(carry.minRightOffset,rifle.x-hip.x);
+    const headAngles=new T.Euler().setFromQuaternion(objects.get('head').getWorldQuaternion(new T.Quaternion()));
+    carry.minHeadPitch=Math.min(carry.minHeadPitch,headAngles.x);carry.maxHeadPitch=Math.max(carry.maxHeadPitch,headAngles.x);carry.maxHeadRoll=Math.max(carry.maxHeadRoll,Math.abs(headAngles.z));
     for(const tag of ['L','R']) {
       const hand=point(objects.get(`hand-${tag}`)),grip=d.review.landmarks[`${tag}-grip`];
+      carry.maxArmExtension=Math.max(carry.maxArmExtension,point(objects.get(`upperarm-${tag}`)).distanceTo(hand)/(.31+.30));
       report.maxGripError=Math.max(report.maxGripError,hand.distanceTo(point(objects.get(grip.node),grip.point)));
       const endpoint=point(objects.get(`piston-end-${tag}`)),mount=point(objects.get(`shin-${tag}`),[(tag==='L'?-1:1)*.067,-.16,-.075]);
       report.maxPistonEndpointError=Math.max(report.maxPistonEndpointError,endpoint.distanceTo(mount));
@@ -71,6 +91,10 @@ try {
   assert.ok(report.maxMatrixError<2e-5);assert.ok(report.maxSkinPositionError<2e-5);
   assert.ok(report.maxGripError<1e-6,`Interpolated grip error: ${report.maxGripError}`);assert.ok(report.maxPistonEndpointError<.001);
   assert.ok(report.maxLimbLengthError<1e-8);assert.ok(report.minFootSurfaceY>-.003);
+  assert.ok(report.carry.minHeightAboveHip>.16&&report.carry.maxHeightAboveHip<.23,'Rifle must remain at waist / hip carry height');
+  assert.ok(report.carry.minRightOffset>.17,'Rifle must stay beside the right hip');
+  assert.ok(report.carry.maxArmExtension<.99,`Arm too close to straight: ${report.carry.maxArmExtension}`);
+  assert.ok(report.carry.maxHeadPitch-report.carry.minHeadPitch<.03&&report.carry.maxHeadRoll<.012,'World gaze stabilization failed');
   const motion=auditLocomotion(d);assert.deepEqual(motion.issues,[]);
   assert.deepEqual(auditMeasurements(d,{pose:'clip',clip:'run',time:.317}).issues,[]);
   const forward=auditLocomotion(d,{clip:'run-forward',mode:'root'});assert.deepEqual(forward.issues,[]);

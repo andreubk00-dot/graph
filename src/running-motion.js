@@ -1,4 +1,5 @@
 // Authored animation model, not a full-body dynamics simulation or universal gait.
+import {periodicSpring} from './secondary-motion.js';
 const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
 const wrap=x=>((x%1)+1)%1;
 export const COMBAT_RUN_PROFILE=Object.freeze({cycle:.8,distance:1.8,duty:.34,gravity:9.81,touchHeight:.982,lift:.255,stanceWidth:.17,landingPitch:-.10,toeOffPitch:.52});
@@ -39,12 +40,41 @@ export function runningBody(time,options={}) {
   }
   const p=wrap(time/c.cycle),weight=Math.sin(2*Math.PI*(p+.08));
   return {phase:p,height,velocity,acceleration,forceBodyWeights:force,inFlight:t>=contact,
-    lateral:-.020*weight,pelvisYaw:-.055*weight,pelvisRoll:-.025*weight,
-    chestYaw:.075*weight,chestRoll:.030*weight,chestPitch:.12+.012*Math.sin(4*Math.PI*p-.4),
-    headYaw:-.018*weight,headRoll:-.005*weight,
-    // Restrained, phase-lagged load response. Both hands solve to this gun pose.
-    weaponOffset:[.003*Math.sin(2*Math.PI*p-.4),.0045*Math.sin(4*Math.PI*p-.7),.003*Math.sin(4*Math.PI*p-.2)],
-    weaponRotation:[.008*Math.sin(4*Math.PI*p-.7),.006*Math.sin(2*Math.PI*p-.4),.008*Math.sin(2*Math.PI*p-.4)]};
+    lateral:-.020*weight,pelvisForward:.012*Math.sin(4*Math.PI*p-.3),pelvisPitch:.075+.010*Math.sin(4*Math.PI*p-.3),pelvisYaw:-.070*weight,pelvisRoll:-.025*weight};
+}
+
+const upperBodyResponses=new Map();
+// Separate lumbar/thoracic responses: support compression drives forward pitch,
+// alternating leg drive produces counterrotation. A loaded weapon follows the
+// hip region rather than inheriting the complete chest transform.
+export function runningUpperBody(time,options={}) {
+  const c={...COMBAT_RUN_PROFILE,...options};
+  runningBody(time,c); // Validate the same temporal/dynamics parameters.
+  const key=JSON.stringify([c.cycle,c.duty,c.gravity,c.touchHeight]);
+  if(!upperBodyResponses.has(key)) {
+    const spring=(target,frequency,damping)=>periodicSpring(target,{period:c.cycle,frequency,damping,samples:480});
+    const phase=t=>2*Math.PI*t/c.cycle;
+    const force=t=>runningBody(t,c).forceBodyWeights;
+    upperBodyResponses.set(key,{
+      lumbarPitch:spring(t=>.045+.019*(force(t)-1),3.4,.82),
+      chestPitch:spring(t=>.035+.022*(force(t)-1),2.8,.88),
+      yaw:spring(t=>Math.sin(phase(t)+.50),3.1,.85),
+      roll:spring(t=>Math.sin(phase(t)+.50),2.5,.9),
+      weaponY:spring(t=>-.008*(force(t)-1),3.8,.86),
+      weaponPitch:spring(t=>.035+.016*(force(t)-1),3.0,.88),
+    });
+    if(upperBodyResponses.size>16)upperBodyResponses.delete(upperBodyResponses.keys().next().value);
+  }
+  const r=upperBodyResponses.get(key),yaw=r.yaw(time).position,roll=r.roll(time).position;
+  return {
+    lumbarRotation:[r.lumbarPitch(time).position,.025*yaw,.018*roll],
+    chestRotation:[r.chestPitch(time).position,.18+.095*yaw,.020*roll],
+    // The carry is on the right, below the abdomen; both grip targets are solved
+    // after transforming the full shoulder hierarchy into world space.
+    weaponAnchor:[.195,.20+r.weaponY(time).position,.12],
+    weaponRotation:[r.weaponPitch(time).position,.025+.025*yaw,-.035+.015*roll],
+    headResidual:[.012*Math.sin(4*Math.PI*time/c.cycle-.5),.012*yaw,.008*roll],
+  };
 }
 
 export function createSoleRoll(points) {
