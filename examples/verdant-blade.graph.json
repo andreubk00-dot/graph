@@ -1,0 +1,596 @@
+{
+  "version": 1,
+  "name": "Verdant blade · game prop",
+  "duration": 4,
+  "fps": 24,
+  "nodes": [
+    {
+      "id": "sword",
+      "name": "Verdant blade",
+      "type": "group",
+      "parent": null,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b8e986",
+      "roughness": 0.55,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "blade",
+      "name": "Steel blade",
+      "type": "extrude",
+      "parent": "sword",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#d7e3de",
+      "roughness": 0.25,
+      "metalness": 0.8,
+      "visible": true,
+      "geometry": {
+        "depth": 0.08,
+        "outline": [
+          [
+            -0.14,
+            0.82
+          ],
+          [
+            -0.23,
+            2.45
+          ],
+          [
+            0,
+            2.95
+          ],
+          [
+            0.23,
+            2.45
+          ],
+          [
+            0.14,
+            0.82
+          ]
+        ]
+      },
+      "keys": []
+    },
+    {
+      "id": "inlay",
+      "name": "Verdant inlay",
+      "type": "extrude",
+      "parent": "sword",
+      "position": [
+        0,
+        0,
+        0.047
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#7fa98e",
+      "roughness": 0.35,
+      "metalness": 0.4,
+      "visible": true,
+      "geometry": {
+        "depth": 0.014,
+        "outline": [
+          [
+            -0.025,
+            1
+          ],
+          [
+            0,
+            2.78
+          ],
+          [
+            0.025,
+            1
+          ]
+        ]
+      },
+      "keys": []
+    },
+    {
+      "id": "guard",
+      "name": "Copper crossguard",
+      "type": "box",
+      "parent": "sword",
+      "position": [
+        0,
+        0.81,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.95,
+        0.15,
+        0.24
+      ],
+      "color": "#dda56e",
+      "roughness": 0.35,
+      "metalness": 0.7,
+      "visible": true,
+      "geometry": {
+        "bevel": 0.18,
+        "bevelSegments": 3
+      },
+      "keys": []
+    },
+    {
+      "id": "grip",
+      "name": "Wrapped grip",
+      "type": "capsule",
+      "parent": "sword",
+      "position": [
+        0,
+        0.41,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.33,
+        0.66,
+        0.33
+      ],
+      "color": "#243d38",
+      "roughness": 0.85,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "pommel",
+      "name": "Copper pommel",
+      "type": "lathe",
+      "parent": "sword",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#dda56e",
+      "roughness": 0.3,
+      "metalness": 0.7,
+      "visible": true,
+      "geometry": {
+        "segments": 32,
+        "profile": [
+          [
+            0,
+            -0.06
+          ],
+          [
+            0.1,
+            -0.04
+          ],
+          [
+            0.12,
+            0.04
+          ],
+          [
+            0.1,
+            0.13
+          ],
+          [
+            0,
+            0.16
+          ]
+        ]
+      },
+      "keys": []
+    },
+    {
+      "id": "plinth",
+      "name": "Display plinth",
+      "type": "cylinder",
+      "parent": null,
+      "position": [
+        0,
+        -0.17,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.6,
+        0.22,
+        1.6
+      ],
+      "color": "#35464c",
+      "roughness": 0.55,
+      "metalness": 0.2,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "wrap-0",
+      "name": "Grip ring 1",
+      "type": "torus",
+      "parent": "sword",
+      "position": [
+        0,
+        0.16,
+        0
+      ],
+      "rotation": [
+        1.5707963268,
+        0,
+        0
+      ],
+      "scale": [
+        0.16,
+        0.16,
+        0.16
+      ],
+      "color": "#739387",
+      "roughness": 0.55,
+      "metalness": 0.3,
+      "visible": true,
+      "geometry": {
+        "tube": 0.07,
+        "smooth": true,
+        "segments": 24
+      },
+      "keys": []
+    },
+    {
+      "id": "wrap-1",
+      "name": "Grip ring 2",
+      "type": "torus",
+      "parent": "sword",
+      "position": [
+        0,
+        0.26,
+        0
+      ],
+      "rotation": [
+        1.5707963268,
+        0,
+        0
+      ],
+      "scale": [
+        0.16,
+        0.16,
+        0.16
+      ],
+      "color": "#739387",
+      "roughness": 0.55,
+      "metalness": 0.3,
+      "visible": true,
+      "geometry": {
+        "tube": 0.07,
+        "smooth": true,
+        "segments": 24
+      },
+      "keys": []
+    },
+    {
+      "id": "wrap-2",
+      "name": "Grip ring 3",
+      "type": "torus",
+      "parent": "sword",
+      "position": [
+        0,
+        0.36,
+        0
+      ],
+      "rotation": [
+        1.5707963268,
+        0,
+        0
+      ],
+      "scale": [
+        0.16,
+        0.16,
+        0.16
+      ],
+      "color": "#739387",
+      "roughness": 0.55,
+      "metalness": 0.3,
+      "visible": true,
+      "geometry": {
+        "tube": 0.07,
+        "smooth": true,
+        "segments": 24
+      },
+      "keys": []
+    },
+    {
+      "id": "wrap-3",
+      "name": "Grip ring 4",
+      "type": "torus",
+      "parent": "sword",
+      "position": [
+        0,
+        0.4600000000000001,
+        0
+      ],
+      "rotation": [
+        1.5707963268,
+        0,
+        0
+      ],
+      "scale": [
+        0.16,
+        0.16,
+        0.16
+      ],
+      "color": "#739387",
+      "roughness": 0.55,
+      "metalness": 0.3,
+      "visible": true,
+      "geometry": {
+        "tube": 0.07,
+        "smooth": true,
+        "segments": 24
+      },
+      "keys": []
+    },
+    {
+      "id": "wrap-4",
+      "name": "Grip ring 5",
+      "type": "torus",
+      "parent": "sword",
+      "position": [
+        0,
+        0.56,
+        0
+      ],
+      "rotation": [
+        1.5707963268,
+        0,
+        0
+      ],
+      "scale": [
+        0.16,
+        0.16,
+        0.16
+      ],
+      "color": "#739387",
+      "roughness": 0.55,
+      "metalness": 0.3,
+      "visible": true,
+      "geometry": {
+        "tube": 0.07,
+        "smooth": true,
+        "segments": 24
+      },
+      "keys": []
+    },
+    {
+      "id": "wrap-5",
+      "name": "Grip ring 6",
+      "type": "torus",
+      "parent": "sword",
+      "position": [
+        0,
+        0.66,
+        0
+      ],
+      "rotation": [
+        1.5707963268,
+        0,
+        0
+      ],
+      "scale": [
+        0.16,
+        0.16,
+        0.16
+      ],
+      "color": "#739387",
+      "roughness": 0.55,
+      "metalness": 0.3,
+      "visible": true,
+      "geometry": {
+        "tube": 0.07,
+        "smooth": true,
+        "segments": 24
+      },
+      "keys": []
+    }
+  ],
+  "clips": [
+    {
+      "id": "idle",
+      "name": "Idle",
+      "duration": 4,
+      "tracks": {
+        "sword": [
+          {
+            "time": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              -0.2,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "time": 2,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0.25,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "time": 4,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              -0.2,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "swing",
+      "name": "Swing",
+      "duration": 1.4,
+      "tracks": {
+        "sword": [
+          {
+            "time": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0.6
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "time": 0.35,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0.1,
+              0.25,
+              0.1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "time": 0.7,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              -0.9
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "time": 1.4,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0.6
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "warden",
+      "kind": "3d",
+      "source": "warden.graph.json",
+      "recipe": "warden.sculpt.json",
+      "model": "warden.glb",
+      "lods": [
+        {
+          "file": "warden.glb",
+          "triangles": 67122
+        },
+        {
+          "file": "warden-low.glb",
+          "triangles": 16416
+        }
+      ],
+      "upAxis": "Y",
+      "forwardAxis": "Z",
+      "units": "meters",
+      "materials": "vertex-color",
+      "animated": false
+    },
+    {
+      "id": "ranger",
+      "kind": "pixel",
+      "source": "ranger.art.json",
+      "atlas": "ranger-atlas.png",
+      "metadata": "ranger-atlas.json",
+      "width": 64,
+      "height": 64,
+      "frames": 8,
+      "frameDuration": 80
+    },
+    {
+      "id": "tideglass",
+      "kind": "vector",
+      "source": "tideglass.art.json",
+      "svg": "tideglass.svg",
+      "png": "tideglass.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "asterion",
+      "kind": "3d",
+      "source": "asterion.graph.json",
+      "model": "asterion.glb",
+      "generator": "scripts/build-asterion.js",
+      "triangles": 6292,
+      "upAxis": "Y",
+      "units": "meters",
+      "pivot": "grip",
+      "animated": false
+    },
+    {
+      "id": "cinder",
+      "kind": "3d",
+      "source": "cinder-demon.graph.json",
+      "model": "cinder-demon.glb",
+      "generator": "scripts/build-demon.js",
+      "upAxis": "Y",
+      "forwardAxis": "Z",
+      "units": "meters",
+      "animated": true,
+      "clips": [
+        {
+          "id": "run",
+          "duration": 0.88,
+          "loop": true,
+          "rootDistance": 0
+        },
+        {
+          "id": "run-forward",
+          "duration": 0.88,
+          "loop": false,
+          "rootDistance": 2.9
+        }
+      ]
+    }
+  ]
+}

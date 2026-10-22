@@ -1,0 +1,307 @@
+{
+  "width": 528,
+  "height": 66,
+  "frames": [
+    {
+      "filename": "Run 1-0.png",
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 64,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 80
+    },
+    {
+      "filename": "Run 2-1.png",
+      "frame": {
+        "x": 67,
+        "y": 1,
+        "w": 64,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 80
+    },
+    {
+      "filename": "Run 3-2.png",
+      "frame": {
+        "x": 133,
+        "y": 1,
+        "w": 64,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 80
+    },
+    {
+      "filename": "Run 4-3.png",
+      "frame": {
+        "x": 199,
+        "y": 1,
+        "w": 64,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 80
+    },
+    {
+      "filename": "Run 5-4.png",
+      "frame": {
+        "x": 265,
+        "y": 1,
+        "w": 64,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 80
+    },
+    {
+      "filename": "Run 6-5.png",
+      "frame": {
+        "x": 331,
+        "y": 1,
+        "w": 64,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 80
+    },
+    {
+      "filename": "Run 7-6.png",
+      "frame": {
+        "x": 397,
+        "y": 1,
+        "w": 64,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 80
+    },
+    {
+      "filename": "Run 8-7.png",
+      "frame": {
+        "x": 463,
+        "y": 1,
+        "w": 64,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 64
+      },
+      "duration": 80
+    }
+  ],
+  "meta": {
+    "motion": {
+      "version": 1,
+      "kind": "run",
+      "facing": "right",
+      "distance": 44,
+      "groundY": 59,
+      "feet": [
+        {
+          "id": "near",
+          "points": [
+            [
+              38,
+              59
+            ],
+            [
+              32,
+              59
+            ],
+            [
+              27,
+              59
+            ],
+            [
+              23,
+              58
+            ],
+            [
+              24,
+              53
+            ],
+            [
+              30,
+              49
+            ],
+            [
+              36,
+              51
+            ],
+            [
+              39,
+              56
+            ]
+          ],
+          "contact": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "far",
+          "points": [
+            [
+              24,
+              53
+            ],
+            [
+              30,
+              49
+            ],
+            [
+              36,
+              51
+            ],
+            [
+              39,
+              56
+            ],
+            [
+              38,
+              59
+            ],
+            [
+              32,
+              59
+            ],
+            [
+              27,
+              59
+            ],
+            [
+              23,
+              58
+            ]
+          ],
+          "contact": [
+            false,
+            false,
+            false,
+            false,
+            true,
+            true,
+            true,
+            false
+          ]
+        }
+      ]
+    },
+    "app": "Graph Forge",
+    "version": "1",
+    "image": "ranger-atlas.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 528,
+      "h": 66
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "Animation",
+        "from": 0,
+        "to": 7,
+        "direction": "forward"
+      }
+    ],
+    "kind": "pixel",
+    "padding": 1,
+    "origin": "top-left"
+  }
+}

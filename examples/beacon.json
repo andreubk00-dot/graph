@@ -1,0 +1,13 @@
+[
+  {"op":"scene","name":"Aether beacon · procedural prop","duration":4},
+  {"op":"create","type":"group","id":"beacon","name":"Aether beacon","position":[0,0,0]},
+  {"op":"create","type":"lathe","id":"housing","name":"Machined housing","parent":"beacon","position":[0,0,0],"color":"#394b53","metalness":0.65,"roughness":0.3,"geometry":{"segments":48,"profile":[[0,0],[0.55,0],[0.65,0.08],[0.65,0.18],[0.52,0.25],[0.4,0.36],[0.34,0.55],[0,0.55]]}},
+  {"op":"create","type":"lathe","id":"core","name":"Ceramic core","parent":"beacon","position":[0,0,0],"color":"#b8e986","roughness":0.25,"geometry":{"segments":48,"profile":[[0,0.45],[0.3,0.45],[0.37,0.6],[0.41,1.1],[0.3,1.5],[0.2,1.65],[0,1.65]]}},
+  {"op":"create","type":"torus","id":"collar","name":"Copper collar","parent":"beacon","position":[0,0.4,0],"rotation":[1.5707963268,0,0],"scale":[0.75,0.75,0.75],"color":"#e9a36a","metalness":0.7,"roughness":0.3,"geometry":{"tube":0.09,"smooth":true}},
+  {"op":"create","type":"capsule","id":"brace-l","name":"Brace L","parent":"beacon","position":[-0.52,0.85,0],"scale":[0.3,1.4,0.3],"color":"#d4dcd0","metalness":0.3},
+  {"op":"create","type":"capsule","id":"brace-r","name":"Brace R","parent":"beacon","position":[0.52,0.85,0],"scale":[0.3,1.4,0.3],"color":"#d4dcd0","metalness":0.3},
+  {"op":"create","type":"box","id":"nameplate","name":"Front panel","parent":"beacon","position":[0,0.15,0.6],"scale":[0.34,0.12,0.08],"color":"#e9a36a","geometry":{"bevel":0.12}},
+  {"op":"keyframe","id":"core","time":0,"position":[0,0,0]},
+  {"op":"keyframe","id":"core","time":2,"position":[0,0.1,0]},
+  {"op":"keyframe","id":"core","time":4,"position":[0,0,0]}
+]

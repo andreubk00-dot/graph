@@ -1,0 +1,7 @@
+[
+  {"op":"scene","name":"Scout · hover animation","duration":4},
+  {"op":"create","type":"torus","id":"halo","name":"Energy halo","parent":"scout","position":[0,3.05,0],"rotation":[1.5707963268,0,0],"scale":[1.4,1.4,1.4],"color":"#ffb86b"},
+  {"op":"keyframe","id":"scout","time":0,"position":[0,0,0],"rotation":[0,0,0]},
+  {"op":"keyframe","id":"scout","time":2,"position":[0,0.5,0],"rotation":[0,0.5,0]},
+  {"op":"keyframe","id":"scout","time":4,"position":[0,0,0],"rotation":[0,0,0]}
+]

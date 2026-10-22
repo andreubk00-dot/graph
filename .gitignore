@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.playwright/
+test-results/
+playwright-report/
+__pycache__/
+examples/helios/frames/
+examples/helios/presentation.blend
+examples/helios/presentation.blend1
+examples/helios/icon-frames.rgba

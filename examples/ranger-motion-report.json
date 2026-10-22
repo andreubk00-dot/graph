@@ -1,0 +1,25 @@
+{
+  "available": true,
+  "facing": "right",
+  "duration": 640,
+  "distance": 44,
+  "speed": 68.75,
+  "feet": [
+    {
+      "id": "near",
+      "maxSlip": 0.5,
+      "maxGroundError": 0,
+      "backwardSteps": 0,
+      "contacts": 3
+    },
+    {
+      "id": "far",
+      "maxSlip": 0.5,
+      "maxGroundError": 0,
+      "backwardSteps": 0,
+      "contacts": 3
+    }
+  ],
+  "airborne": true,
+  "issues": []
+}

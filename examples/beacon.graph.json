@@ -1,0 +1,325 @@
+{
+  "version": 1,
+  "name": "Aether beacon · procedural prop",
+  "duration": 4,
+  "fps": 24,
+  "nodes": [
+    {
+      "id": "beacon",
+      "name": "Aether beacon",
+      "type": "group",
+      "parent": null,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b8e986",
+      "roughness": 0.55,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "housing",
+      "name": "Machined housing",
+      "type": "lathe",
+      "parent": "beacon",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#394b53",
+      "roughness": 0.3,
+      "metalness": 0.65,
+      "visible": true,
+      "geometry": {
+        "segments": 48,
+        "profile": [
+          [
+            0,
+            0
+          ],
+          [
+            0.55,
+            0
+          ],
+          [
+            0.65,
+            0.08
+          ],
+          [
+            0.65,
+            0.18
+          ],
+          [
+            0.52,
+            0.25
+          ],
+          [
+            0.4,
+            0.36
+          ],
+          [
+            0.34,
+            0.55
+          ],
+          [
+            0,
+            0.55
+          ]
+        ]
+      },
+      "keys": []
+    },
+    {
+      "id": "core",
+      "name": "Ceramic core",
+      "type": "lathe",
+      "parent": "beacon",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b8e986",
+      "roughness": 0.25,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {
+        "segments": 48,
+        "profile": [
+          [
+            0,
+            0.45
+          ],
+          [
+            0.3,
+            0.45
+          ],
+          [
+            0.37,
+            0.6
+          ],
+          [
+            0.41,
+            1.1
+          ],
+          [
+            0.3,
+            1.5
+          ],
+          [
+            0.2,
+            1.65
+          ],
+          [
+            0,
+            1.65
+          ]
+        ]
+      },
+      "keys": [
+        {
+          "time": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "time": 2,
+          "position": [
+            0,
+            0.1,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "time": 4,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "collar",
+      "name": "Copper collar",
+      "type": "torus",
+      "parent": "beacon",
+      "position": [
+        0,
+        0.4,
+        0
+      ],
+      "rotation": [
+        1.5707963268,
+        0,
+        0
+      ],
+      "scale": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "color": "#e9a36a",
+      "roughness": 0.3,
+      "metalness": 0.7,
+      "visible": true,
+      "geometry": {
+        "tube": 0.09,
+        "smooth": true
+      },
+      "keys": []
+    },
+    {
+      "id": "brace-l",
+      "name": "Brace L",
+      "type": "capsule",
+      "parent": "beacon",
+      "position": [
+        -0.52,
+        0.85,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.3,
+        1.4,
+        0.3
+      ],
+      "color": "#d4dcd0",
+      "roughness": 0.55,
+      "metalness": 0.3,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "brace-r",
+      "name": "Brace R",
+      "type": "capsule",
+      "parent": "beacon",
+      "position": [
+        0.52,
+        0.85,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.3,
+        1.4,
+        0.3
+      ],
+      "color": "#d4dcd0",
+      "roughness": 0.55,
+      "metalness": 0.3,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "nameplate",
+      "name": "Front panel",
+      "type": "box",
+      "parent": "beacon",
+      "position": [
+        0,
+        0.15,
+        0.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.34,
+        0.12,
+        0.08
+      ],
+      "color": "#e9a36a",
+      "roughness": 0.55,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {
+        "bevel": 0.12
+      },
+      "keys": []
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+[
+  {
+    "op": "scene",
+    "name": "Verdant blade \u00b7 game prop",
+    "duration": 4
+  },
+  {
+    "op": "create",
+    "type": "group",
+    "id": "sword",
+    "name": "Verdant blade",
+    "position": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "op": "create",
+    "type": "extrude",
+    "id": "blade",
+    "parent": "sword",
+    "name": "Steel blade",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "color": "#d7e3de",
+    "metalness": 0.8,
+    "roughness": 0.25,
+    "geometry": {
+      "depth": 0.08,
+      "outline": [
+        [
+          -0.14,
+          0.82
+        ],
+        [
+          -0.23,
+          2.45
+        ],
+        [
+          0,
+          2.95
+        ],
+        [
+          0.23,
+          2.45
+        ],
+        [
+          0.14,
+          0.82
+        ]
+      ]
+    }
+  },
+  {
+    "op": "create",
+    "type": "extrude",
+    "id": "inlay",
+    "parent": "sword",
+    "name": "Verdant inlay",
+    "position": [
+      0,
+      0,
+      0.047
+    ],
+    "color": "#7fa98e",
+    "metalness": 0.4,
+    "roughness": 0.35,
+    "geometry": {
+      "depth": 0.014,
+      "outline": [
+        [
+          -0.025,
+          1
+        ],
+        [
+          0,
+          2.78
+        ],
+        [
+          0.025,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "op": "create",
+    "type": "box",
+    "id": "guard",
+    "parent": "sword",
+    "name": "Copper crossguard",
+    "position": [
+      0,
+      0.81,
+      0
+    ],
+    "scale": [
+      0.95,
+      0.15,
+      0.24
+    ],
+    "color": "#dda56e",
+    "metalness": 0.7,
+    "roughness": 0.35,
+    "geometry": {
+      "bevel": 0.18,
+      "bevelSegments": 3
+    }
+  },
+  {
+    "op": "create",
+    "type": "capsule",
+    "id": "grip",
+    "parent": "sword",
+    "name": "Wrapped grip",
+    "position": [
+      0,
+      0.41,
+      0
+    ],
+    "scale": [
+      0.33,
+      0.66,
+      0.33
+    ],
+    "color": "#243d38",
+    "roughness": 0.85
+  },
+  {
+    "op": "create",
+    "type": "lathe",
+    "id": "pommel",
+    "parent": "sword",
+    "name": "Copper pommel",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "color": "#dda56e",
+    "metalness": 0.7,
+    "roughness": 0.3,
+    "geometry": {
+      "segments": 32,
+      "profile": [
+        [
+          0,
+          -0.06
+        ],
+        [
+          0.1,
+          -0.04
+        ],
+        [
+          0.12,
+          0.04
+        ],
+        [
+          0.1,
+          0.13
+        ],
+        [
+          0,
+          0.16
+        ]
+      ]
+    }
+  },
+  {
+    "op": "create",
+    "type": "cylinder",
+    "id": "plinth",
+    "name": "Display plinth",
+    "position": [
+      0,
+      -0.17,
+      0
+    ],
+    "scale": [
+      1.6,
+      0.22,
+      1.6
+    ],
+    "color": "#35464c",
+    "metalness": 0.2
+  },
+  {
+    "op": "create",
+    "type": "torus",
+    "id": "wrap-0",
+    "parent": "sword",
+    "name": "Grip ring 1",
+    "position": [
+      0,
+      0.16,
+      0
+    ],
+    "rotation": [
+      1.5707963268,
+      0,
+      0
+    ],
+    "scale": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "color": "#739387",
+    "metalness": 0.3,
+    "geometry": {
+      "tube": 0.07,
+      "smooth": true,
+      "segments": 24
+    }
+  },
+  {
+    "op": "create",
+    "type": "torus",
+    "id": "wrap-1",
+    "parent": "sword",
+    "name": "Grip ring 2",
+    "position": [
+      0,
+      0.26,
+      0
+    ],
+    "rotation": [
+      1.5707963268,
+      0,
+      0
+    ],
+    "scale": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "color": "#739387",
+    "metalness": 0.3,
+    "geometry": {
+      "tube": 0.07,
+      "smooth": true,
+      "segments": 24
+    }
+  },
+  {
+    "op": "create",
+    "type": "torus",
+    "id": "wrap-2",
+    "parent": "sword",
+    "name": "Grip ring 3",
+    "position": [
+      0,
+      0.36,
+      0
+    ],
+    "rotation": [
+      1.5707963268,
+      0,
+      0
+    ],
+    "scale": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "color": "#739387",
+    "metalness": 0.3,
+    "geometry": {
+      "tube": 0.07,
+      "smooth": true,
+      "segments": 24
+    }
+  },
+  {
+    "op": "create",
+    "type": "torus",
+    "id": "wrap-3",
+    "parent": "sword",
+    "name": "Grip ring 4",
+    "position": [
+      0,
+      0.4600000000000001,
+      0
+    ],
+    "rotation": [
+      1.5707963268,
+      0,
+      0
+    ],
+    "scale": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "color": "#739387",
+    "metalness": 0.3,
+    "geometry": {
+      "tube": 0.07,
+      "smooth": true,
+      "segments": 24
+    }
+  },
+  {
+    "op": "create",
+    "type": "torus",
+    "id": "wrap-4",
+    "parent": "sword",
+    "name": "Grip ring 5",
+    "position": [
+      0,
+      0.56,
+      0
+    ],
+    "rotation": [
+      1.5707963268,
+      0,
+      0
+    ],
+    "scale": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "color": "#739387",
+    "metalness": 0.3,
+    "geometry": {
+      "tube": 0.07,
+      "smooth": true,
+      "segments": 24
+    }
+  },
+  {
+    "op": "create",
+    "type": "torus",
+    "id": "wrap-5",
+    "parent": "sword",
+    "name": "Grip ring 6",
+    "position": [
+      0,
+      0.66,
+      0
+    ],
+    "rotation": [
+      1.5707963268,
+      0,
+      0
+    ],
+    "scale": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "color": "#739387",
+    "metalness": 0.3,
+    "geometry": {
+      "tube": 0.07,
+      "smooth": true,
+      "segments": 24
+    }
+  },
+  {
+    "op": "createClip",
+    "id": "idle",
+    "name": "Idle",
+    "duration": 4
+  },
+  {
+    "op": "keyframe",
+    "id": "sword",
+    "clip": "idle",
+    "time": 0,
+    "rotation": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  {
+    "op": "keyframe",
+    "id": "sword",
+    "clip": "idle",
+    "time": 2,
+    "rotation": [
+      0,
+      0.25,
+      0
+    ]
+  },
+  {
+    "op": "keyframe",
+    "id": "sword",
+    "clip": "idle",
+    "time": 4,
+    "rotation": [
+      0,
+      -0.2,
+      0
+    ]
+  },
+  {
+    "op": "createClip",
+    "id": "swing",
+    "name": "Swing",
+    "duration": 1.4
+  },
+  {
+    "op": "keyframe",
+    "id": "sword",
+    "clip": "swing",
+    "time": 0,
+    "rotation": [
+      0,
+      0,
+      0.6
+    ]
+  },
+  {
+    "op": "keyframe",
+    "id": "sword",
+    "clip": "swing",
+    "time": 0.35,
+    "rotation": [
+      0.1,
+      0.25,
+      0.1
+    ]
+  },
+  {
+    "op": "keyframe",
+    "id": "sword",
+    "clip": "swing",
+    "time": 0.7,
+    "rotation": [
+      0,
+      0,
+      -0.9
+    ]
+  },
+  {
+    "op": "keyframe",
+    "id": "sword",
+    "clip": "swing",
+    "time": 1.4,
+    "rotation": [
+      0,
+      0,
+      0.6
+    ]
+  }
+]

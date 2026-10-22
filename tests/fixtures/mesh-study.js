@@ -1,0 +1,18 @@
+export function halfBox() {
+  return {
+    positions: [
+      0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1,
+    ],
+    indices: [
+      0, 3, 2, 0, 2, 1, 4, 5, 6, 4, 6, 7, 0, 1, 5, 0, 5, 4, 3, 7, 6, 3, 6, 2, 1,
+      2, 6, 1, 6, 5,
+    ],
+    smooth: false,
+  };
+}
+
+export function closedBox() {
+  const g = halfBox();
+  g.indices.push(0, 4, 7, 0, 7, 3);
+  return g;
+}

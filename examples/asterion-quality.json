@@ -1,0 +1,350 @@
+[
+  {
+    "id": "blade",
+    "name": "blade",
+    "vertices": 288,
+    "weldedVertices": 50,
+    "triangles": 96,
+    "components": 1,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "windingConflicts": 0,
+    "degenerate": 0,
+    "normalErrors": 0,
+    "inwardNormals": 0,
+    "mirrorMatch": 1,
+    "bounds": [
+      [
+        -0.22499999403953552,
+        0.22499999403953552
+      ],
+      [
+        0.5699999928474426,
+        2.8500001430511475
+      ],
+      [
+        -0.07000000029802322,
+        0.07000000029802322
+      ]
+    ]
+  },
+  {
+    "id": "swept-guard",
+    "name": "swept guard",
+    "vertices": 9588,
+    "weldedVertices": 1600,
+    "triangles": 3196,
+    "components": 1,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "windingConflicts": 0,
+    "degenerate": 0,
+    "normalErrors": 0,
+    "inwardNormals": 0,
+    "mirrorMatch": 1,
+    "bounds": [
+      [
+        -0.6913825869560242,
+        0.6913825869560242
+      ],
+      [
+        0.4135744571685791,
+        0.7652735114097595
+      ],
+      [
+        -0.11500000208616257,
+        0.11499999463558197
+      ]
+    ]
+  },
+  {
+    "id": "guard-collar",
+    "name": "guard collar",
+    "vertices": 408,
+    "weldedVertices": 70,
+    "triangles": 136,
+    "components": 1,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "windingConflicts": 0,
+    "degenerate": 0,
+    "normalErrors": 0,
+    "inwardNormals": 0,
+    "mirrorMatch": 1,
+    "bounds": [
+      [
+        -0.23725438117980957,
+        0.23725438117980957
+      ],
+      [
+        0.45600003004074097,
+        0.7449998259544373
+      ],
+      [
+        -0.12399999797344208,
+        0.12399999797344208
+      ]
+    ]
+  },
+  {
+    "id": "guard-jewel",
+    "name": "guard jewel",
+    "vertices": 228,
+    "weldedVertices": 40,
+    "triangles": 76,
+    "components": 1,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "windingConflicts": 0,
+    "degenerate": 0,
+    "normalErrors": 0,
+    "inwardNormals": 0,
+    "mirrorMatch": 1,
+    "bounds": [
+      [
+        -0.08203022181987762,
+        0.08203022181987762
+      ],
+      [
+        0.4887996315956116,
+        0.6420710682868958
+      ],
+      [
+        -0.010999999940395355,
+        0.01100000087171793
+      ]
+    ]
+  },
+  {
+    "id": "wrapped-grip",
+    "name": "wrapped grip",
+    "vertices": 504,
+    "weldedVertices": 86,
+    "triangles": 168,
+    "components": 1,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "windingConflicts": 0,
+    "degenerate": 0,
+    "normalErrors": 0,
+    "inwardNormals": 0,
+    "mirrorMatch": 1,
+    "bounds": [
+      [
+        -0.10000000149011612,
+        0.10000000149011612
+      ],
+      [
+        -0.36000001430511475,
+        0.47999995946884155
+      ],
+      [
+        -0.10000000149011612,
+        0.10000000149011612
+      ]
+    ]
+  },
+  {
+    "id": "grip-ferrule-24",
+    "name": "grip ferrule 24",
+    "vertices": 576,
+    "weldedVertices": 98,
+    "triangles": 192,
+    "components": 1,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "windingConflicts": 0,
+    "degenerate": 0,
+    "normalErrors": 0,
+    "inwardNormals": 0,
+    "mirrorMatch": 1,
+    "bounds": [
+      [
+        -0.10499999672174454,
+        0.10499999672174454
+      ],
+      [
+        -0.33500000834465027,
+        -0.2850000262260437
+      ],
+      [
+        -0.10499999672174454,
+        0.10499999672174454
+      ]
+    ]
+  },
+  {
+    "id": "grip-ferrule-93",
+    "name": "grip ferrule 93",
+    "vertices": 576,
+    "weldedVertices": 98,
+    "triangles": 192,
+    "components": 1,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "windingConflicts": 0,
+    "degenerate": 0,
+    "normalErrors": 0,
+    "inwardNormals": 0,
+    "mirrorMatch": 1,
+    "bounds": [
+      [
+        -0.10499999672174454,
+        0.10499999672174454
+      ],
+      [
+        0.35499995946884155,
+        0.4049999713897705
+      ],
+      [
+        -0.10499999672174454,
+        0.10499999672174454
+      ]
+    ]
+  },
+  {
+    "id": "leather-binding",
+    "name": "leather binding",
+    "vertices": 5796,
+    "weldedVertices": 968,
+    "triangles": 1932,
+    "components": 1,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "windingConflicts": 0,
+    "degenerate": 0,
+    "normalErrors": 0,
+    "inwardNormals": 0,
+    "mirrorMatch": 0.0010330578512396382,
+    "bounds": [
+      [
+        -0.09667111188173294,
+        0.09764651209115982
+      ],
+      [
+        -0.27689889073371887,
+        0.34787261486053467
+      ],
+      [
+        -0.0971294566988945,
+        0.0969855934381485
+      ]
+    ]
+  },
+  {
+    "id": "pommel-frame",
+    "name": "pommel frame",
+    "vertices": 348,
+    "weldedVertices": 60,
+    "triangles": 116,
+    "components": 1,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "windingConflicts": 0,
+    "degenerate": 0,
+    "normalErrors": 0,
+    "inwardNormals": 0,
+    "mirrorMatch": 1,
+    "bounds": [
+      [
+        -0.15082141757011414,
+        0.15082141757011414
+      ],
+      [
+        -0.564325213432312,
+        -0.23763932287693024
+      ],
+      [
+        -0.08999999612569809,
+        0.08999999612569809
+      ]
+    ]
+  },
+  {
+    "id": "pommel-inset",
+    "name": "pommel inset",
+    "vertices": 348,
+    "weldedVertices": 60,
+    "triangles": 116,
+    "components": 1,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "windingConflicts": 0,
+    "degenerate": 0,
+    "normalErrors": 0,
+    "inwardNormals": 0,
+    "mirrorMatch": 1,
+    "bounds": [
+      [
+        -0.07808935642242432,
+        0.07808935642242432
+      ],
+      [
+        -0.5014721751213074,
+        -0.30924123525619507
+      ],
+      [
+        -0.0139999995008111,
+        0.014000000432133675
+      ]
+    ]
+  },
+  {
+    "id": "rune-channel--1",
+    "name": "rune channel  1",
+    "vertices": 108,
+    "weldedVertices": 20,
+    "triangles": 36,
+    "components": 1,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "windingConflicts": 0,
+    "degenerate": 0,
+    "normalErrors": 0,
+    "inwardNormals": 0,
+    "mirrorMatch": 1,
+    "bounds": [
+      [
+        -0.009999999776482582,
+        0.009999999776482582
+      ],
+      [
+        0.8499999642372131,
+        2.2699999809265137
+      ],
+      [
+        -0.0691717192530632,
+        -0.04177192971110344
+      ]
+    ]
+  },
+  {
+    "id": "rune-channel-1",
+    "name": "rune channel 1",
+    "vertices": 108,
+    "weldedVertices": 20,
+    "triangles": 36,
+    "components": 1,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "windingConflicts": 0,
+    "degenerate": 0,
+    "normalErrors": 0,
+    "inwardNormals": 0,
+    "mirrorMatch": 1,
+    "bounds": [
+      [
+        -0.009999999776482582,
+        0.009999999776482582
+      ],
+      [
+        0.8499999642372131,
+        2.2699999809265137
+      ],
+      [
+        0.04177192971110344,
+        0.0691717192530632
+      ]
+    ]
+  }
+]

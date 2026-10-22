@@ -1,0 +1,468 @@
+{
+  "version": 1,
+  "name": "Scout · character study",
+  "duration": 4,
+  "fps": 24,
+  "nodes": [
+    {
+      "id": "scout",
+      "name": "Scout",
+      "type": "group",
+      "parent": null,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "color": "#b8e986",
+      "roughness": 0.55,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {},
+      "keys": [
+        {
+          "time": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "time": 2,
+          "position": [
+            0,
+            0.16,
+            0
+          ],
+          "rotation": [
+            0,
+            0.35,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "time": 4,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body",
+      "type": "box",
+      "parent": "scout",
+      "position": [
+        0,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.08,
+        1.05,
+        0.68
+      ],
+      "color": "#b8e986",
+      "roughness": 0.55,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "head",
+      "name": "Helmet",
+      "type": "box",
+      "parent": "scout",
+      "position": [
+        0,
+        2.38,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.35,
+        0.72,
+        0.85
+      ],
+      "color": "#e6eadf",
+      "roughness": 0.55,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "visor",
+      "name": "Visor",
+      "type": "box",
+      "parent": "head",
+      "position": [
+        0,
+        -0.01,
+        0.51
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.75,
+        0.35,
+        0.12
+      ],
+      "color": "#202b31",
+      "roughness": 0.15,
+      "metalness": 0.5,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "eye-l",
+      "name": "Optic L",
+      "type": "sphere",
+      "parent": "visor",
+      "position": [
+        -0.29,
+        0,
+        0.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.1,
+        0.23,
+        0.14
+      ],
+      "color": "#b8e986",
+      "roughness": 0.55,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "eye-r",
+      "name": "Optic R",
+      "type": "sphere",
+      "parent": "visor",
+      "position": [
+        0.29,
+        0,
+        0.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.1,
+        0.23,
+        0.14
+      ],
+      "color": "#b8e986",
+      "roughness": 0.55,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "neck",
+      "name": "Neck",
+      "type": "cylinder",
+      "parent": "scout",
+      "position": [
+        0,
+        1.98,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "color": "#505b61",
+      "roughness": 0.55,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "arm-l",
+      "name": "Arm L",
+      "type": "box",
+      "parent": "scout",
+      "position": [
+        -0.76,
+        1.43,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.12
+      ],
+      "scale": [
+        0.3,
+        0.87,
+        0.42
+      ],
+      "color": "#e6eadf",
+      "roughness": 0.55,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "arm-r",
+      "name": "Arm R",
+      "type": "box",
+      "parent": "scout",
+      "position": [
+        0.76,
+        1.43,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.12
+      ],
+      "scale": [
+        0.3,
+        0.87,
+        0.42
+      ],
+      "color": "#e6eadf",
+      "roughness": 0.55,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "leg-l",
+      "name": "Leg L",
+      "type": "box",
+      "parent": "scout",
+      "position": [
+        -0.31,
+        0.53,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.37,
+        0.8,
+        0.43
+      ],
+      "color": "#505b61",
+      "roughness": 0.55,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "leg-r",
+      "name": "Leg R",
+      "type": "box",
+      "parent": "scout",
+      "position": [
+        0.31,
+        0.53,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.37,
+        0.8,
+        0.43
+      ],
+      "color": "#505b61",
+      "roughness": 0.55,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "foot-l",
+      "name": "Boot L",
+      "type": "box",
+      "parent": "scout",
+      "position": [
+        -0.31,
+        0.16,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.45,
+        0.26,
+        0.69
+      ],
+      "color": "#e6eadf",
+      "roughness": 0.55,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "foot-r",
+      "name": "Boot R",
+      "type": "box",
+      "parent": "scout",
+      "position": [
+        0.31,
+        0.16,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.45,
+        0.26,
+        0.69
+      ],
+      "color": "#e6eadf",
+      "roughness": 0.55,
+      "metalness": 0,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "badge",
+      "name": "Power core",
+      "type": "cylinder",
+      "parent": "scout",
+      "position": [
+        0,
+        1.56,
+        0.36
+      ],
+      "rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "scale": [
+        0.17,
+        0.08,
+        0.17
+      ],
+      "color": "#ffb86b",
+      "roughness": 0.55,
+      "metalness": 0.3,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    },
+    {
+      "id": "plinth",
+      "name": "Display plinth",
+      "type": "cylinder",
+      "parent": null,
+      "position": [
+        0,
+        -0.13,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        2.05,
+        0.24,
+        2.05
+      ],
+      "color": "#39454b",
+      "roughness": 0.55,
+      "metalness": 0.15,
+      "visible": true,
+      "geometry": {},
+      "keys": []
+    }
+  ]
+}
