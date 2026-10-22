@@ -4,12 +4,12 @@
   "skins": 2,
   "triangles": 13452,
   "topologyIssues": [],
-  "maxMatrixError": 3.135969228740265e-7,
-  "maxSkinPositionError": 2.3320627867246058e-7,
+  "maxMatrixError": 5.626685935511411e-7,
+  "maxSkinPositionError": 2.1574459157241836e-7,
   "maxGripError": 4.085764151944021e-7,
-  "maxPistonEndpointError": 0.000024839300484159833,
-  "maxLimbLengthError": 2.220446049250313e-16,
-  "minFootSurfaceY": -0.00004993462476035604,
+  "maxPistonEndpointError": 0.000024838734083120674,
+  "maxLimbLengthError": 2.7755575615628914e-16,
+  "minFootSurfaceY": -0.00009679857100300393,
   "clips": [
     {
       "id": "run",
@@ -32,6 +32,12 @@
     "maxHeadRoll": 0.006827455069689122,
     "standingPoseVerified": true
   },
+  "ankle": {
+    "convention": "Sagittal projection in fixed toe-out plane; positive plantarflexion; not clinical measurement",
+    "minSwingFlexion": -0.21231534473215546,
+    "maxSwingFlexion": 0.21489332954898932,
+    "minRearRecoveryPitch": 1.3077545019918209
+  },
   "motion": {
     "samples": 526,
     "speed": 2.25,
@@ -41,17 +47,17 @@
     "feet": [
       {
         "id": "L",
-        "maxSlip": 0.000010998726123678513,
-        "maxSlipSpeed": 0.013412278547333517,
-        "maxGroundError": 0.0004738927214607558,
-        "maxPenetration": 0.000029108667757918316
+        "maxSlip": 0.00003234056765613556,
+        "maxSlipSpeed": 0.049575782181708876,
+        "maxGroundError": 0.0009331423364046243,
+        "maxPenetration": 0.00008494235131023542
       },
       {
         "id": "R",
-        "maxSlip": 0.000010998726123936903,
-        "maxSlipSpeed": 0.013412278547400973,
-        "maxGroundError": 0.0004738927214608113,
-        "maxPenetration": 0.00002910866775776566
+        "maxSlip": 0.00003234056765613556,
+        "maxSlipSpeed": 0.049575782181707995,
+        "maxGroundError": 0.0009331423364046243,
+        "maxPenetration": 0.00008494235131045746
       }
     ]
   }

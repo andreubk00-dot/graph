@@ -56,8 +56,8 @@ def render(path):
 if mode=='side-cycle':
     (out/'side-frames').mkdir(exist_ok=True)
     camera((-6,0,1.1))
-    for i in range(8):
-        frame(i*2);render(out/'side-frames'/f'{i:03d}.png')
+    for i in range(16):
+        frame(i);render(out/'side-frames'/f'{i:03d}.png')
 elif mode=='animate':
     (out/'frames').mkdir(exist_ok=True)
     for i in range(32):

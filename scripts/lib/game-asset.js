@@ -6,13 +6,7 @@ import { stripEmptyFaces } from "../../src/mesh-audit.js";
 export const V = p => new T.Vector3(...p);
 export const euler = q => new T.Euler().setFromQuaternion(q).toArray().slice(0,3);
 export const downTo = v => new T.Quaternion().setFromUnitVectors(new T.Vector3(0,-1,0),v.clone().normalize());
-export function solveLimb(a,b,upper,lower,pole) {
-  const delta=b.clone().sub(a),d=delta.length();
-  if(d>upper+lower+1e-6||d<Math.abs(upper-lower)+1e-6)throw new Error(`Unreachable limb ${d}`);
-  const u=delta.divideScalar(d),along=(upper*upper-lower*lower+d*d)/(2*d);
-  const tangent=pole.clone().addScaledVector(u,-pole.dot(u)).normalize();
-  return a.clone().addScaledVector(u,along).addScaledVector(tangent,Math.sqrt(Math.max(0,upper*upper-along*along)));
-}
+export {solveLimb} from '../../src/limb-ik.js';
 export function canonical(buffer) {
   buffer.normalizeNormals();
   let g={positions:Array.from(buffer.attributes.position.array),normals:Array.from(buffer.attributes.normal.array),smooth:true};

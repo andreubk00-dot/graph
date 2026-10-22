@@ -4,6 +4,7 @@ import * as T from 'three';
 import {emptyDocument,validateDocument,applyCommands,poseFor} from '../src/document.js';
 import {geometryFor,createGLB} from '../src/scene.js';
 import {COMBAT_RUN_PROFILE,runningBody,runningUpperBody,runningFoot,createSoleRoll} from '../src/running-motion.js';
+import {solveRunningLeg} from '../src/running-leg.js';
 import {assetBuilder,loft,bodyRings,solveLimb,downTo,V,euler} from './lib/game-asset.js';
 const out=process.argv[2]??'examples/cyborg';await fs.mkdir(out,{recursive:true});
 let doc=emptyDocument();doc.name='VANGUARD M-07 · Armed cyborg run';doc.duration=1.6;doc.fps=30;
@@ -270,10 +271,9 @@ function motion(time,forward=false) {
     head:{rotation:euler(chestQ.clone().invert().multiply(gazeQ))},
     rifle:{position:gunPosition.toArray(),rotation:upper.weaponRotation}};
   for(const s of [-1,1]) {
-    const tag=s<0?'L':'R',gait=runningFoot(time,tag,soles[tag]);
-    const footQ=new T.Quaternion().setFromAxisAngle(V([0,1,0]),gait.yaw).multiply(new T.Quaternion().setFromAxisAngle(V([1,0,0]),gait.pitch));
-    const hip=V([s*.105,0,0]).applyQuaternion(hipQ).add(hipPosition),ankle=V([gait.lateral,gait.height,gait.forward]);
-    const knee=solveLimb(hip,ankle,lengths.upper,lengths.lower,V([0,0,1]));
+    const tag=s<0?'L':'R';
+    const hip=V([s*.105,0,0]).applyQuaternion(hipQ).add(hipPosition);
+    const {ankle,knee,footQuaternion:footQ}=solveRunningLeg({time,side:tag,hip,upperLength:lengths.upper,lowerLength:lengths.lower,sole:soles[tag]});
     const upperQ=downTo(knee.clone().sub(hip)),lowerQ=downTo(ankle.clone().sub(knee));
     result[`thigh-${tag}`]={rotation:euler(hipQ.clone().invert().multiply(upperQ))};
     const lowerLocal=upperQ.clone().invert().multiply(lowerQ);
@@ -348,5 +348,5 @@ for(let i=0;i<32;i++)frames.push(Object.fromEntries(moving.map(id=>{const n=doc.
 await fs.writeFile(`${out}/run-samples.json`,JSON.stringify({fps:20,duration:1.6,cycle,stride,frames}));
 let triangles=0,vertices=0;for(const n of doc.nodes.filter(n=>n.type==='mesh')){const g=geometryFor(n);triangles+=(g.index?.count??g.attributes.position.count)/3;vertices+=g.attributes.position.count;g.dispose();}
 await fs.writeFile(`${out}/manifest.json`,JSON.stringify({name:doc.name,nodes:doc.nodes.length,bones:doc.nodes.filter(n=>n.type==='bone').length,skins:doc.nodes.filter(n=>n.skin).length,triangles,vertices,glbBytes:bytes.byteLength,cycle,stride,speed:stride/cycle,forward:'+Z',up:'+Y',grips,lengths},null,2));
-await fs.writeFile(`${out}/motion-style.json`,JSON.stringify({profile:COMBAT_RUN_PROFILE,carry:'right hip, two-handed; rifle independently animated under rig root',model:'Authored stance-force / ballistic pelvis proxy; C2 foot arcs and sole rolling; periodic second-order lumbar/thoracic/weapon response; world-space grip IK',samples:Array.from({length:193},(_,i)=>({time:i/120,...runningBody(i/120),upper:runningUpperBody(i/120)}))},null,2));
+await fs.writeFile(`${out}/motion-style.json`,JSON.stringify({profile:COMBAT_RUN_PROFILE,carry:'right hip, two-handed; rifle independently animated under rig root',model:'Authored stance-force / ballistic pelvis proxy; C2 foot arcs and sole rolling; periodic second-order lumbar/thoracic/weapon response; world-space grip IK; shank-relative recovery with coupled sole-clearance IK',samples:Array.from({length:193},(_,i)=>({time:i/120,...runningBody(i/120),upper:runningUpperBody(i/120)}))},null,2));
 console.log(JSON.stringify({out,nodes:doc.nodes.length,triangles,vertices,skins:2,bytes:bytes.byteLength}));

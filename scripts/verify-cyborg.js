@@ -12,6 +12,7 @@ const root=new T.Scene(),objects=new Map();buildContent(root,d,objects);
 const bytes=await fs.readFile(`${out}/cyborg.glb`),gltf=await new GLTFLoader().parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),'');
 const report={nodes:d.nodes.length,bones:d.nodes.filter(n=>n.type==='bone').length,skins:d.nodes.filter(n=>n.skin).length,triangles:0,topologyIssues:[],maxMatrixError:0,maxSkinPositionError:0,maxGripError:0,maxPistonEndpointError:0,maxLimbLengthError:0,minFootSurfaceY:Infinity,clips:[]};
 report.carry={minHeightAboveHip:Infinity,maxHeightAboveHip:-Infinity,minRightOffset:Infinity,maxArmExtension:0,minHeadPitch:Infinity,maxHeadPitch:-Infinity,maxHeadRoll:0};
+report.ankle={convention:'Sagittal projection in fixed toe-out plane; positive plantarflexion; not clinical measurement',minSwingFlexion:Infinity,maxSwingFlexion:-Infinity,minRearRecoveryPitch:Infinity};
 const point=(o,p=[0,0,0])=>new T.Vector3(...p).applyMatrix4(o.matrixWorld);
 function setPose(clip,time){for(const n of d.nodes){const p=poseFor(d,n,time,clip),o=objects.get(n.id);o.position.fromArray(p.position);o.rotation.set(...p.rotation);o.scale.fromArray(p.scale);}root.updateMatrixWorld(true);}
 try {
@@ -75,6 +76,15 @@ try {
     const headAngles=new T.Euler().setFromQuaternion(objects.get('head').getWorldQuaternion(new T.Quaternion()));
     carry.minHeadPitch=Math.min(carry.minHeadPitch,headAngles.x);carry.maxHeadPitch=Math.max(carry.maxHeadPitch,headAngles.x);carry.maxHeadRoll=Math.max(carry.maxHeadRoll,Math.abs(headAngles.z));
     for(const tag of ['L','R']) {
+      const phase=((i/150/.8+(tag==='R'?.5:0))%1+1)%1;
+      if(phase>=.34) {
+        const forward=new T.Vector3(Math.sin((tag==='L'?-1:1)*.045),0,Math.cos(.045));
+        const shank=point(objects.get(`foot-${tag}`)).sub(point(objects.get(`shin-${tag}`)));
+        const toe=new T.Vector3(0,0,1).applyQuaternion(objects.get(`foot-${tag}`).getWorldQuaternion(new T.Quaternion()));
+        const pitch=Math.atan2(-toe.y,toe.dot(forward)),beta=Math.atan2(-shank.dot(forward),-shank.y),flexion=pitch-beta;
+        report.ankle.minSwingFlexion=Math.min(report.ankle.minSwingFlexion,flexion);report.ankle.maxSwingFlexion=Math.max(report.ankle.maxSwingFlexion,flexion);
+        const swing=(phase-.34)/.66;if(swing>=.25&&swing<=.5)report.ankle.minRearRecoveryPitch=Math.min(report.ankle.minRearRecoveryPitch,pitch);
+      }
       const hand=point(objects.get(`hand-${tag}`)),grip=d.review.landmarks[`${tag}-grip`];
       carry.maxArmExtension=Math.max(carry.maxArmExtension,point(objects.get(`upperarm-${tag}`)).distanceTo(hand)/(.31+.30));
       report.maxGripError=Math.max(report.maxGripError,hand.distanceTo(point(objects.get(grip.node),grip.point)));
@@ -95,6 +105,8 @@ try {
   assert.ok(report.carry.minRightOffset>.17,'Rifle must stay beside the right hip');
   assert.ok(report.carry.maxArmExtension<.99,`Arm too close to straight: ${report.carry.maxArmExtension}`);
   assert.ok(report.carry.maxHeadPitch-report.carry.minHeadPitch<.03&&report.carry.maxHeadRoll<.012,'World gaze stabilization failed');
+  assert.ok(report.ankle.minSwingFlexion>-.35&&report.ankle.maxSwingFlexion<.45,'Recovery exceeds authored ankle envelope');
+  assert.ok(report.ankle.minRearRecoveryPitch>1.0,'Rear boot must follow the recovering shank, not remain horizontal');
   const motion=auditLocomotion(d);assert.deepEqual(motion.issues,[]);
   assert.deepEqual(auditMeasurements(d,{pose:'clip',clip:'run',time:.317}).issues,[]);
   const forward=auditLocomotion(d,{clip:'run-forward',mode:'root'});assert.deepEqual(forward.issues,[]);

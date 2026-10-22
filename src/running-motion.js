@@ -2,7 +2,7 @@
 import {periodicSpring} from './secondary-motion.js';
 const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
 const wrap=x=>((x%1)+1)%1;
-export const COMBAT_RUN_PROFILE=Object.freeze({cycle:.8,distance:1.8,duty:.34,gravity:9.81,touchHeight:.982,lift:.255,stanceWidth:.17,landingPitch:-.10,toeOffPitch:.52});
+export const COMBAT_RUN_PROFILE=Object.freeze({cycle:.8,distance:1.8,duty:.34,gravity:9.81,touchHeight:.982,lift:.255,stanceWidth:.17,landingPitch:-.10,toeOffPitch:1.02});
 
 // C2 piecewise quintics. Shared zero knot accelerations avoid sudden changes in
 // acceleration; explicit endpoint velocities match contact/swing transitions.
@@ -85,7 +85,7 @@ export function createSoleRoll(points) {
     for(const p of yz){const y=c*p[0]-s*p[1];if(y<min){min=y;point=[0,...p];}}
     return {height:-min,point};
   };
-  const lo=-1,hi=1,steps=4000,dx=(hi-lo)/steps,integrals=new Float64Array(steps+1);
+  const lo=-1.6,hi=1.6,steps=6400,dx=(hi-lo)/steps,integrals=new Float64Array(steps+1);
   let previous=support(lo).height;
   for(let i=1;i<=steps;i++){const current=support(lo+i*dx).height;integrals[i]=integrals[i-1]+(previous+current)*dx/2;previous=current;}
   const value=p=>{if(p<lo||p>hi)throw new Error('Foot pitch outside roll table');const x=(p-lo)/dx,i=Math.min(steps-1,Math.floor(x));return integrals[i]+(integrals[i+1]-integrals[i])*(x-i);};
@@ -110,7 +110,7 @@ export function runningFoot(time,side,sole,options={}) {
     height=sole.support(pitch).height;
   }else{
     swing=(p-c.duty)/(1-c.duty);
-    pitch=motionCurve([[0,c.toeOffPitch,2*swingTime],[.18,.70,0],[.44,.10],[.72,-.20,0],[1,c.landingPitch,0]],swing).value;
+    pitch=motionCurve([[0,c.toeOffPitch,2*swingTime],[.18,1.15,0],[.44,.10],[.72,-.20,0],[1,c.landingPitch,0]],swing).value;
     const v0=(-speed+sole.support(c.toeOffPitch).height*2*Math.cos(yaw))*swingTime;
     const scale=c.distance/1.8;
     forward=motionCurve([[0,toeForward,v0],[.20,-.43*scale,0],[.50,-.18*scale],[.80,.20*scale],[1,touchForward,-speed*swingTime]],swing).value;
@@ -118,6 +118,9 @@ export function runningFoot(time,side,sole,options={}) {
     height=sole.support(pitch).height+clearance;
     roll=motionCurve([[0,endRoll,2*sole.support(c.toeOffPitch).height*swingTime],[1,0,0]],swing).value;
   }
-  return {phase:p,contact:p<c.duty,swing,pitch,yaw,forward,height,clearance,
+  const ease=t=>{const u=clamp(t,0,1);return u*u*u*(10-15*u+6*u*u);};
+  const ankleBlend=p<c.duty?0:ease(swing/.18)*(1-ease((swing-.74)/.24));
+  const ankleFlexion=motionCurve([[0,.10],[.18,.18],[.42,.08],[.64,-.12],[.85,-.16],[1,-.10]],swing).value;
+  return {phase:p,contact:p<c.duty,swing,pitch,yaw,forward,height,clearance,ankleBlend,ankleFlexion,
     lateral:sign*c.stanceWidth/2+roll*Math.sin(yaw),supportPoint:sole.support(pitch).point};
 }

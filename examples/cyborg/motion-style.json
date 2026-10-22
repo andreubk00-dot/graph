@@ -8,10 +8,10 @@
     "lift": 0.255,
     "stanceWidth": 0.17,
     "landingPitch": -0.1,
-    "toeOffPitch": 0.52
+    "toeOffPitch": 1.02
   },
   "carry": "right hip, two-handed; rifle independently animated under rig root",
-  "model": "Authored stance-force / ballistic pelvis proxy; C2 foot arcs and sole rolling; periodic second-order lumbar/thoracic/weapon response; world-space grip IK",
+  "model": "Authored stance-force / ballistic pelvis proxy; C2 foot arcs and sole rolling; periodic second-order lumbar/thoracic/weapon response; world-space grip IK; shank-relative recovery with coupled sole-clearance IK",
   "samples": [
     {
       "time": 0,

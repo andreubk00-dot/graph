@@ -1,0 +1,5171 @@
+{
+  "convention": "VANGUARD +Y up +Z forward; sagittal projection in toe-out plane; positive plantarflexion. Authored mechanical diagnostic, not clinical ROM.",
+  "cycle": 0.8,
+  "duty": 0.34,
+  "current": {
+    "sourceSha256": "b0fd9d388986be6aafe4521703efe9eff3f2391bef85cb221e4bd33588328112",
+    "maxSwingDorsiflexionDegrees": 12.170058975645585,
+    "maxSwingPlantarflexionDegrees": 12.34867196821893,
+    "samples": [
+      {
+        "side": "L",
+        "swing": 0,
+        "time": 0.272,
+        "footPitchDegrees": 58.44095508271652,
+        "shankPitchDegrees": 46.795984117919005,
+        "relativeFlexionDegrees": 11.644970964797515
+      },
+      {
+        "side": "L",
+        "swing": 0.00625,
+        "time": 0.27530000000000004,
+        "footPitchDegrees": 58.81680034209194,
+        "shankPitchDegrees": 46.856151973362145,
+        "relativeFlexionDegrees": 11.960648368729792
+      },
+      {
+        "side": "L",
+        "swing": 0.0125,
+        "time": 0.2786,
+        "footPitchDegrees": 59.17896379909836,
+        "shankPitchDegrees": 46.96604284934176,
+        "relativeFlexionDegrees": 12.212920949756601
+      },
+      {
+        "side": "L",
+        "swing": 0.01875,
+        "time": 0.28190000000000004,
+        "footPitchDegrees": 59.5139791298072,
+        "shankPitchDegrees": 47.166889579506744,
+        "relativeFlexionDegrees": 12.347089550300453
+      },
+      {
+        "side": "L",
+        "swing": 0.025,
+        "time": 0.2852,
+        "footPitchDegrees": 59.81949207019687,
+        "shankPitchDegrees": 47.470820101977964,
+        "relativeFlexionDegrees": 12.348671968218909
+      },
+      {
+        "side": "L",
+        "swing": 0.03125,
+        "time": 0.28850000000000003,
+        "footPitchDegrees": 60.09562163096866,
+        "shankPitchDegrees": 47.89180361228095,
+        "relativeFlexionDegrees": 12.203818018687706
+      },
+      {
+        "side": "L",
+        "swing": 0.0375,
+        "time": 0.2918,
+        "footPitchDegrees": 60.34582741715603,
+        "shankPitchDegrees": 48.44064658048793,
+        "relativeFlexionDegrees": 11.905180836668102
+      },
+      {
+        "side": "L",
+        "swing": 0.04375,
+        "time": 0.29510000000000003,
+        "footPitchDegrees": 60.58415961722584,
+        "shankPitchDegrees": 49.16505027538407,
+        "relativeFlexionDegrees": 11.419109341841775
+      },
+      {
+        "side": "L",
+        "swing": 0.05,
+        "time": 0.2984,
+        "footPitchDegrees": 60.84501101503054,
+        "shankPitchDegrees": 50.03008032810297,
+        "relativeFlexionDegrees": 10.814930686927575
+      },
+      {
+        "side": "L",
+        "swing": 0.05625,
+        "time": 0.3017,
+        "footPitchDegrees": 61.15477432005894,
+        "shankPitchDegrees": 51.02201473947356,
+        "relativeFlexionDegrees": 10.132759580585379
+      },
+      {
+        "side": "L",
+        "swing": 0.0625,
+        "time": 0.30500000000000005,
+        "footPitchDegrees": 61.53990412951761,
+        "shankPitchDegrees": 52.13286919902472,
+        "relativeFlexionDegrees": 9.407034930492891
+      },
+      {
+        "side": "L",
+        "swing": 0.06875,
+        "time": 0.3083,
+        "footPitchDegrees": 62.02977776561551,
+        "shankPitchDegrees": 53.35411625641398,
+        "relativeFlexionDegrees": 8.675661509201532
+      },
+      {
+        "side": "L",
+        "swing": 0.075,
+        "time": 0.31160000000000004,
+        "footPitchDegrees": 62.7104010682136,
+        "shankPitchDegrees": 54.69512282213045,
+        "relativeFlexionDegrees": 8.015278246083149
+      },
+      {
+        "side": "L",
+        "swing": 0.08125,
+        "time": 0.3149,
+        "footPitchDegrees": 63.56109244855918,
+        "shankPitchDegrees": 56.10312052980074,
+        "relativeFlexionDegrees": 7.457971918758439
+      },
+      {
+        "side": "L",
+        "swing": 0.0875,
+        "time": 0.31820000000000004,
+        "footPitchDegrees": 64.59034274280299,
+        "shankPitchDegrees": 57.56273362327178,
+        "relativeFlexionDegrees": 7.027609119531206
+      },
+      {
+        "side": "L",
+        "swing": 0.09375,
+        "time": 0.3215,
+        "footPitchDegrees": 65.80133943041186,
+        "shankPitchDegrees": 59.058545523992414,
+        "relativeFlexionDegrees": 6.742793906419443
+      },
+      {
+        "side": "L",
+        "swing": 0.1,
+        "time": 0.32480000000000003,
+        "footPitchDegrees": 67.20453301633546,
+        "shankPitchDegrees": 60.57467614427669,
+        "relativeFlexionDegrees": 6.629856872058774
+      },
+      {
+        "side": "L",
+        "swing": 0.10625,
+        "time": 0.3281,
+        "footPitchDegrees": 68.80240444146116,
+        "shankPitchDegrees": 62.085490624904544,
+        "relativeFlexionDegrees": 6.71691381655662
+      },
+      {
+        "side": "L",
+        "swing": 0.1125,
+        "time": 0.33140000000000003,
+        "footPitchDegrees": 70.5146904574871,
+        "shankPitchDegrees": 63.57291098781281,
+        "relativeFlexionDegrees": 6.9417794696742945
+      },
+      {
+        "side": "L",
+        "swing": 0.11875,
+        "time": 0.3347,
+        "footPitchDegrees": 72.3073577773823,
+        "shankPitchDegrees": 65.02495213040427,
+        "relativeFlexionDegrees": 7.28240564697802
+      },
+      {
+        "side": "L",
+        "swing": 0.125,
+        "time": 0.338,
+        "footPitchDegrees": 74.14397192931906,
+        "shankPitchDegrees": 66.43050552108163,
+        "relativeFlexionDegrees": 7.713466408237437
+      },
+      {
+        "side": "L",
+        "swing": 0.13125,
+        "time": 0.34130000000000005,
+        "footPitchDegrees": 75.97531318219663,
+        "shankPitchDegrees": 67.76877732107732,
+        "relativeFlexionDegrees": 8.206535861119306
+      },
+      {
+        "side": "L",
+        "swing": 0.1375,
+        "time": 0.3446,
+        "footPitchDegrees": 77.7279859643751,
+        "shankPitchDegrees": 69.02263283461045,
+        "relativeFlexionDegrees": 8.705353129764646
+      },
+      {
+        "side": "L",
+        "swing": 0.14375,
+        "time": 0.3479,
+        "footPitchDegrees": 79.37039922819626,
+        "shankPitchDegrees": 70.1997782799446,
+        "relativeFlexionDegrees": 9.170620948251667
+      },
+      {
+        "side": "L",
+        "swing": 0.15,
+        "time": 0.3512,
+        "footPitchDegrees": 80.87566642482521,
+        "shankPitchDegrees": 71.29700032159927,
+        "relativeFlexionDegrees": 9.578666103225942
+      },
+      {
+        "side": "L",
+        "swing": 0.15625,
+        "time": 0.35450000000000004,
+        "footPitchDegrees": 82.22193358930888,
+        "shankPitchDegrees": 72.3121863388334,
+        "relativeFlexionDegrees": 9.909747250475476
+      },
+      {
+        "side": "L",
+        "swing": 0.1625,
+        "time": 0.3578,
+        "footPitchDegrees": 83.35575900963075,
+        "shankPitchDegrees": 73.22712534885895,
+        "relativeFlexionDegrees": 10.128633660771797
+      },
+      {
+        "side": "L",
+        "swing": 0.16875,
+        "time": 0.36110000000000003,
+        "footPitchDegrees": 84.30035959075023,
+        "shankPitchDegrees": 74.05299983840935,
+        "relativeFlexionDegrees": 10.247359752340884
+      },
+      {
+        "side": "L",
+        "swing": 0.175,
+        "time": 0.3644,
+        "footPitchDegrees": 85.10746510229569,
+        "shankPitchDegrees": 74.80712376515164,
+        "relativeFlexionDegrees": 10.300341337144047
+      },
+      {
+        "side": "L",
+        "swing": 0.18125,
+        "time": 0.3677,
+        "footPitchDegrees": 85.81029488915976,
+        "shankPitchDegrees": 75.49722647987576,
+        "relativeFlexionDegrees": 10.313068409284
+      },
+      {
+        "side": "L",
+        "swing": 0.1875,
+        "time": 0.371,
+        "footPitchDegrees": 86.44506778981747,
+        "shankPitchDegrees": 76.13270673390062,
+        "relativeFlexionDegrees": 10.312361055916853
+      },
+      {
+        "side": "L",
+        "swing": 0.19375,
+        "time": 0.3743,
+        "footPitchDegrees": 87.0310949571863,
+        "shankPitchDegrees": 76.72290604039911,
+        "relativeFlexionDegrees": 10.308188916787188
+      },
+      {
+        "side": "L",
+        "swing": 0.2,
+        "time": 0.37760000000000005,
+        "footPitchDegrees": 87.60367309323905,
+        "shankPitchDegrees": 77.3052414088379,
+        "relativeFlexionDegrees": 10.298431684401152
+      },
+      {
+        "side": "L",
+        "swing": 0.20625,
+        "time": 0.3809,
+        "footPitchDegrees": 88.17638171093958,
+        "shankPitchDegrees": 77.89442233883031,
+        "relativeFlexionDegrees": 10.28195937210927
+      },
+      {
+        "side": "L",
+        "swing": 0.2125,
+        "time": 0.38420000000000004,
+        "footPitchDegrees": 88.7541986255877,
+        "shankPitchDegrees": 78.49662086749476,
+        "relativeFlexionDegrees": 10.25757775809295
+      },
+      {
+        "side": "L",
+        "swing": 0.21875,
+        "time": 0.3875,
+        "footPitchDegrees": 89.33683599809932,
+        "shankPitchDegrees": 79.11262131118056,
+        "relativeFlexionDegrees": 10.224214686918756
+      },
+      {
+        "side": "L",
+        "swing": 0.225,
+        "time": 0.39080000000000004,
+        "footPitchDegrees": 89.92155573180116,
+        "shankPitchDegrees": 79.74460494982792,
+        "relativeFlexionDegrees": 10.176950781973247
+      },
+      {
+        "side": "L",
+        "swing": 0.23125,
+        "time": 0.3941,
+        "footPitchDegrees": 90.50288606836814,
+        "shankPitchDegrees": 80.3843633723711,
+        "relativeFlexionDegrees": 10.118522695997044
+      },
+      {
+        "side": "L",
+        "swing": 0.2375,
+        "time": 0.39740000000000003,
+        "footPitchDegrees": 91.07664996461823,
+        "shankPitchDegrees": 81.02808852876831,
+        "relativeFlexionDegrees": 10.04856143584992
+      },
+      {
+        "side": "L",
+        "swing": 0.24375,
+        "time": 0.40070000000000006,
+        "footPitchDegrees": 91.6382048739715,
+        "shankPitchDegrees": 81.67141858406748,
+        "relativeFlexionDegrees": 9.966786289904022
+      },
+      {
+        "side": "L",
+        "swing": 0.25,
+        "time": 0.404,
+        "footPitchDegrees": 92.18054831153033,
+        "shankPitchDegrees": 82.30836324510474,
+        "relativeFlexionDegrees": 9.872185066425587
+      },
+      {
+        "side": "L",
+        "swing": 0.25625,
+        "time": 0.4073,
+        "footPitchDegrees": 92.68677490886658,
+        "shankPitchDegrees": 82.92463850640132,
+        "relativeFlexionDegrees": 9.76213640246526
+      },
+      {
+        "side": "L",
+        "swing": 0.2625,
+        "time": 0.4106,
+        "footPitchDegrees": 93.15483944063898,
+        "shankPitchDegrees": 83.51451022013208,
+        "relativeFlexionDegrees": 9.6403292205069
+      },
+      {
+        "side": "L",
+        "swing": 0.26875,
+        "time": 0.41390000000000005,
+        "footPitchDegrees": 93.57778847921566,
+        "shankPitchDegrees": 84.0707332953558,
+        "relativeFlexionDegrees": 9.507055183859862
+      },
+      {
+        "side": "L",
+        "swing": 0.275,
+        "time": 0.4172,
+        "footPitchDegrees": 93.94882126028749,
+        "shankPitchDegrees": 84.58615891032429,
+        "relativeFlexionDegrees": 9.362662349963202
+      },
+      {
+        "side": "L",
+        "swing": 0.28125,
+        "time": 0.42050000000000004,
+        "footPitchDegrees": 94.25185132926048,
+        "shankPitchDegrees": 85.04563620971862,
+        "relativeFlexionDegrees": 9.206215119541852
+      },
+      {
+        "side": "L",
+        "swing": 0.2875,
+        "time": 0.4238,
+        "footPitchDegrees": 94.47123346905812,
+        "shankPitchDegrees": 85.43338931721422,
+        "relativeFlexionDegrees": 9.037844151843899
+      },
+      {
+        "side": "L",
+        "swing": 0.29375,
+        "time": 0.42710000000000004,
+        "footPitchDegrees": 94.61604235174043,
+        "shankPitchDegrees": 85.75552132653274,
+        "relativeFlexionDegrees": 8.860521025207689
+      },
+      {
+        "side": "L",
+        "swing": 0.3,
+        "time": 0.4304,
+        "footPitchDegrees": 94.68304299918616,
+        "shankPitchDegrees": 86.00812968304598,
+        "relativeFlexionDegrees": 8.674913316140177
+      },
+      {
+        "side": "L",
+        "swing": 0.30625,
+        "time": 0.43370000000000003,
+        "footPitchDegrees": 94.6697371580664,
+        "shankPitchDegrees": 86.18802383494466,
+        "relativeFlexionDegrees": 8.481713323121738
+      },
+      {
+        "side": "L",
+        "swing": 0.3125,
+        "time": 0.43700000000000006,
+        "footPitchDegrees": 94.55778666371681,
+        "shankPitchDegrees": 86.27727432905208,
+        "relativeFlexionDegrees": 8.280512334664735
+      },
+      {
+        "side": "L",
+        "swing": 0.31875,
+        "time": 0.4403,
+        "footPitchDegrees": 94.35291985992028,
+        "shankPitchDegrees": 86.27989385588413,
+        "relativeFlexionDegrees": 8.073026004036151
+      },
+      {
+        "side": "L",
+        "swing": 0.325,
+        "time": 0.4436,
+        "footPitchDegrees": 94.0704210756948,
+        "shankPitchDegrees": 86.20939479337224,
+        "relativeFlexionDegrees": 7.861026282322555
+      },
+      {
+        "side": "L",
+        "swing": 0.33125,
+        "time": 0.4469,
+        "footPitchDegrees": 93.71395755208121,
+        "shankPitchDegrees": 86.06868480428274,
+        "relativeFlexionDegrees": 7.645272747798472
+      },
+      {
+        "side": "L",
+        "swing": 0.3375,
+        "time": 0.45020000000000004,
+        "footPitchDegrees": 93.28790960872328,
+        "shankPitchDegrees": 85.86139128297512,
+        "relativeFlexionDegrees": 7.426518325748162
+      },
+      {
+        "side": "L",
+        "swing": 0.34375,
+        "time": 0.4535,
+        "footPitchDegrees": 92.78338712742169,
+        "shankPitchDegrees": 85.57813284211399,
+        "relativeFlexionDegrees": 7.205254285307703
+      },
+      {
+        "side": "L",
+        "swing": 0.35,
+        "time": 0.4568,
+        "footPitchDegrees": 92.22337081579035,
+        "shankPitchDegrees": 85.24036154368282,
+        "relativeFlexionDegrees": 6.983009272107523
+      },
+      {
+        "side": "L",
+        "swing": 0.35625,
+        "time": 0.46010000000000006,
+        "footPitchDegrees": 91.62026550795093,
+        "shankPitchDegrees": 84.85971008338586,
+        "relativeFlexionDegrees": 6.760555424565069
+      },
+      {
+        "side": "L",
+        "swing": 0.3625,
+        "time": 0.46340000000000003,
+        "footPitchDegrees": 90.98143157623781,
+        "shankPitchDegrees": 84.44297095237039,
+        "relativeFlexionDegrees": 6.538460623867422
+      },
+      {
+        "side": "L",
+        "swing": 0.36875,
+        "time": 0.4667,
+        "footPitchDegrees": 90.31429601093991,
+        "shankPitchDegrees": 83.9970414432341,
+        "relativeFlexionDegrees": 6.317254567705817
+      },
+      {
+        "side": "L",
+        "swing": 0.375,
+        "time": 0.47000000000000003,
+        "footPitchDegrees": 89.62389659245201,
+        "shankPitchDegrees": 83.52578343037581,
+        "relativeFlexionDegrees": 6.098113162076203
+      },
+      {
+        "side": "L",
+        "swing": 0.38125,
+        "time": 0.47330000000000005,
+        "footPitchDegrees": 88.9261556052661,
+        "shankPitchDegrees": 83.04513229955988,
+        "relativeFlexionDegrees": 5.881023305706222
+      },
+      {
+        "side": "L",
+        "swing": 0.3875,
+        "time": 0.4766,
+        "footPitchDegrees": 88.22675890253139,
+        "shankPitchDegrees": 82.56063068232407,
+        "relativeFlexionDegrees": 5.666128220207312
+      },
+      {
+        "side": "L",
+        "swing": 0.39375,
+        "time": 0.4799,
+        "footPitchDegrees": 87.53056498552354,
+        "shankPitchDegrees": 82.07704475032958,
+        "relativeFlexionDegrees": 5.453520235193963
+      },
+      {
+        "side": "L",
+        "swing": 0.4,
+        "time": 0.4832000000000001,
+        "footPitchDegrees": 86.84251389081882,
+        "shankPitchDegrees": 81.59918186743569,
+        "relativeFlexionDegrees": 5.243332023383132
+      },
+      {
+        "side": "L",
+        "swing": 0.40625,
+        "time": 0.48650000000000004,
+        "footPitchDegrees": 86.1698319703802,
+        "shankPitchDegrees": 81.13405144115413,
+        "relativeFlexionDegrees": 5.0357805292260736
+      },
+      {
+        "side": "L",
+        "swing": 0.4125,
+        "time": 0.4898,
+        "footPitchDegrees": 85.51035086991479,
+        "shankPitchDegrees": 80.68062731678998,
+        "relativeFlexionDegrees": 4.829723553124808
+      },
+      {
+        "side": "L",
+        "swing": 0.41875,
+        "time": 0.49310000000000004,
+        "footPitchDegrees": 84.9038087635645,
+        "shankPitchDegrees": 80.27930118496106,
+        "relativeFlexionDegrees": 4.624507578603442
+      },
+      {
+        "side": "L",
+        "swing": 0.425,
+        "time": 0.49640000000000006,
+        "footPitchDegrees": 84.36313911885121,
+        "shankPitchDegrees": 79.94451997591415,
+        "relativeFlexionDegrees": 4.418619142937061
+      },
+      {
+        "side": "L",
+        "swing": 0.43125,
+        "time": 0.49970000000000003,
+        "footPitchDegrees": 83.84193895232444,
+        "shankPitchDegrees": 79.63395922967696,
+        "relativeFlexionDegrees": 4.2079797226474795
+      },
+      {
+        "side": "L",
+        "swing": 0.4375,
+        "time": 0.503,
+        "footPitchDegrees": 83.27523702386894,
+        "shankPitchDegrees": 79.29161252398887,
+        "relativeFlexionDegrees": 3.983624499880065
+      },
+      {
+        "side": "L",
+        "swing": 0.44375,
+        "time": 0.5063,
+        "footPitchDegrees": 82.65607840699975,
+        "shankPitchDegrees": 78.91255735407259,
+        "relativeFlexionDegrees": 3.7435210529271643
+      },
+      {
+        "side": "L",
+        "swing": 0.45,
+        "time": 0.5096,
+        "footPitchDegrees": 81.97757861215293,
+        "shankPitchDegrees": 78.49245349156784,
+        "relativeFlexionDegrees": 3.4851251205850815
+      },
+      {
+        "side": "L",
+        "swing": 0.45625,
+        "time": 0.5129,
+        "footPitchDegrees": 81.23465973522134,
+        "shankPitchDegrees": 78.02831956879288,
+        "relativeFlexionDegrees": 3.206340166428461
+      },
+      {
+        "side": "L",
+        "swing": 0.4625,
+        "time": 0.5162,
+        "footPitchDegrees": 80.41041373328966,
+        "shankPitchDegrees": 77.50929413073541,
+        "relativeFlexionDegrees": 2.901119602554246
+      },
+      {
+        "side": "L",
+        "swing": 0.46875,
+        "time": 0.5195000000000001,
+        "footPitchDegrees": 79.50401510288033,
+        "shankPitchDegrees": 76.93487009386051,
+        "relativeFlexionDegrees": 2.5691450090198202
+      },
+      {
+        "side": "L",
+        "swing": 0.475,
+        "time": 0.5228,
+        "footPitchDegrees": 78.5267382582688,
+        "shankPitchDegrees": 76.31221727553252,
+        "relativeFlexionDegrees": 2.214520982736275
+      },
+      {
+        "side": "L",
+        "swing": 0.48125,
+        "time": 0.5261,
+        "footPitchDegrees": 77.47903228746902,
+        "shankPitchDegrees": 75.64104887210038,
+        "relativeFlexionDegrees": 1.8379834153686403
+      },
+      {
+        "side": "L",
+        "swing": 0.4875,
+        "time": 0.5294000000000001,
+        "footPitchDegrees": 76.36176369574345,
+        "shankPitchDegrees": 74.92120658707488,
+        "relativeFlexionDegrees": 1.4405571086685711
+      },
+      {
+        "side": "L",
+        "swing": 0.49375,
+        "time": 0.5327000000000001,
+        "footPitchDegrees": 75.1595424687416,
+        "shankPitchDegrees": 74.14004195305864,
+        "relativeFlexionDegrees": 1.0195005156829637
+      },
+      {
+        "side": "L",
+        "swing": 0.5,
+        "time": 0.536,
+        "footPitchDegrees": 73.99221402476083,
+        "shankPitchDegrees": 73.41089290532592,
+        "relativeFlexionDegrees": 0.5813211194349037
+      },
+      {
+        "side": "L",
+        "swing": 0.50625,
+        "time": 0.5393,
+        "footPitchDegrees": 72.85669389703055,
+        "shankPitchDegrees": 72.72641160179798,
+        "relativeFlexionDegrees": 0.1302822952325755
+      },
+      {
+        "side": "L",
+        "swing": 0.5125,
+        "time": 0.5426,
+        "footPitchDegrees": 71.71554604330098,
+        "shankPitchDegrees": 72.04657546867935,
+        "relativeFlexionDegrees": -0.3310294253783752
+      },
+      {
+        "side": "L",
+        "swing": 0.51875,
+        "time": 0.5459,
+        "footPitchDegrees": 70.50868269456248,
+        "shankPitchDegrees": 71.30858127594195,
+        "relativeFlexionDegrees": -0.7998985813794661
+      },
+      {
+        "side": "L",
+        "swing": 0.525,
+        "time": 0.5492,
+        "footPitchDegrees": 69.21729415748865,
+        "shankPitchDegrees": 70.49024815617051,
+        "relativeFlexionDegrees": -1.2729539986818565
+      },
+      {
+        "side": "L",
+        "swing": 0.53125,
+        "time": 0.5525,
+        "footPitchDegrees": 67.8640804757131,
+        "shankPitchDegrees": 69.608499535648,
+        "relativeFlexionDegrees": -1.7444190599348985
+      },
+      {
+        "side": "L",
+        "swing": 0.5375,
+        "time": 0.5558000000000001,
+        "footPitchDegrees": 66.45373486286836,
+        "shankPitchDegrees": 68.66489904302799,
+        "relativeFlexionDegrees": -2.211164180159628
+      },
+      {
+        "side": "L",
+        "swing": 0.54375,
+        "time": 0.5590999999999999,
+        "footPitchDegrees": 64.98946463059191,
+        "shankPitchDegrees": 67.65964929265652,
+        "relativeFlexionDegrees": -2.6701846620646137
+      },
+      {
+        "side": "L",
+        "swing": 0.55,
+        "time": 0.5624,
+        "footPitchDegrees": 63.472938051168164,
+        "shankPitchDegrees": 66.59081521675982,
+        "relativeFlexionDegrees": -3.1178771655916577
+      },
+      {
+        "side": "L",
+        "swing": 0.55625,
+        "time": 0.5657000000000001,
+        "footPitchDegrees": 61.89850161729339,
+        "shankPitchDegrees": 65.44403702587141,
+        "relativeFlexionDegrees": -3.5455354085780186
+      },
+      {
+        "side": "L",
+        "swing": 0.5625,
+        "time": 0.5690000000000001,
+        "footPitchDegrees": 60.28640670061999,
+        "shankPitchDegrees": 64.24060742690469,
+        "relativeFlexionDegrees": -3.9542007262846965
+      },
+      {
+        "side": "L",
+        "swing": 0.56875,
+        "time": 0.5723,
+        "footPitchDegrees": 58.641102027001466,
+        "shankPitchDegrees": 62.98278441228851,
+        "relativeFlexionDegrees": -4.341682385287044
+      },
+      {
+        "side": "L",
+        "swing": 0.575,
+        "time": 0.5756,
+        "footPitchDegrees": 56.96705885137536,
+        "shankPitchDegrees": 61.67304599370862,
+        "relativeFlexionDegrees": -4.705987142333257
+      },
+      {
+        "side": "L",
+        "swing": 0.58125,
+        "time": 0.5789000000000001,
+        "footPitchDegrees": 55.26695855851171,
+        "shankPitchDegrees": 60.309298410106884,
+        "relativeFlexionDegrees": -5.042339851595173
+      },
+      {
+        "side": "L",
+        "swing": 0.5875,
+        "time": 0.5822,
+        "footPitchDegrees": 53.54603704847709,
+        "shankPitchDegrees": 58.89105195141381,
+        "relativeFlexionDegrees": -5.345014902936718
+      },
+      {
+        "side": "L",
+        "swing": 0.59375,
+        "time": 0.5855,
+        "footPitchDegrees": 51.81405144880672,
+        "shankPitchDegrees": 57.43401997409733,
+        "relativeFlexionDegrees": -5.619968525290609
+      },
+      {
+        "side": "L",
+        "swing": 0.6,
+        "time": 0.5888,
+        "footPitchDegrees": 50.074705646634875,
+        "shankPitchDegrees": 55.94199811400233,
+        "relativeFlexionDegrees": -5.867292467367456
+      },
+      {
+        "side": "L",
+        "swing": 0.60625,
+        "time": 0.5921000000000001,
+        "footPitchDegrees": 48.33145424574817,
+        "shankPitchDegrees": 54.41888818137212,
+        "relativeFlexionDegrees": -6.087433935623949
+      },
+      {
+        "side": "L",
+        "swing": 0.6125,
+        "time": 0.5954,
+        "footPitchDegrees": 46.588122298750584,
+        "shankPitchDegrees": 52.86522454271657,
+        "relativeFlexionDegrees": -6.2771022439659845
+      },
+      {
+        "side": "L",
+        "swing": 0.61875,
+        "time": 0.5987,
+        "footPitchDegrees": 44.84874494679172,
+        "shankPitchDegrees": 51.288649128741106,
+        "relativeFlexionDegrees": -6.439904181949387
+      },
+      {
+        "side": "L",
+        "swing": 0.625,
+        "time": 0.6020000000000001,
+        "footPitchDegrees": 43.11428910701822,
+        "shankPitchDegrees": 49.69803466560458,
+        "relativeFlexionDegrees": -6.583745558586358
+      },
+      {
+        "side": "L",
+        "swing": 0.63125,
+        "time": 0.6053,
+        "footPitchDegrees": 41.385144922895144,
+        "shankPitchDegrees": 48.09757400690102,
+        "relativeFlexionDegrees": -6.712429084005876
+      },
+      {
+        "side": "L",
+        "swing": 0.6375,
+        "time": 0.6086,
+        "footPitchDegrees": 39.661199321478115,
+        "shankPitchDegrees": 46.4914254562045,
+        "relativeFlexionDegrees": -6.830226134726388
+      },
+      {
+        "side": "L",
+        "swing": 0.64375,
+        "time": 0.6119000000000001,
+        "footPitchDegrees": 37.94200439244297,
+        "shankPitchDegrees": 44.885133002568594,
+        "relativeFlexionDegrees": -6.943128610125626
+      },
+      {
+        "side": "L",
+        "swing": 0.65,
+        "time": 0.6152,
+        "footPitchDegrees": 36.22941922783695,
+        "shankPitchDegrees": 43.28533472405081,
+        "relativeFlexionDegrees": -7.0559154962138635
+      },
+      {
+        "side": "L",
+        "swing": 0.65625,
+        "time": 0.6185,
+        "footPitchDegrees": 34.52691177722665,
+        "shankPitchDegrees": 41.69553087088347,
+        "relativeFlexionDegrees": -7.168619093656822
+      },
+      {
+        "side": "L",
+        "swing": 0.6625,
+        "time": 0.6218,
+        "footPitchDegrees": 32.83783051531334,
+        "shankPitchDegrees": 40.1190005144001,
+        "relativeFlexionDegrees": -7.281169999086757
+      },
+      {
+        "side": "L",
+        "swing": 0.66875,
+        "time": 0.6251,
+        "footPitchDegrees": 31.165387246664007,
+        "shankPitchDegrees": 38.55883671611037,
+        "relativeFlexionDegrees": -7.393449469446363
+      },
+      {
+        "side": "L",
+        "swing": 0.675,
+        "time": 0.6284000000000001,
+        "footPitchDegrees": 29.520296515425443,
+        "shankPitchDegrees": 37.025296829502516,
+        "relativeFlexionDegrees": -7.505000314077073
+      },
+      {
+        "side": "L",
+        "swing": 0.68125,
+        "time": 0.6317,
+        "footPitchDegrees": 27.900505080755483,
+        "shankPitchDegrees": 35.516172056474026,
+        "relativeFlexionDegrees": -7.615666975718543
+      },
+      {
+        "side": "L",
+        "swing": 0.6875,
+        "time": 0.635,
+        "footPitchDegrees": 26.307380148103405,
+        "shankPitchDegrees": 34.03260746164763,
+        "relativeFlexionDegrees": -7.725227313544224
+      },
+      {
+        "side": "L",
+        "swing": 0.69375,
+        "time": 0.6383000000000001,
+        "footPitchDegrees": 24.743309767104602,
+        "shankPitchDegrees": 32.57672916213044,
+        "relativeFlexionDegrees": -7.833419395025839
+      },
+      {
+        "side": "L",
+        "swing": 0.7,
+        "time": 0.6416,
+        "footPitchDegrees": 23.21181575776989,
+        "shankPitchDegrees": 31.151723094116317,
+        "relativeFlexionDegrees": -7.939907336346426
+      },
+      {
+        "side": "L",
+        "swing": 0.70625,
+        "time": 0.6449,
+        "footPitchDegrees": 21.727657555556892,
+        "shankPitchDegrees": 29.771213148576884,
+        "relativeFlexionDegrees": -8.043555593019992
+      },
+      {
+        "side": "L",
+        "swing": 0.7125,
+        "time": 0.6482000000000001,
+        "footPitchDegrees": 20.282739893171158,
+        "shankPitchDegrees": 28.427374154882393,
+        "relativeFlexionDegrees": -8.144634261711236
+      },
+      {
+        "side": "L",
+        "swing": 0.71875,
+        "time": 0.6515,
+        "footPitchDegrees": 18.8792536229563,
+        "shankPitchDegrees": 27.122086106578717,
+        "relativeFlexionDegrees": -8.242832483622418
+      },
+      {
+        "side": "L",
+        "swing": 0.725,
+        "time": 0.6548,
+        "footPitchDegrees": 17.519159073603994,
+        "shankPitchDegrees": 25.85700004690301,
+        "relativeFlexionDegrees": -8.337840973299016
+      },
+      {
+        "side": "L",
+        "swing": 0.73125,
+        "time": 0.6581,
+        "footPitchDegrees": 16.208672925467326,
+        "shankPitchDegrees": 24.63763532344027,
+        "relativeFlexionDegrees": -8.428962397972946
+      },
+      {
+        "side": "L",
+        "swing": 0.7375,
+        "time": 0.6614,
+        "footPitchDegrees": 14.957178084180656,
+        "shankPitchDegrees": 23.472213621075493,
+        "relativeFlexionDegrees": -8.515035536894837
+      },
+      {
+        "side": "L",
+        "swing": 0.74375,
+        "time": 0.6647000000000001,
+        "footPitchDegrees": 13.749552631826804,
+        "shankPitchDegrees": 22.350009903311726,
+        "relativeFlexionDegrees": -8.600457271484922
+      },
+      {
+        "side": "L",
+        "swing": 0.75,
+        "time": 0.668,
+        "footPitchDegrees": 12.574791758523764,
+        "shankPitchDegrees": 21.270908933179296,
+        "relativeFlexionDegrees": -8.696117174655532
+      },
+      {
+        "side": "L",
+        "swing": 0.75625,
+        "time": 0.6713,
+        "footPitchDegrees": 11.420986575521715,
+        "shankPitchDegrees": 20.234553972885138,
+        "relativeFlexionDegrees": -8.813567397363423
+      },
+      {
+        "side": "L",
+        "swing": 0.7625,
+        "time": 0.6746000000000001,
+        "footPitchDegrees": 10.276428769135594,
+        "shankPitchDegrees": 19.246850097839463,
+        "relativeFlexionDegrees": -8.97042132870387
+      },
+      {
+        "side": "L",
+        "swing": 0.76875,
+        "time": 0.6779000000000001,
+        "footPitchDegrees": 9.130777166838433,
+        "shankPitchDegrees": 18.30560540187802,
+        "relativeFlexionDegrees": -9.174828235039586
+      },
+      {
+        "side": "L",
+        "swing": 0.775,
+        "time": 0.6812,
+        "footPitchDegrees": 7.981236686689051,
+        "shankPitchDegrees": 17.399725393098297,
+        "relativeFlexionDegrees": -9.418488706409246
+      },
+      {
+        "side": "L",
+        "swing": 0.78125,
+        "time": 0.6845000000000001,
+        "footPitchDegrees": 6.827368062633069,
+        "shankPitchDegrees": 16.525746832487474,
+        "relativeFlexionDegrees": -9.698378769854404
+      },
+      {
+        "side": "L",
+        "swing": 0.7875,
+        "time": 0.6878,
+        "footPitchDegrees": 5.669676678896984,
+        "shankPitchDegrees": 15.679782016048938,
+        "relativeFlexionDegrees": -10.010105337151954
+      },
+      {
+        "side": "L",
+        "swing": 0.79375,
+        "time": 0.6911,
+        "footPitchDegrees": 4.510309209927365,
+        "shankPitchDegrees": 14.860436323605597,
+        "relativeFlexionDegrees": -10.350127113678234
+      },
+      {
+        "side": "L",
+        "swing": 0.8,
+        "time": 0.6944000000000001,
+        "footPitchDegrees": 3.354237870034378,
+        "shankPitchDegrees": 14.055032507152532,
+        "relativeFlexionDegrees": -10.700794637118154
+      },
+      {
+        "side": "L",
+        "swing": 0.80625,
+        "time": 0.6977,
+        "footPitchDegrees": 2.203797391528882,
+        "shankPitchDegrees": 13.251898577480418,
+        "relativeFlexionDegrees": -11.048101185951536
+      },
+      {
+        "side": "L",
+        "swing": 0.8125,
+        "time": 0.7010000000000001,
+        "footPitchDegrees": 1.061904251703021,
+        "shankPitchDegrees": 12.441903755805328,
+        "relativeFlexionDegrees": -11.379999504102306
+      },
+      {
+        "side": "L",
+        "swing": 0.81875,
+        "time": 0.7043,
+        "footPitchDegrees": -0.06783444684425317,
+        "shankPitchDegrees": 11.615791303362577,
+        "relativeFlexionDegrees": -11.683625750206831
+      },
+      {
+        "side": "L",
+        "swing": 0.825,
+        "time": 0.7076,
+        "footPitchDegrees": -1.1683177632565542,
+        "shankPitchDegrees": 10.755600631378671,
+        "relativeFlexionDegrees": -11.923918394635226
+      },
+      {
+        "side": "L",
+        "swing": 0.83125,
+        "time": 0.7109000000000001,
+        "footPitchDegrees": -2.22913097471713,
+        "shankPitchDegrees": 9.860530497660454,
+        "relativeFlexionDegrees": -12.089661472377584
+      },
+      {
+        "side": "L",
+        "swing": 0.8375,
+        "time": 0.7142000000000001,
+        "footPitchDegrees": -3.2402501212304324,
+        "shankPitchDegrees": 8.929808854415151,
+        "relativeFlexionDegrees": -12.170058975645585
+      },
+      {
+        "side": "L",
+        "swing": 0.84375,
+        "time": 0.7175,
+        "footPitchDegrees": -4.190501284264185,
+        "shankPitchDegrees": 7.96192391772441,
+        "relativeFlexionDegrees": -12.152425201988596
+      },
+      {
+        "side": "L",
+        "swing": 0.85,
+        "time": 0.7208000000000001,
+        "footPitchDegrees": -5.067447997754983,
+        "shankPitchDegrees": 6.955594741552129,
+        "relativeFlexionDegrees": -12.023042739307112
+      },
+      {
+        "side": "L",
+        "swing": 0.85625,
+        "time": 0.7241,
+        "footPitchDegrees": -5.824229807258518,
+        "shankPitchDegrees": 5.899403689722657,
+        "relativeFlexionDegrees": -11.723633496981176
+      },
+      {
+        "side": "L",
+        "swing": 0.8625,
+        "time": 0.7274,
+        "footPitchDegrees": -6.474266909219169,
+        "shankPitchDegrees": 4.807618131028118,
+        "relativeFlexionDegrees": -11.281885040247287
+      },
+      {
+        "side": "L",
+        "swing": 0.86875,
+        "time": 0.7307000000000001,
+        "footPitchDegrees": -7.012277064973859,
+        "shankPitchDegrees": 3.6795760199286445,
+        "relativeFlexionDegrees": -10.691853084902505
+      },
+      {
+        "side": "L",
+        "swing": 0.875,
+        "time": 0.734,
+        "footPitchDegrees": -7.435185003876706,
+        "shankPitchDegrees": 2.5151980757842014,
+        "relativeFlexionDegrees": -9.950383079660908
+      },
+      {
+        "side": "L",
+        "swing": 0.88125,
+        "time": 0.7373000000000001,
+        "footPitchDegrees": -7.733203245800878,
+        "shankPitchDegrees": 1.3124266419202466,
+        "relativeFlexionDegrees": -9.045629887721125
+      },
+      {
+        "side": "L",
+        "swing": 0.8875,
+        "time": 0.7406,
+        "footPitchDegrees": -7.8910081112780315,
+        "shankPitchDegrees": 0.07258603893992485,
+        "relativeFlexionDegrees": -7.963594150217956
+      },
+      {
+        "side": "L",
+        "swing": 0.89375,
+        "time": 0.7439,
+        "footPitchDegrees": -7.9486154267673435,
+        "shankPitchDegrees": -1.185747135199134,
+        "relativeFlexionDegrees": -6.76286829156821
+      },
+      {
+        "side": "L",
+        "swing": 0.9,
+        "time": 0.7472000000000001,
+        "footPitchDegrees": -7.915608228056841,
+        "shankPitchDegrees": -2.4519617536340648,
+        "relativeFlexionDegrees": -5.4636464744227755
+      },
+      {
+        "side": "L",
+        "swing": 0.90625,
+        "time": 0.7505000000000001,
+        "footPitchDegrees": -7.80273230639998,
+        "shankPitchDegrees": -3.713592325529569,
+        "relativeFlexionDegrees": -4.089139980870411
+      },
+      {
+        "side": "L",
+        "swing": 0.9125,
+        "time": 0.7538,
+        "footPitchDegrees": -7.615563439426648,
+        "shankPitchDegrees": -4.948019590305447,
+        "relativeFlexionDegrees": -2.667543849121201
+      },
+      {
+        "side": "L",
+        "swing": 0.91875,
+        "time": 0.7571,
+        "footPitchDegrees": -7.376846351169146,
+        "shankPitchDegrees": -6.114382751652408,
+        "relativeFlexionDegrees": -1.262463599516738
+      },
+      {
+        "side": "L",
+        "swing": 0.925,
+        "time": 0.7604000000000001,
+        "footPitchDegrees": -7.1148314180439005,
+        "shankPitchDegrees": -7.186358316996533,
+        "relativeFlexionDegrees": 0.07152689895263276
+      },
+      {
+        "side": "L",
+        "swing": 0.93125,
+        "time": 0.7637,
+        "footPitchDegrees": -6.844030183588581,
+        "shankPitchDegrees": -8.128017972697375,
+        "relativeFlexionDegrees": 1.283987789108794
+      },
+      {
+        "side": "L",
+        "swing": 0.9375,
+        "time": 0.767,
+        "footPitchDegrees": -6.578533039139865,
+        "shankPitchDegrees": -8.899557481314318,
+        "relativeFlexionDegrees": 2.321024442174453
+      },
+      {
+        "side": "L",
+        "swing": 0.94375,
+        "time": 0.7703,
+        "footPitchDegrees": -6.340432029188318,
+        "shankPitchDegrees": -9.388453020672562,
+        "relativeFlexionDegrees": 3.048020991484244
+      },
+      {
+        "side": "L",
+        "swing": 0.95,
+        "time": 0.7736000000000001,
+        "footPitchDegrees": -6.144518257693998,
+        "shankPitchDegrees": -9.536141067913851,
+        "relativeFlexionDegrees": 3.391622810219853
+      },
+      {
+        "side": "L",
+        "swing": 0.95625,
+        "time": 0.7769,
+        "footPitchDegrees": -5.9905936113712785,
+        "shankPitchDegrees": -9.356450830812483,
+        "relativeFlexionDegrees": 3.365857219441204
+      },
+      {
+        "side": "L",
+        "swing": 0.9625,
+        "time": 0.7802,
+        "footPitchDegrees": -5.87844011505664,
+        "shankPitchDegrees": -8.85041892132455,
+        "relativeFlexionDegrees": 2.9719788062679102
+      },
+      {
+        "side": "L",
+        "swing": 0.96875,
+        "time": 0.7835000000000001,
+        "footPitchDegrees": -5.8051173450487985,
+        "shankPitchDegrees": -8.034313180972102,
+        "relativeFlexionDegrees": 2.2291958359233037
+      },
+      {
+        "side": "L",
+        "swing": 0.975,
+        "time": 0.7868,
+        "footPitchDegrees": -5.768052770963409,
+        "shankPitchDegrees": -6.897388202544656,
+        "relativeFlexionDegrees": 1.1293354315812474
+      },
+      {
+        "side": "L",
+        "swing": 0.98125,
+        "time": 0.7901,
+        "footPitchDegrees": -5.7469474676009185,
+        "shankPitchDegrees": -5.581435646415935,
+        "relativeFlexionDegrees": -0.16551182118498353
+      },
+      {
+        "side": "L",
+        "swing": 0.9875,
+        "time": 0.7934000000000001,
+        "footPitchDegrees": -5.735566174448766,
+        "shankPitchDegrees": -4.153975589864843,
+        "relativeFlexionDegrees": -1.5815905845839229
+      },
+      {
+        "side": "L",
+        "swing": 0.99375,
+        "time": 0.7967000000000001,
+        "footPitchDegrees": -5.730537947887184,
+        "shankPitchDegrees": -2.6631742411014363,
+        "relativeFlexionDegrees": -3.0673637067857475
+      },
+      {
+        "side": "L",
+        "swing": 1,
+        "time": 0.8,
+        "footPitchDegrees": -5.729577951308234,
+        "shankPitchDegrees": -1.1551871301232066,
+        "relativeFlexionDegrees": -4.574390821185027
+      },
+      {
+        "side": "R",
+        "swing": 0,
+        "time": 0.672,
+        "footPitchDegrees": 58.44095508271654,
+        "shankPitchDegrees": 46.79598411791901,
+        "relativeFlexionDegrees": 11.64497096479753
+      },
+      {
+        "side": "R",
+        "swing": 0.00625,
+        "time": 0.6753,
+        "footPitchDegrees": 58.81680034209194,
+        "shankPitchDegrees": 46.85615197336213,
+        "relativeFlexionDegrees": 11.960648368729807
+      },
+      {
+        "side": "R",
+        "swing": 0.0125,
+        "time": 0.6786000000000001,
+        "footPitchDegrees": 59.178963799098376,
+        "shankPitchDegrees": 46.96604284934178,
+        "relativeFlexionDegrees": 12.212920949756594
+      },
+      {
+        "side": "R",
+        "swing": 0.01875,
+        "time": 0.6819000000000001,
+        "footPitchDegrees": 59.51397912980723,
+        "shankPitchDegrees": 47.16688957950678,
+        "relativeFlexionDegrees": 12.347089550300453
+      },
+      {
+        "side": "R",
+        "swing": 0.025,
+        "time": 0.6852,
+        "footPitchDegrees": 59.81949207019687,
+        "shankPitchDegrees": 47.47082010197794,
+        "relativeFlexionDegrees": 12.34867196821893
+      },
+      {
+        "side": "R",
+        "swing": 0.03125,
+        "time": 0.6885000000000001,
+        "footPitchDegrees": 60.095621630968665,
+        "shankPitchDegrees": 47.89180361228096,
+        "relativeFlexionDegrees": 12.203818018687706
+      },
+      {
+        "side": "R",
+        "swing": 0.0375,
+        "time": 0.6918,
+        "footPitchDegrees": 60.34582741715603,
+        "shankPitchDegrees": 48.44064658048793,
+        "relativeFlexionDegrees": 11.905180836668102
+      },
+      {
+        "side": "R",
+        "swing": 0.04375,
+        "time": 0.6951,
+        "footPitchDegrees": 60.58415961722582,
+        "shankPitchDegrees": 49.16505027538406,
+        "relativeFlexionDegrees": 11.41910934184176
+      },
+      {
+        "side": "R",
+        "swing": 0.05,
+        "time": 0.6984,
+        "footPitchDegrees": 60.84501101503056,
+        "shankPitchDegrees": 50.030080328103004,
+        "relativeFlexionDegrees": 10.814930686927553
+      },
+      {
+        "side": "R",
+        "swing": 0.05625,
+        "time": 0.7017,
+        "footPitchDegrees": 61.15477432005896,
+        "shankPitchDegrees": 51.02201473947358,
+        "relativeFlexionDegrees": 10.132759580585379
+      },
+      {
+        "side": "R",
+        "swing": 0.0625,
+        "time": 0.7050000000000001,
+        "footPitchDegrees": 61.53990412951758,
+        "shankPitchDegrees": 52.132869199024725,
+        "relativeFlexionDegrees": 9.407034930492856
+      },
+      {
+        "side": "R",
+        "swing": 0.06875,
+        "time": 0.7083,
+        "footPitchDegrees": 62.029777765615464,
+        "shankPitchDegrees": 53.354116256413874,
+        "relativeFlexionDegrees": 8.67566150920159
+      },
+      {
+        "side": "R",
+        "swing": 0.075,
+        "time": 0.7116,
+        "footPitchDegrees": 62.71040106821356,
+        "shankPitchDegrees": 54.695122822130394,
+        "relativeFlexionDegrees": 8.015278246083163
+      },
+      {
+        "side": "R",
+        "swing": 0.08125,
+        "time": 0.7149000000000001,
+        "footPitchDegrees": 63.56109244855918,
+        "shankPitchDegrees": 56.103120529800755,
+        "relativeFlexionDegrees": 7.457971918758425
+      },
+      {
+        "side": "R",
+        "swing": 0.0875,
+        "time": 0.7182000000000001,
+        "footPitchDegrees": 64.59034274280297,
+        "shankPitchDegrees": 57.562733623271754,
+        "relativeFlexionDegrees": 7.0276091195312205
+      },
+      {
+        "side": "R",
+        "swing": 0.09375,
+        "time": 0.7215,
+        "footPitchDegrees": 65.80133943041183,
+        "shankPitchDegrees": 59.05854552399238,
+        "relativeFlexionDegrees": 6.74279390641945
+      },
+      {
+        "side": "R",
+        "swing": 0.1,
+        "time": 0.7248000000000001,
+        "footPitchDegrees": 67.20453301633552,
+        "shankPitchDegrees": 60.574676144276744,
+        "relativeFlexionDegrees": 6.629856872058774
+      },
+      {
+        "side": "R",
+        "swing": 0.10625,
+        "time": 0.7281,
+        "footPitchDegrees": 68.80240444146116,
+        "shankPitchDegrees": 62.08549062490455,
+        "relativeFlexionDegrees": 6.7169138165566125
+      },
+      {
+        "side": "R",
+        "swing": 0.1125,
+        "time": 0.7314,
+        "footPitchDegrees": 70.51469045748718,
+        "shankPitchDegrees": 63.57291098781287,
+        "relativeFlexionDegrees": 6.941779469674309
+      },
+      {
+        "side": "R",
+        "swing": 0.11875,
+        "time": 0.7347,
+        "footPitchDegrees": 72.3073577773823,
+        "shankPitchDegrees": 65.02495213040426,
+        "relativeFlexionDegrees": 7.2824056469780345
+      },
+      {
+        "side": "R",
+        "swing": 0.125,
+        "time": 0.738,
+        "footPitchDegrees": 74.14397192931906,
+        "shankPitchDegrees": 66.43050552108161,
+        "relativeFlexionDegrees": 7.713466408237451
+      },
+      {
+        "side": "R",
+        "swing": 0.13125,
+        "time": 0.7413000000000001,
+        "footPitchDegrees": 75.97531318219676,
+        "shankPitchDegrees": 67.76877732107742,
+        "relativeFlexionDegrees": 8.206535861119335
+      },
+      {
+        "side": "R",
+        "swing": 0.1375,
+        "time": 0.7446,
+        "footPitchDegrees": 77.72798596437512,
+        "shankPitchDegrees": 69.0226328346105,
+        "relativeFlexionDegrees": 8.705353129764617
+      },
+      {
+        "side": "R",
+        "swing": 0.14375,
+        "time": 0.7479,
+        "footPitchDegrees": 79.37039922819626,
+        "shankPitchDegrees": 70.1997782799446,
+        "relativeFlexionDegrees": 9.170620948251667
+      },
+      {
+        "side": "R",
+        "swing": 0.15,
+        "time": 0.7512000000000001,
+        "footPitchDegrees": 80.87566642482528,
+        "shankPitchDegrees": 71.29700032159931,
+        "relativeFlexionDegrees": 9.57866610322597
+      },
+      {
+        "side": "R",
+        "swing": 0.15625,
+        "time": 0.7545000000000001,
+        "footPitchDegrees": 82.2219335893089,
+        "shankPitchDegrees": 72.31218633883344,
+        "relativeFlexionDegrees": 9.909747250475462
+      },
+      {
+        "side": "R",
+        "swing": 0.1625,
+        "time": 0.7578,
+        "footPitchDegrees": 83.35575900963077,
+        "shankPitchDegrees": 73.22712534885895,
+        "relativeFlexionDegrees": 10.128633660771825
+      },
+      {
+        "side": "R",
+        "swing": 0.16875,
+        "time": 0.7611000000000001,
+        "footPitchDegrees": 84.30035959075029,
+        "shankPitchDegrees": 74.05299983840935,
+        "relativeFlexionDegrees": 10.247359752340941
+      },
+      {
+        "side": "R",
+        "swing": 0.175,
+        "time": 0.7644,
+        "footPitchDegrees": 85.10746510229569,
+        "shankPitchDegrees": 74.80712376515162,
+        "relativeFlexionDegrees": 10.300341337144076
+      },
+      {
+        "side": "R",
+        "swing": 0.18125,
+        "time": 0.7677,
+        "footPitchDegrees": 85.81029488915979,
+        "shankPitchDegrees": 75.49722647987576,
+        "relativeFlexionDegrees": 10.313068409284028
+      },
+      {
+        "side": "R",
+        "swing": 0.1875,
+        "time": 0.771,
+        "footPitchDegrees": 86.44506778981743,
+        "shankPitchDegrees": 76.13270673390059,
+        "relativeFlexionDegrees": 10.312361055916838
+      },
+      {
+        "side": "R",
+        "swing": 0.19375,
+        "time": 0.7743,
+        "footPitchDegrees": 87.03109495718627,
+        "shankPitchDegrees": 76.72290604039908,
+        "relativeFlexionDegrees": 10.308188916787188
+      },
+      {
+        "side": "R",
+        "swing": 0.2,
+        "time": 0.7776000000000001,
+        "footPitchDegrees": 87.60367309323905,
+        "shankPitchDegrees": 77.30524140883789,
+        "relativeFlexionDegrees": 10.298431684401166
+      },
+      {
+        "side": "R",
+        "swing": 0.20625,
+        "time": 0.7809,
+        "footPitchDegrees": 88.17638171093964,
+        "shankPitchDegrees": 77.89442233883037,
+        "relativeFlexionDegrees": 10.28195937210927
+      },
+      {
+        "side": "R",
+        "swing": 0.2125,
+        "time": 0.7842,
+        "footPitchDegrees": 88.7541986255877,
+        "shankPitchDegrees": 78.49662086749478,
+        "relativeFlexionDegrees": 10.257577758092921
+      },
+      {
+        "side": "R",
+        "swing": 0.21875,
+        "time": 0.7875000000000001,
+        "footPitchDegrees": 89.33683599809929,
+        "shankPitchDegrees": 79.11262131118059,
+        "relativeFlexionDegrees": 10.2242146869187
+      },
+      {
+        "side": "R",
+        "swing": 0.225,
+        "time": 0.7908000000000001,
+        "footPitchDegrees": 89.9215557318012,
+        "shankPitchDegrees": 79.74460494982797,
+        "relativeFlexionDegrees": 10.176950781973233
+      },
+      {
+        "side": "R",
+        "swing": 0.23125,
+        "time": 0.7941,
+        "footPitchDegrees": 90.50288606836814,
+        "shankPitchDegrees": 80.3843633723711,
+        "relativeFlexionDegrees": 10.118522695997044
+      },
+      {
+        "side": "R",
+        "swing": 0.2375,
+        "time": 0.7974000000000001,
+        "footPitchDegrees": 91.07664996461823,
+        "shankPitchDegrees": 81.02808852876832,
+        "relativeFlexionDegrees": 10.048561435849905
+      },
+      {
+        "side": "R",
+        "swing": 0.24375,
+        "time": 0.8007000000000001,
+        "footPitchDegrees": 91.6382048739715,
+        "shankPitchDegrees": 81.67141858406748,
+        "relativeFlexionDegrees": 9.966786289904022
+      },
+      {
+        "side": "R",
+        "swing": 0.25,
+        "time": 0.804,
+        "footPitchDegrees": 92.18054831153033,
+        "shankPitchDegrees": 82.30836324510474,
+        "relativeFlexionDegrees": 9.872185066425587
+      },
+      {
+        "side": "R",
+        "swing": 0.25625,
+        "time": 0.8073,
+        "footPitchDegrees": 92.68677490886658,
+        "shankPitchDegrees": 82.92463850640132,
+        "relativeFlexionDegrees": 9.76213640246526
+      },
+      {
+        "side": "R",
+        "swing": 0.2625,
+        "time": 0.8106,
+        "footPitchDegrees": 93.15483944063898,
+        "shankPitchDegrees": 83.5145102201321,
+        "relativeFlexionDegrees": 9.640329220506885
+      },
+      {
+        "side": "R",
+        "swing": 0.26875,
+        "time": 0.8139000000000001,
+        "footPitchDegrees": 93.5777884792157,
+        "shankPitchDegrees": 84.07073329535584,
+        "relativeFlexionDegrees": 9.507055183859862
+      },
+      {
+        "side": "R",
+        "swing": 0.275,
+        "time": 0.8172,
+        "footPitchDegrees": 93.94882126028742,
+        "shankPitchDegrees": 84.58615891032424,
+        "relativeFlexionDegrees": 9.362662349963173
+      },
+      {
+        "side": "R",
+        "swing": 0.28125,
+        "time": 0.8205,
+        "footPitchDegrees": 94.25185132926048,
+        "shankPitchDegrees": 85.04563620971862,
+        "relativeFlexionDegrees": 9.206215119541852
+      },
+      {
+        "side": "R",
+        "swing": 0.2875,
+        "time": 0.8238000000000001,
+        "footPitchDegrees": 94.47123346905809,
+        "shankPitchDegrees": 85.43338931721419,
+        "relativeFlexionDegrees": 9.037844151843899
+      },
+      {
+        "side": "R",
+        "swing": 0.29375,
+        "time": 0.8271000000000001,
+        "footPitchDegrees": 94.61604235174046,
+        "shankPitchDegrees": 85.75552132653274,
+        "relativeFlexionDegrees": 8.860521025207717
+      },
+      {
+        "side": "R",
+        "swing": 0.3,
+        "time": 0.8304,
+        "footPitchDegrees": 94.68304299918624,
+        "shankPitchDegrees": 86.00812968304602,
+        "relativeFlexionDegrees": 8.67491331614022
+      },
+      {
+        "side": "R",
+        "swing": 0.30625,
+        "time": 0.8337000000000001,
+        "footPitchDegrees": 94.66973715806641,
+        "shankPitchDegrees": 86.18802383494472,
+        "relativeFlexionDegrees": 8.481713323121696
+      },
+      {
+        "side": "R",
+        "swing": 0.3125,
+        "time": 0.8370000000000001,
+        "footPitchDegrees": 94.55778666371681,
+        "shankPitchDegrees": 86.27727432905206,
+        "relativeFlexionDegrees": 8.28051233466475
+      },
+      {
+        "side": "R",
+        "swing": 0.31875,
+        "time": 0.8403,
+        "footPitchDegrees": 94.35291985992028,
+        "shankPitchDegrees": 86.27989385588413,
+        "relativeFlexionDegrees": 8.073026004036151
+      },
+      {
+        "side": "R",
+        "swing": 0.325,
+        "time": 0.8436,
+        "footPitchDegrees": 94.07042107569482,
+        "shankPitchDegrees": 86.20939479337228,
+        "relativeFlexionDegrees": 7.861026282322541
+      },
+      {
+        "side": "R",
+        "swing": 0.33125,
+        "time": 0.8469,
+        "footPitchDegrees": 93.71395755208121,
+        "shankPitchDegrees": 86.06868480428274,
+        "relativeFlexionDegrees": 7.645272747798472
+      },
+      {
+        "side": "R",
+        "swing": 0.3375,
+        "time": 0.8502000000000001,
+        "footPitchDegrees": 93.28790960872327,
+        "shankPitchDegrees": 85.86139128297512,
+        "relativeFlexionDegrees": 7.426518325748148
+      },
+      {
+        "side": "R",
+        "swing": 0.34375,
+        "time": 0.8535,
+        "footPitchDegrees": 92.78338712742168,
+        "shankPitchDegrees": 85.57813284211397,
+        "relativeFlexionDegrees": 7.205254285307703
+      },
+      {
+        "side": "R",
+        "swing": 0.35,
+        "time": 0.8568,
+        "footPitchDegrees": 92.22337081579029,
+        "shankPitchDegrees": 85.24036154368277,
+        "relativeFlexionDegrees": 6.983009272107523
+      },
+      {
+        "side": "R",
+        "swing": 0.35625,
+        "time": 0.8601000000000001,
+        "footPitchDegrees": 91.62026550795093,
+        "shankPitchDegrees": 84.85971008338586,
+        "relativeFlexionDegrees": 6.760555424565069
+      },
+      {
+        "side": "R",
+        "swing": 0.3625,
+        "time": 0.8634000000000001,
+        "footPitchDegrees": 90.98143157623781,
+        "shankPitchDegrees": 84.44297095237039,
+        "relativeFlexionDegrees": 6.538460623867422
+      },
+      {
+        "side": "R",
+        "swing": 0.36875,
+        "time": 0.8667,
+        "footPitchDegrees": 90.31429601093994,
+        "shankPitchDegrees": 83.9970414432341,
+        "relativeFlexionDegrees": 6.317254567705845
+      },
+      {
+        "side": "R",
+        "swing": 0.375,
+        "time": 0.8700000000000001,
+        "footPitchDegrees": 89.62389659245201,
+        "shankPitchDegrees": 83.52578343037581,
+        "relativeFlexionDegrees": 6.098113162076203
+      },
+      {
+        "side": "R",
+        "swing": 0.38125,
+        "time": 0.8733000000000001,
+        "footPitchDegrees": 88.92615560526615,
+        "shankPitchDegrees": 83.04513229955991,
+        "relativeFlexionDegrees": 5.881023305706236
+      },
+      {
+        "side": "R",
+        "swing": 0.3875,
+        "time": 0.8766,
+        "footPitchDegrees": 88.22675890253142,
+        "shankPitchDegrees": 82.56063068232409,
+        "relativeFlexionDegrees": 5.666128220207327
+      },
+      {
+        "side": "R",
+        "swing": 0.39375,
+        "time": 0.8799,
+        "footPitchDegrees": 87.53056498552358,
+        "shankPitchDegrees": 82.07704475032958,
+        "relativeFlexionDegrees": 5.453520235194006
+      },
+      {
+        "side": "R",
+        "swing": 0.4,
+        "time": 0.8832000000000001,
+        "footPitchDegrees": 86.84251389081885,
+        "shankPitchDegrees": 81.59918186743568,
+        "relativeFlexionDegrees": 5.243332023383175
+      },
+      {
+        "side": "R",
+        "swing": 0.40625,
+        "time": 0.8865000000000001,
+        "footPitchDegrees": 86.16983197038024,
+        "shankPitchDegrees": 81.13405144115413,
+        "relativeFlexionDegrees": 5.035780529226116
+      },
+      {
+        "side": "R",
+        "swing": 0.4125,
+        "time": 0.8898,
+        "footPitchDegrees": 85.51035086991482,
+        "shankPitchDegrees": 80.68062731679,
+        "relativeFlexionDegrees": 4.829723553124822
+      },
+      {
+        "side": "R",
+        "swing": 0.41875,
+        "time": 0.8931,
+        "footPitchDegrees": 84.90380876356448,
+        "shankPitchDegrees": 80.27930118496103,
+        "relativeFlexionDegrees": 4.624507578603456
+      },
+      {
+        "side": "R",
+        "swing": 0.425,
+        "time": 0.8964000000000001,
+        "footPitchDegrees": 84.36313911885114,
+        "shankPitchDegrees": 79.94451997591409,
+        "relativeFlexionDegrees": 4.418619142937047
+      },
+      {
+        "side": "R",
+        "swing": 0.43125,
+        "time": 0.8997,
+        "footPitchDegrees": 83.84193895232443,
+        "shankPitchDegrees": 79.63395922967695,
+        "relativeFlexionDegrees": 4.2079797226474795
+      },
+      {
+        "side": "R",
+        "swing": 0.4375,
+        "time": 0.903,
+        "footPitchDegrees": 83.27523702386894,
+        "shankPitchDegrees": 79.29161252398887,
+        "relativeFlexionDegrees": 3.983624499880065
+      },
+      {
+        "side": "R",
+        "swing": 0.44375,
+        "time": 0.9063,
+        "footPitchDegrees": 82.65607840699974,
+        "shankPitchDegrees": 78.91255735407258,
+        "relativeFlexionDegrees": 3.7435210529271643
+      },
+      {
+        "side": "R",
+        "swing": 0.45,
+        "time": 0.9096000000000001,
+        "footPitchDegrees": 81.97757861215297,
+        "shankPitchDegrees": 78.49245349156787,
+        "relativeFlexionDegrees": 3.4851251205850957
+      },
+      {
+        "side": "R",
+        "swing": 0.45625,
+        "time": 0.9129,
+        "footPitchDegrees": 81.23465973522138,
+        "shankPitchDegrees": 78.02831956879294,
+        "relativeFlexionDegrees": 3.206340166428447
+      },
+      {
+        "side": "R",
+        "swing": 0.4625,
+        "time": 0.9162,
+        "footPitchDegrees": 80.4104137332897,
+        "shankPitchDegrees": 77.50929413073546,
+        "relativeFlexionDegrees": 2.901119602554246
+      },
+      {
+        "side": "R",
+        "swing": 0.46875,
+        "time": 0.9195000000000001,
+        "footPitchDegrees": 79.50401510288035,
+        "shankPitchDegrees": 76.93487009386051,
+        "relativeFlexionDegrees": 2.5691450090198344
+      },
+      {
+        "side": "R",
+        "swing": 0.475,
+        "time": 0.9228000000000001,
+        "footPitchDegrees": 78.52673825826876,
+        "shankPitchDegrees": 76.31221727553248,
+        "relativeFlexionDegrees": 2.214520982736289
+      },
+      {
+        "side": "R",
+        "swing": 0.48125,
+        "time": 0.9261,
+        "footPitchDegrees": 77.47903228746905,
+        "shankPitchDegrees": 75.64104887210038,
+        "relativeFlexionDegrees": 1.8379834153686687
+      },
+      {
+        "side": "R",
+        "swing": 0.4875,
+        "time": 0.9294000000000001,
+        "footPitchDegrees": 76.36176369574348,
+        "shankPitchDegrees": 74.92120658707492,
+        "relativeFlexionDegrees": 1.440557108668557
+      },
+      {
+        "side": "R",
+        "swing": 0.49375,
+        "time": 0.9327000000000001,
+        "footPitchDegrees": 75.1595424687416,
+        "shankPitchDegrees": 74.14004195305864,
+        "relativeFlexionDegrees": 1.0195005156829637
+      },
+      {
+        "side": "R",
+        "swing": 0.5,
+        "time": 0.936,
+        "footPitchDegrees": 73.99221402476078,
+        "shankPitchDegrees": 73.41089290532592,
+        "relativeFlexionDegrees": 0.5813211194348611
+      },
+      {
+        "side": "R",
+        "swing": 0.50625,
+        "time": 0.9393,
+        "footPitchDegrees": 72.85669389703055,
+        "shankPitchDegrees": 72.72641160179798,
+        "relativeFlexionDegrees": 0.1302822952325755
+      },
+      {
+        "side": "R",
+        "swing": 0.5125,
+        "time": 0.9426,
+        "footPitchDegrees": 71.71554604330098,
+        "shankPitchDegrees": 72.04657546867935,
+        "relativeFlexionDegrees": -0.3310294253783752
+      },
+      {
+        "side": "R",
+        "swing": 0.51875,
+        "time": 0.9459000000000001,
+        "footPitchDegrees": 70.50868269456248,
+        "shankPitchDegrees": 71.30858127594196,
+        "relativeFlexionDegrees": -0.7998985813794803
+      },
+      {
+        "side": "R",
+        "swing": 0.525,
+        "time": 0.9492,
+        "footPitchDegrees": 69.21729415748871,
+        "shankPitchDegrees": 70.49024815617055,
+        "relativeFlexionDegrees": -1.2729539986818423
+      },
+      {
+        "side": "R",
+        "swing": 0.53125,
+        "time": 0.9525,
+        "footPitchDegrees": 67.86408047571314,
+        "shankPitchDegrees": 69.60849953564804,
+        "relativeFlexionDegrees": -1.7444190599348985
+      },
+      {
+        "side": "R",
+        "swing": 0.5375,
+        "time": 0.9558000000000001,
+        "footPitchDegrees": 66.45373486286839,
+        "shankPitchDegrees": 68.66489904302802,
+        "relativeFlexionDegrees": -2.211164180159628
+      },
+      {
+        "side": "R",
+        "swing": 0.54375,
+        "time": 0.9591,
+        "footPitchDegrees": 64.98946463059185,
+        "shankPitchDegrees": 67.6596492926565,
+        "relativeFlexionDegrees": -2.670184662064642
+      },
+      {
+        "side": "R",
+        "swing": 0.55,
+        "time": 0.9624,
+        "footPitchDegrees": 63.472938051168164,
+        "shankPitchDegrees": 66.59081521675982,
+        "relativeFlexionDegrees": -3.1178771655916577
+      },
+      {
+        "side": "R",
+        "swing": 0.55625,
+        "time": 0.9657000000000001,
+        "footPitchDegrees": 61.89850161729342,
+        "shankPitchDegrees": 65.44403702587144,
+        "relativeFlexionDegrees": -3.5455354085780186
+      },
+      {
+        "side": "R",
+        "swing": 0.5625,
+        "time": 0.9690000000000001,
+        "footPitchDegrees": 60.28640670061999,
+        "shankPitchDegrees": 64.24060742690472,
+        "relativeFlexionDegrees": -3.954200726284725
+      },
+      {
+        "side": "R",
+        "swing": 0.56875,
+        "time": 0.9723,
+        "footPitchDegrees": 58.641102027001494,
+        "shankPitchDegrees": 62.98278441228854,
+        "relativeFlexionDegrees": -4.341682385287044
+      },
+      {
+        "side": "R",
+        "swing": 0.575,
+        "time": 0.9756,
+        "footPitchDegrees": 56.96705885137534,
+        "shankPitchDegrees": 61.6730459937086,
+        "relativeFlexionDegrees": -4.705987142333257
+      },
+      {
+        "side": "R",
+        "swing": 0.58125,
+        "time": 0.9789000000000001,
+        "footPitchDegrees": 55.26695855851178,
+        "shankPitchDegrees": 60.30929841010695,
+        "relativeFlexionDegrees": -5.042339851595166
+      },
+      {
+        "side": "R",
+        "swing": 0.5875,
+        "time": 0.9822000000000001,
+        "footPitchDegrees": 53.546037048477054,
+        "shankPitchDegrees": 58.89105195141377,
+        "relativeFlexionDegrees": -5.345014902936718
+      },
+      {
+        "side": "R",
+        "swing": 0.59375,
+        "time": 0.9855,
+        "footPitchDegrees": 51.81405144880671,
+        "shankPitchDegrees": 57.43401997409733,
+        "relativeFlexionDegrees": -5.6199685252906235
+      },
+      {
+        "side": "R",
+        "swing": 0.6,
+        "time": 0.9888,
+        "footPitchDegrees": 50.074705646634875,
+        "shankPitchDegrees": 55.94199811400233,
+        "relativeFlexionDegrees": -5.867292467367456
+      },
+      {
+        "side": "R",
+        "swing": 0.60625,
+        "time": 0.9921000000000001,
+        "footPitchDegrees": 48.33145424574816,
+        "shankPitchDegrees": 54.4188881813721,
+        "relativeFlexionDegrees": -6.087433935623935
+      },
+      {
+        "side": "R",
+        "swing": 0.6125,
+        "time": 0.9954000000000001,
+        "footPitchDegrees": 46.5881222987506,
+        "shankPitchDegrees": 52.86522454271659,
+        "relativeFlexionDegrees": -6.277102243965992
+      },
+      {
+        "side": "R",
+        "swing": 0.61875,
+        "time": 0.9987,
+        "footPitchDegrees": 44.84874494679173,
+        "shankPitchDegrees": 51.28864912874113,
+        "relativeFlexionDegrees": -6.4399041819493945
+      },
+      {
+        "side": "R",
+        "swing": 0.625,
+        "time": 1.0020000000000002,
+        "footPitchDegrees": 43.114289107018166,
+        "shankPitchDegrees": 49.698034665604524,
+        "relativeFlexionDegrees": -6.583745558586358
+      },
+      {
+        "side": "R",
+        "swing": 0.63125,
+        "time": 1.0053,
+        "footPitchDegrees": 41.38514492289507,
+        "shankPitchDegrees": 48.09757400690096,
+        "relativeFlexionDegrees": -6.7124290840058904
+      },
+      {
+        "side": "R",
+        "swing": 0.6375,
+        "time": 1.0086,
+        "footPitchDegrees": 39.66119932147818,
+        "shankPitchDegrees": 46.49142545620455,
+        "relativeFlexionDegrees": -6.830226134726374
+      },
+      {
+        "side": "R",
+        "swing": 0.64375,
+        "time": 1.0119000000000002,
+        "footPitchDegrees": 37.94200439244286,
+        "shankPitchDegrees": 44.885133002568494,
+        "relativeFlexionDegrees": -6.943128610125633
+      },
+      {
+        "side": "R",
+        "swing": 0.65,
+        "time": 1.0152,
+        "footPitchDegrees": 36.2294192278369,
+        "shankPitchDegrees": 43.285334724050756,
+        "relativeFlexionDegrees": -7.055915496213856
+      },
+      {
+        "side": "R",
+        "swing": 0.65625,
+        "time": 1.0185,
+        "footPitchDegrees": 34.52691177722668,
+        "shankPitchDegrees": 41.69553087088349,
+        "relativeFlexionDegrees": -7.168619093656808
+      },
+      {
+        "side": "R",
+        "swing": 0.6625,
+        "time": 1.0218,
+        "footPitchDegrees": 32.83783051531331,
+        "shankPitchDegrees": 40.11900051440008,
+        "relativeFlexionDegrees": -7.281169999086771
+      },
+      {
+        "side": "R",
+        "swing": 0.66875,
+        "time": 1.0251000000000001,
+        "footPitchDegrees": 31.16538724666393,
+        "shankPitchDegrees": 38.55883671611032,
+        "relativeFlexionDegrees": -7.3934494694463915
+      },
+      {
+        "side": "R",
+        "swing": 0.675,
+        "time": 1.0284,
+        "footPitchDegrees": 29.520296515425507,
+        "shankPitchDegrees": 37.025296829502594,
+        "relativeFlexionDegrees": -7.505000314077087
+      },
+      {
+        "side": "R",
+        "swing": 0.68125,
+        "time": 1.0317,
+        "footPitchDegrees": 27.900505080755494,
+        "shankPitchDegrees": 35.516172056474055,
+        "relativeFlexionDegrees": -7.615666975718561
+      },
+      {
+        "side": "R",
+        "swing": 0.6875,
+        "time": 1.0350000000000001,
+        "footPitchDegrees": 26.307380148103395,
+        "shankPitchDegrees": 34.03260746164761,
+        "relativeFlexionDegrees": -7.725227313544213
+      },
+      {
+        "side": "R",
+        "swing": 0.69375,
+        "time": 1.0383,
+        "footPitchDegrees": 24.743309767104737,
+        "shankPitchDegrees": 32.576729162130555,
+        "relativeFlexionDegrees": -7.8334193950258175
+      },
+      {
+        "side": "R",
+        "swing": 0.7,
+        "time": 1.0415999999999999,
+        "footPitchDegrees": 23.211815757770033,
+        "shankPitchDegrees": 31.151723094116438,
+        "relativeFlexionDegrees": -7.939907336346405
+      },
+      {
+        "side": "R",
+        "swing": 0.70625,
+        "time": 1.0449000000000002,
+        "footPitchDegrees": 21.727657555556767,
+        "shankPitchDegrees": 29.771213148576788,
+        "relativeFlexionDegrees": -8.04355559302002
+      },
+      {
+        "side": "R",
+        "swing": 0.7125,
+        "time": 1.0482,
+        "footPitchDegrees": 20.282739893171154,
+        "shankPitchDegrees": 28.427374154882393,
+        "relativeFlexionDegrees": -8.14463426171124
+      },
+      {
+        "side": "R",
+        "swing": 0.71875,
+        "time": 1.0514999999999999,
+        "footPitchDegrees": 18.879253622956355,
+        "shankPitchDegrees": 27.122086106578774,
+        "relativeFlexionDegrees": -8.242832483622418
+      },
+      {
+        "side": "R",
+        "swing": 0.725,
+        "time": 1.0548000000000002,
+        "footPitchDegrees": 17.519159073603948,
+        "shankPitchDegrees": 25.85700004690296,
+        "relativeFlexionDegrees": -8.337840973299013
+      },
+      {
+        "side": "R",
+        "swing": 0.73125,
+        "time": 1.0581,
+        "footPitchDegrees": 16.208672925467326,
+        "shankPitchDegrees": 24.63763532344027,
+        "relativeFlexionDegrees": -8.428962397972946
+      },
+      {
+        "side": "R",
+        "swing": 0.7375,
+        "time": 1.0614,
+        "footPitchDegrees": 14.957178084180686,
+        "shankPitchDegrees": 23.472213621075518,
+        "relativeFlexionDegrees": -8.515035536894832
+      },
+      {
+        "side": "R",
+        "swing": 0.74375,
+        "time": 1.0647000000000002,
+        "footPitchDegrees": 13.74955263182674,
+        "shankPitchDegrees": 22.350009903311673,
+        "relativeFlexionDegrees": -8.600457271484933
+      },
+      {
+        "side": "R",
+        "swing": 0.75,
+        "time": 1.068,
+        "footPitchDegrees": 12.574791758523778,
+        "shankPitchDegrees": 21.27090893317931,
+        "relativeFlexionDegrees": -8.696117174655532
+      },
+      {
+        "side": "R",
+        "swing": 0.75625,
+        "time": 1.0713,
+        "footPitchDegrees": 11.420986575521745,
+        "shankPitchDegrees": 20.23455397288516,
+        "relativeFlexionDegrees": -8.813567397363414
+      },
+      {
+        "side": "R",
+        "swing": 0.7625,
+        "time": 1.0746000000000002,
+        "footPitchDegrees": 10.276428769135585,
+        "shankPitchDegrees": 19.246850097839445,
+        "relativeFlexionDegrees": -8.97042132870386
+      },
+      {
+        "side": "R",
+        "swing": 0.76875,
+        "time": 1.0779,
+        "footPitchDegrees": 9.130777166838493,
+        "shankPitchDegrees": 18.305605401878065,
+        "relativeFlexionDegrees": -9.174828235039572
+      },
+      {
+        "side": "R",
+        "swing": 0.775,
+        "time": 1.0812,
+        "footPitchDegrees": 7.981236686689075,
+        "shankPitchDegrees": 17.39972539309831,
+        "relativeFlexionDegrees": -9.418488706409235
+      },
+      {
+        "side": "R",
+        "swing": 0.78125,
+        "time": 1.0845000000000002,
+        "footPitchDegrees": 6.827368062633032,
+        "shankPitchDegrees": 16.525746832487457,
+        "relativeFlexionDegrees": -9.698378769854425
+      },
+      {
+        "side": "R",
+        "swing": 0.7875,
+        "time": 1.0878,
+        "footPitchDegrees": 5.669676678897032,
+        "shankPitchDegrees": 15.679782016048996,
+        "relativeFlexionDegrees": -10.010105337151964
+      },
+      {
+        "side": "R",
+        "swing": 0.79375,
+        "time": 1.0911,
+        "footPitchDegrees": 4.510309209927463,
+        "shankPitchDegrees": 14.86043632360567,
+        "relativeFlexionDegrees": -10.350127113678207
+      },
+      {
+        "side": "R",
+        "swing": 0.8,
+        "time": 1.0944000000000003,
+        "footPitchDegrees": 3.3542378700343525,
+        "shankPitchDegrees": 14.055032507152507,
+        "relativeFlexionDegrees": -10.700794637118154
+      },
+      {
+        "side": "R",
+        "swing": 0.80625,
+        "time": 1.0977000000000001,
+        "footPitchDegrees": 2.2037973915288505,
+        "shankPitchDegrees": 13.251898577480388,
+        "relativeFlexionDegrees": -11.048101185951538
+      },
+      {
+        "side": "R",
+        "swing": 0.8125,
+        "time": 1.101,
+        "footPitchDegrees": 1.0619042517030877,
+        "shankPitchDegrees": 12.441903755805367,
+        "relativeFlexionDegrees": -11.37999950410228
+      },
+      {
+        "side": "R",
+        "swing": 0.81875,
+        "time": 1.1043,
+        "footPitchDegrees": -0.06783444684419512,
+        "shankPitchDegrees": 11.615791303362604,
+        "relativeFlexionDegrees": -11.683625750206799
+      },
+      {
+        "side": "R",
+        "swing": 0.825,
+        "time": 1.1076000000000001,
+        "footPitchDegrees": -1.168317763256641,
+        "shankPitchDegrees": 10.755600631378584,
+        "relativeFlexionDegrees": -11.923918394635226
+      },
+      {
+        "side": "R",
+        "swing": 0.83125,
+        "time": 1.1109,
+        "footPitchDegrees": -2.229130974717141,
+        "shankPitchDegrees": 9.860530497660434,
+        "relativeFlexionDegrees": -12.089661472377575
+      },
+      {
+        "side": "R",
+        "swing": 0.8375,
+        "time": 1.1142,
+        "footPitchDegrees": -3.2402501212304324,
+        "shankPitchDegrees": 8.929808854415151,
+        "relativeFlexionDegrees": -12.170058975645585
+      },
+      {
+        "side": "R",
+        "swing": 0.84375,
+        "time": 1.1175000000000002,
+        "footPitchDegrees": -4.190501284264242,
+        "shankPitchDegrees": 7.96192391772435,
+        "relativeFlexionDegrees": -12.152425201988592
+      },
+      {
+        "side": "R",
+        "swing": 0.85,
+        "time": 1.1208,
+        "footPitchDegrees": -5.067447997754964,
+        "shankPitchDegrees": 6.955594741552154,
+        "relativeFlexionDegrees": -12.023042739307119
+      },
+      {
+        "side": "R",
+        "swing": 0.85625,
+        "time": 1.1240999999999999,
+        "footPitchDegrees": -5.8242298072584955,
+        "shankPitchDegrees": 5.899403689722694,
+        "relativeFlexionDegrees": -11.72363349698119
+      },
+      {
+        "side": "R",
+        "swing": 0.8625,
+        "time": 1.1274000000000002,
+        "footPitchDegrees": -6.474266909219204,
+        "shankPitchDegrees": 4.807618131028061,
+        "relativeFlexionDegrees": -11.281885040247264
+      },
+      {
+        "side": "R",
+        "swing": 0.86875,
+        "time": 1.1307,
+        "footPitchDegrees": -7.012277064973852,
+        "shankPitchDegrees": 3.6795760199286796,
+        "relativeFlexionDegrees": -10.691853084902531
+      },
+      {
+        "side": "R",
+        "swing": 0.875,
+        "time": 1.134,
+        "footPitchDegrees": -7.435185003876683,
+        "shankPitchDegrees": 2.5151980757842622,
+        "relativeFlexionDegrees": -9.950383079660945
+      },
+      {
+        "side": "R",
+        "swing": 0.88125,
+        "time": 1.1373000000000002,
+        "footPitchDegrees": -7.733203245800833,
+        "shankPitchDegrees": 1.3124266419203032,
+        "relativeFlexionDegrees": -9.045629887721136
+      },
+      {
+        "side": "R",
+        "swing": 0.8875,
+        "time": 1.1406,
+        "footPitchDegrees": -7.89100811127801,
+        "shankPitchDegrees": 0.07258603893998834,
+        "relativeFlexionDegrees": -7.9635941502179985
+      },
+      {
+        "side": "R",
+        "swing": 0.89375,
+        "time": 1.1439,
+        "footPitchDegrees": -7.94861542676733,
+        "shankPitchDegrees": -1.1857471351990774,
+        "relativeFlexionDegrees": -6.762868291568253
+      },
+      {
+        "side": "R",
+        "swing": 0.9,
+        "time": 1.1472000000000002,
+        "footPitchDegrees": -7.915608228056833,
+        "shankPitchDegrees": -2.451961753634121,
+        "relativeFlexionDegrees": -5.463646474422712
+      },
+      {
+        "side": "R",
+        "swing": 0.90625,
+        "time": 1.1505,
+        "footPitchDegrees": -7.802732306399975,
+        "shankPitchDegrees": -3.713592325529554,
+        "relativeFlexionDegrees": -4.089139980870421
+      },
+      {
+        "side": "R",
+        "swing": 0.9125,
+        "time": 1.1538,
+        "footPitchDegrees": -7.615563439426644,
+        "shankPitchDegrees": -4.948019590305356,
+        "relativeFlexionDegrees": -2.667543849121288
+      },
+      {
+        "side": "R",
+        "swing": 0.91875,
+        "time": 1.1571,
+        "footPitchDegrees": -7.376846351169167,
+        "shankPitchDegrees": -6.114382751652415,
+        "relativeFlexionDegrees": -1.2624635995167521
+      },
+      {
+        "side": "R",
+        "swing": 0.925,
+        "time": 1.1604,
+        "footPitchDegrees": -7.1148314180439165,
+        "shankPitchDegrees": -7.186358316996548,
+        "relativeFlexionDegrees": 0.07152689895263187
+      },
+      {
+        "side": "R",
+        "swing": 0.93125,
+        "time": 1.1637,
+        "footPitchDegrees": -6.844030183588601,
+        "shankPitchDegrees": -8.128017972697346,
+        "relativeFlexionDegrees": 1.2839877891087452
+      },
+      {
+        "side": "R",
+        "swing": 0.9375,
+        "time": 1.167,
+        "footPitchDegrees": -6.578533039139874,
+        "shankPitchDegrees": -8.89955748131429,
+        "relativeFlexionDegrees": 2.3210244421744157
+      },
+      {
+        "side": "R",
+        "swing": 0.94375,
+        "time": 1.1703000000000001,
+        "footPitchDegrees": -6.340432029188294,
+        "shankPitchDegrees": -9.388453020672575,
+        "relativeFlexionDegrees": 3.0480209914842806
+      },
+      {
+        "side": "R",
+        "swing": 0.95,
+        "time": 1.1736,
+        "footPitchDegrees": -6.144518257694004,
+        "shankPitchDegrees": -9.536141067913857,
+        "relativeFlexionDegrees": 3.391622810219853
+      },
+      {
+        "side": "R",
+        "swing": 0.95625,
+        "time": 1.1769,
+        "footPitchDegrees": -5.9905936113712865,
+        "shankPitchDegrees": -9.356450830812495,
+        "relativeFlexionDegrees": 3.3658572194412084
+      },
+      {
+        "side": "R",
+        "swing": 0.9625,
+        "time": 1.1802000000000001,
+        "footPitchDegrees": -5.878440115056625,
+        "shankPitchDegrees": -8.850418921324511,
+        "relativeFlexionDegrees": 2.9719788062678862
+      },
+      {
+        "side": "R",
+        "swing": 0.96875,
+        "time": 1.1835,
+        "footPitchDegrees": -5.8051173450487985,
+        "shankPitchDegrees": -8.034313180972134,
+        "relativeFlexionDegrees": 2.2291958359233357
+      },
+      {
+        "side": "R",
+        "swing": 0.975,
+        "time": 1.1868,
+        "footPitchDegrees": -5.768052770963419,
+        "shankPitchDegrees": -6.897388202544645,
+        "relativeFlexionDegrees": 1.129335431581226
+      },
+      {
+        "side": "R",
+        "swing": 0.98125,
+        "time": 1.1901000000000002,
+        "footPitchDegrees": -5.746947467600924,
+        "shankPitchDegrees": -5.581435646415882,
+        "relativeFlexionDegrees": -0.16551182118504215
+      },
+      {
+        "side": "R",
+        "swing": 0.9875,
+        "time": 1.1934,
+        "footPitchDegrees": -5.735566174448757,
+        "shankPitchDegrees": -4.153975589864875,
+        "relativeFlexionDegrees": -1.581590584583882
+      },
+      {
+        "side": "R",
+        "swing": 0.99375,
+        "time": 1.1967,
+        "footPitchDegrees": -5.730537947887186,
+        "shankPitchDegrees": -2.663174241101426,
+        "relativeFlexionDegrees": -3.0673637067857595
+      },
+      {
+        "side": "R",
+        "swing": 1,
+        "time": 1.2000000000000002,
+        "footPitchDegrees": -5.72957795130822,
+        "shankPitchDegrees": -1.1551871301231291,
+        "relativeFlexionDegrees": -4.574390821185091
+      }
+    ]
+  },
+  "previous": {
+    "sourceSha256": "2794f8178a75e4d0664cb43f146d26aed10f0d56da30c796262bde02ba29fd36",
+    "maxSwingDorsiflexionDegrees": 73.7526090865195,
+    "maxSwingPlantarflexionDegrees": 3.5587691557569565,
+    "samples": [
+      {
+        "side": "L",
+        "swing": 0,
+        "time": 0.272,
+        "footPitchDegrees": 29.794005967944948,
+        "shankPitchDegrees": 45.3119314531233,
+        "relativeFlexionDegrees": -15.517925485178353
+      },
+      {
+        "side": "L",
+        "swing": 0.00625,
+        "time": 0.27530000000000004,
+        "footPitchDegrees": 30.17401921833945,
+        "shankPitchDegrees": 45.254532897265626,
+        "relativeFlexionDegrees": -15.080513678926177
+      },
+      {
+        "side": "L",
+        "swing": 0.0125,
+        "time": 0.2786,
+        "footPitchDegrees": 30.56244537467964,
+        "shankPitchDegrees": 45.24561152452637,
+        "relativeFlexionDegrees": -14.683166149846727
+      },
+      {
+        "side": "L",
+        "swing": 0.01875,
+        "time": 0.28190000000000004,
+        "footPitchDegrees": 30.96666039250217,
+        "shankPitchDegrees": 45.328864278755276,
+        "relativeFlexionDegrees": -14.362203886253106
+      },
+      {
+        "side": "L",
+        "swing": 0.025,
+        "time": 0.2852,
+        "footPitchDegrees": 31.38817833605441,
+        "shankPitchDegrees": 45.518830215994605,
+        "relativeFlexionDegrees": -14.130651879940196
+      },
+      {
+        "side": "L",
+        "swing": 0.03125,
+        "time": 0.28850000000000003,
+        "footPitchDegrees": 31.828668800193586,
+        "shankPitchDegrees": 45.83162115184921,
+        "relativeFlexionDegrees": -14.002952351655626
+      },
+      {
+        "side": "L",
+        "swing": 0.0375,
+        "time": 0.2918,
+        "footPitchDegrees": 32.28907320193465,
+        "shankPitchDegrees": 46.280131888780964,
+        "relativeFlexionDegrees": -13.991058686846316
+      },
+      {
+        "side": "L",
+        "swing": 0.04375,
+        "time": 0.29510000000000003,
+        "footPitchDegrees": 32.77466021063945,
+        "shankPitchDegrees": 46.917249249490304,
+        "relativeFlexionDegrees": -14.14258903885085
+      },
+      {
+        "side": "L",
+        "swing": 0.05,
+        "time": 0.2984,
+        "footPitchDegrees": 33.27795254535423,
+        "shankPitchDegrees": 47.70635549463232,
+        "relativeFlexionDegrees": -14.428402949278087
+      },
+      {
+        "side": "L",
+        "swing": 0.05625,
+        "time": 0.3017,
+        "footPitchDegrees": 33.79512849559717,
+        "shankPitchDegrees": 48.6326794769183,
+        "relativeFlexionDegrees": -14.83755098132113
+      },
+      {
+        "side": "L",
+        "swing": 0.0625,
+        "time": 0.30500000000000005,
+        "footPitchDegrees": 34.32308225069562,
+        "shankPitchDegrees": 49.68753061506174,
+        "relativeFlexionDegrees": -15.364448364366119
+      },
+      {
+        "side": "L",
+        "swing": 0.06875,
+        "time": 0.3083,
+        "footPitchDegrees": 34.85834930798229,
+        "shankPitchDegrees": 50.86152263866111,
+        "relativeFlexionDegrees": -16.00317333067882
+      },
+      {
+        "side": "L",
+        "swing": 0.075,
+        "time": 0.31160000000000004,
+        "footPitchDegrees": 35.394773186936106,
+        "shankPitchDegrees": 52.164683448447235,
+        "relativeFlexionDegrees": -16.76991026151113
+      },
+      {
+        "side": "L",
+        "swing": 0.08125,
+        "time": 0.3149,
+        "footPitchDegrees": 35.92517267476905,
+        "shankPitchDegrees": 53.540663336172265,
+        "relativeFlexionDegrees": -17.615490661403214
+      },
+      {
+        "side": "L",
+        "swing": 0.0875,
+        "time": 0.31820000000000004,
+        "footPitchDegrees": 36.444887254583335,
+        "shankPitchDegrees": 54.97370841186246,
+        "relativeFlexionDegrees": -18.528821157279125
+      },
+      {
+        "side": "L",
+        "swing": 0.09375,
+        "time": 0.3215,
+        "footPitchDegrees": 36.94926687006069,
+        "shankPitchDegrees": 56.44817805450415,
+        "relativeFlexionDegrees": -19.498911184443458
+      },
+      {
+        "side": "L",
+        "swing": 0.1,
+        "time": 0.32480000000000003,
+        "footPitchDegrees": 37.43140330431174,
+        "shankPitchDegrees": 57.94858364937792,
+        "relativeFlexionDegrees": -20.51718034506618
+      },
+      {
+        "side": "L",
+        "swing": 0.10625,
+        "time": 0.3281,
+        "footPitchDegrees": 37.87869113017633,
+        "shankPitchDegrees": 59.45051195057786,
+        "relativeFlexionDegrees": -21.571820820401534
+      },
+      {
+        "side": "L",
+        "swing": 0.1125,
+        "time": 0.33140000000000003,
+        "footPitchDegrees": 38.29303071083795,
+        "shankPitchDegrees": 60.93446610099634,
+        "relativeFlexionDegrees": -22.641435390158392
+      },
+      {
+        "side": "L",
+        "swing": 0.11875,
+        "time": 0.3347,
+        "footPitchDegrees": 38.671092143805446,
+        "shankPitchDegrees": 62.38823767193261,
+        "relativeFlexionDegrees": -23.717145528127162
+      },
+      {
+        "side": "L",
+        "swing": 0.125,
+        "time": 0.338,
+        "footPitchDegrees": 39.00991525336918,
+        "shankPitchDegrees": 63.800332982171255,
+        "relativeFlexionDegrees": -24.790417728802076
+      },
+      {
+        "side": "L",
+        "swing": 0.13125,
+        "time": 0.34130000000000005,
+        "footPitchDegrees": 39.30025018593379,
+        "shankPitchDegrees": 65.14975173395543,
+        "relativeFlexionDegrees": -25.849501548021635
+      },
+      {
+        "side": "L",
+        "swing": 0.1375,
+        "time": 0.3446,
+        "footPitchDegrees": 39.537447151154716,
+        "shankPitchDegrees": 66.41769049502959,
+        "relativeFlexionDegrees": -26.880243343874874
+      },
+      {
+        "side": "L",
+        "swing": 0.14375,
+        "time": 0.3479,
+        "footPitchDegrees": 39.730641193755524,
+        "shankPitchDegrees": 67.60977491762584,
+        "relativeFlexionDegrees": -27.879133723870318
+      },
+      {
+        "side": "L",
+        "swing": 0.15,
+        "time": 0.3512,
+        "footPitchDegrees": 39.881067463809245,
+        "shankPitchDegrees": 68.72163272661719,
+        "relativeFlexionDegrees": -28.840565262807942
+      },
+      {
+        "side": "L",
+        "swing": 0.15625,
+        "time": 0.35450000000000004,
+        "footPitchDegrees": 39.9906899617814,
+        "shankPitchDegrees": 69.7500835725736,
+        "relativeFlexionDegrees": -29.759393610792202
+      },
+      {
+        "side": "L",
+        "swing": 0.1625,
+        "time": 0.3578,
+        "footPitchDegrees": 40.05602939331167,
+        "shankPitchDegrees": 70.6753330834541,
+        "relativeFlexionDegrees": -30.619303690142438
+      },
+      {
+        "side": "L",
+        "swing": 0.16875,
+        "time": 0.36110000000000003,
+        "footPitchDegrees": 40.089415146596224,
+        "shankPitchDegrees": 71.50852979991016,
+        "relativeFlexionDegrees": -31.41911465331394
+      },
+      {
+        "side": "L",
+        "swing": 0.175,
+        "time": 0.3644,
+        "footPitchDegrees": 40.10374083972098,
+        "shankPitchDegrees": 72.2682123366317,
+        "relativeFlexionDegrees": -32.16447149691073
+      },
+      {
+        "side": "L",
+        "swing": 0.18125,
+        "time": 0.3677,
+        "footPitchDegrees": 40.105760700809974,
+        "shankPitchDegrees": 72.96284965292595,
+        "relativeFlexionDegrees": -32.85708895211598
+      },
+      {
+        "side": "L",
+        "swing": 0.1875,
+        "time": 0.371,
+        "footPitchDegrees": 40.10021146693115,
+        "shankPitchDegrees": 73.60220887275469,
+        "relativeFlexionDegrees": -33.50199740582354
+      },
+      {
+        "side": "L",
+        "swing": 0.19375,
+        "time": 0.3743,
+        "footPitchDegrees": 40.06790013713983,
+        "shankPitchDegrees": 74.19006181400319,
+        "relativeFlexionDegrees": -34.12216167686336
+      },
+      {
+        "side": "L",
+        "swing": 0.2,
+        "time": 0.37760000000000005,
+        "footPitchDegrees": 39.9927225785019,
+        "shankPitchDegrees": 74.75909621306607,
+        "relativeFlexionDegrees": -34.766373634564175
+      },
+      {
+        "side": "L",
+        "swing": 0.20625,
+        "time": 0.3809,
+        "footPitchDegrees": 39.866382770845654,
+        "shankPitchDegrees": 75.32201051044309,
+        "relativeFlexionDegrees": -35.45562773959744
+      },
+      {
+        "side": "L",
+        "swing": 0.2125,
+        "time": 0.38420000000000004,
+        "footPitchDegrees": 39.68017659453294,
+        "shankPitchDegrees": 75.88322733963062,
+        "relativeFlexionDegrees": -36.203050745097684
+      },
+      {
+        "side": "L",
+        "swing": 0.21875,
+        "time": 0.3875,
+        "footPitchDegrees": 39.42642974916302,
+        "shankPitchDegrees": 76.4423499864206,
+        "relativeFlexionDegrees": -37.015920237257575
+      },
+      {
+        "side": "L",
+        "swing": 0.225,
+        "time": 0.39080000000000004,
+        "footPitchDegrees": 39.06944823828979,
+        "shankPitchDegrees": 76.99576102203444,
+        "relativeFlexionDegrees": -37.926312783744656
+      },
+      {
+        "side": "L",
+        "swing": 0.23125,
+        "time": 0.3941,
+        "footPitchDegrees": 38.63080321386529,
+        "shankPitchDegrees": 77.54260378419782,
+        "relativeFlexionDegrees": -38.91180057033253
+      },
+      {
+        "side": "L",
+        "swing": 0.2375,
+        "time": 0.39740000000000003,
+        "footPitchDegrees": 38.108749882797184,
+        "shankPitchDegrees": 78.08120909702592,
+        "relativeFlexionDegrees": -39.972459214228735
+      },
+      {
+        "side": "L",
+        "swing": 0.24375,
+        "time": 0.40070000000000006,
+        "footPitchDegrees": 37.50228049638682,
+        "shankPitchDegrees": 78.60977475898922,
+        "relativeFlexionDegrees": -41.1074942626024
+      },
+      {
+        "side": "L",
+        "swing": 0.25,
+        "time": 0.404,
+        "footPitchDegrees": 36.805503243900205,
+        "shankPitchDegrees": 79.12529043158465,
+        "relativeFlexionDegrees": -42.31978718768444
+      },
+      {
+        "side": "L",
+        "swing": 0.25625,
+        "time": 0.4073,
+        "footPitchDegrees": 36.00267985562674,
+        "shankPitchDegrees": 79.6197246841803,
+        "relativeFlexionDegrees": -43.61704482855356
+      },
+      {
+        "side": "L",
+        "swing": 0.2625,
+        "time": 0.4106,
+        "footPitchDegrees": 35.12141355979778,
+        "shankPitchDegrees": 80.09362966986257,
+        "relativeFlexionDegrees": -44.972216110064785
+      },
+      {
+        "side": "L",
+        "swing": 0.26875,
+        "time": 0.41390000000000005,
+        "footPitchDegrees": 34.16545077100625,
+        "shankPitchDegrees": 80.54417994567515,
+        "relativeFlexionDegrees": -46.378729174668905
+      },
+      {
+        "side": "L",
+        "swing": 0.275,
+        "time": 0.4172,
+        "footPitchDegrees": 33.138999620986894,
+        "shankPitchDegrees": 80.96860285895045,
+        "relativeFlexionDegrees": -47.82960323796355
+      },
+      {
+        "side": "L",
+        "swing": 0.28125,
+        "time": 0.42050000000000004,
+        "footPitchDegrees": 32.03911439606032,
+        "shankPitchDegrees": 81.35962894788489,
+        "relativeFlexionDegrees": -49.320514551824566
+      },
+      {
+        "side": "L",
+        "swing": 0.2875,
+        "time": 0.4238,
+        "footPitchDegrees": 30.8712686635307,
+        "shankPitchDegrees": 81.71021729001161,
+        "relativeFlexionDegrees": -50.838948626480914
+      },
+      {
+        "side": "L",
+        "swing": 0.29375,
+        "time": 0.42710000000000004,
+        "footPitchDegrees": 29.656200669722804,
+        "shankPitchDegrees": 82.024791330597,
+        "relativeFlexionDegrees": -52.36859066087419
+      },
+      {
+        "side": "L",
+        "swing": 0.3,
+        "time": 0.4304,
+        "footPitchDegrees": 28.40066774074738,
+        "shankPitchDegrees": 82.30155382118302,
+        "relativeFlexionDegrees": -53.90088608043564
+      },
+      {
+        "side": "L",
+        "swing": 0.30625,
+        "time": 0.43370000000000003,
+        "footPitchDegrees": 27.11161366725075,
+        "shankPitchDegrees": 82.53890485791804,
+        "relativeFlexionDegrees": -55.42729119066729
+      },
+      {
+        "side": "L",
+        "swing": 0.3125,
+        "time": 0.43700000000000006,
+        "footPitchDegrees": 25.793607346994445,
+        "shankPitchDegrees": 82.72678431615817,
+        "relativeFlexionDegrees": -56.933176969163725
+      },
+      {
+        "side": "L",
+        "swing": 0.31875,
+        "time": 0.4403,
+        "footPitchDegrees": 24.4611500527208,
+        "shankPitchDegrees": 82.86614681159476,
+        "relativeFlexionDegrees": -58.40499675887396
+      },
+      {
+        "side": "L",
+        "swing": 0.325,
+        "time": 0.4436,
+        "footPitchDegrees": 23.125253307661133,
+        "shankPitchDegrees": 82.96311099116586,
+        "relativeFlexionDegrees": -59.83785768350473
+      },
+      {
+        "side": "L",
+        "swing": 0.33125,
+        "time": 0.4469,
+        "footPitchDegrees": 21.793205123733227,
+        "shankPitchDegrees": 83.01785373803702,
+        "relativeFlexionDegrees": -61.22464861430379
+      },
+      {
+        "side": "L",
+        "swing": 0.3375,
+        "time": 0.45020000000000004,
+        "footPitchDegrees": 20.472204698447513,
+        "shankPitchDegrees": 83.03078675016644,
+        "relativeFlexionDegrees": -62.55858205171893
+      },
+      {
+        "side": "L",
+        "swing": 0.34375,
+        "time": 0.4535,
+        "footPitchDegrees": 19.177851252134257,
+        "shankPitchDegrees": 82.99201158853587,
+        "relativeFlexionDegrees": -63.81416033640161
+      },
+      {
+        "side": "L",
+        "swing": 0.35,
+        "time": 0.4568,
+        "footPitchDegrees": 17.916964617093825,
+        "shankPitchDegrees": 82.91150982033336,
+        "relativeFlexionDegrees": -64.99454520323954
+      },
+      {
+        "side": "L",
+        "swing": 0.35625,
+        "time": 0.46010000000000006,
+        "footPitchDegrees": 16.693545645901168,
+        "shankPitchDegrees": 82.79436801508768,
+        "relativeFlexionDegrees": -66.10082236918652
+      },
+      {
+        "side": "L",
+        "swing": 0.3625,
+        "time": 0.46340000000000003,
+        "footPitchDegrees": 15.512932776272818,
+        "shankPitchDegrees": 82.6424675428822,
+        "relativeFlexionDegrees": -67.12953476660938
+      },
+      {
+        "side": "L",
+        "swing": 0.36875,
+        "time": 0.4667,
+        "footPitchDegrees": 14.38010039368037,
+        "shankPitchDegrees": 82.45782697367471,
+        "relativeFlexionDegrees": -68.07772657999435
+      },
+      {
+        "side": "L",
+        "swing": 0.375,
+        "time": 0.47000000000000003,
+        "footPitchDegrees": 13.319683478178147,
+        "shankPitchDegrees": 82.23383638115862,
+        "relativeFlexionDegrees": -68.91415290298048
+      },
+      {
+        "side": "L",
+        "swing": 0.38125,
+        "time": 0.47330000000000005,
+        "footPitchDegrees": 12.318501195108285,
+        "shankPitchDegrees": 81.9838469819881,
+        "relativeFlexionDegrees": -69.66534578687981
+      },
+      {
+        "side": "L",
+        "swing": 0.3875,
+        "time": 0.4766,
+        "footPitchDegrees": 11.377380112440836,
+        "shankPitchDegrees": 81.71065529205136,
+        "relativeFlexionDegrees": -70.33327517961052
+      },
+      {
+        "side": "L",
+        "swing": 0.39375,
+        "time": 0.4799,
+        "footPitchDegrees": 10.497228975558983,
+        "shankPitchDegrees": 81.41662677964504,
+        "relativeFlexionDegrees": -70.91939780408606
+      },
+      {
+        "side": "L",
+        "swing": 0.4,
+        "time": 0.4832000000000001,
+        "footPitchDegrees": 9.681537966761057,
+        "shankPitchDegrees": 81.10328980226714,
+        "relativeFlexionDegrees": -71.42175183550609
+      },
+      {
+        "side": "L",
+        "swing": 0.40625,
+        "time": 0.48650000000000004,
+        "footPitchDegrees": 8.942352433435147,
+        "shankPitchDegrees": 80.77054046921883,
+        "relativeFlexionDegrees": -71.82818803578368
+      },
+      {
+        "side": "L",
+        "swing": 0.4125,
+        "time": 0.4898,
+        "footPitchDegrees": 8.257139594012086,
+        "shankPitchDegrees": 80.44124300201281,
+        "relativeFlexionDegrees": -72.18410340800072
+      },
+      {
+        "side": "L",
+        "swing": 0.41875,
+        "time": 0.49310000000000004,
+        "footPitchDegrees": 7.620830288588403,
+        "shankPitchDegrees": 80.14594526958003,
+        "relativeFlexionDegrees": -72.52511498099162
+      },
+      {
+        "side": "L",
+        "swing": 0.425,
+        "time": 0.49640000000000006,
+        "footPitchDegrees": 7.02742373786496,
+        "shankPitchDegrees": 79.88749361737355,
+        "relativeFlexionDegrees": -72.86006987950859
+      },
+      {
+        "side": "L",
+        "swing": 0.43125,
+        "time": 0.49970000000000003,
+        "footPitchDegrees": 6.472368109638242,
+        "shankPitchDegrees": 79.6048514316256,
+        "relativeFlexionDegrees": -73.13248332198737
+      },
+      {
+        "side": "L",
+        "swing": 0.4375,
+        "time": 0.503,
+        "footPitchDegrees": 5.9409605393972855,
+        "shankPitchDegrees": 79.28443189152092,
+        "relativeFlexionDegrees": -73.34347135212364
+      },
+      {
+        "side": "L",
+        "swing": 0.44375,
+        "time": 0.5063,
+        "footPitchDegrees": 5.414849114808036,
+        "shankPitchDegrees": 78.92598601952517,
+        "relativeFlexionDegrees": -73.51113690471713
+      },
+      {
+        "side": "L",
+        "swing": 0.45,
+        "time": 0.5096,
+        "footPitchDegrees": 4.889292312736895,
+        "shankPitchDegrees": 78.52600799261039,
+        "relativeFlexionDegrees": -73.63671567987349
+      },
+      {
+        "side": "L",
+        "swing": 0.45625,
+        "time": 0.5129,
+        "footPitchDegrees": 4.361462489268752,
+        "shankPitchDegrees": 78.08176295723666,
+        "relativeFlexionDegrees": -73.72030046796792
+      },
+      {
+        "side": "L",
+        "swing": 0.4625,
+        "time": 0.5162,
+        "footPitchDegrees": 3.829351794931895,
+        "shankPitchDegrees": 77.5819608814514,
+        "relativeFlexionDegrees": -73.7526090865195
+      },
+      {
+        "side": "L",
+        "swing": 0.46875,
+        "time": 0.5195000000000001,
+        "footPitchDegrees": 3.2918516266642635,
+        "shankPitchDegrees": 77.02572334792093,
+        "relativeFlexionDegrees": -73.73387172125666
+      },
+      {
+        "side": "L",
+        "swing": 0.475,
+        "time": 0.5228,
+        "footPitchDegrees": 2.749288472523215,
+        "shankPitchDegrees": 76.42014153286412,
+        "relativeFlexionDegrees": -73.6708530603409
+      },
+      {
+        "side": "L",
+        "swing": 0.48125,
+        "time": 0.5261,
+        "footPitchDegrees": 2.2015219498722836,
+        "shankPitchDegrees": 75.76477357930052,
+        "relativeFlexionDegrees": -73.56325162942824
+      },
+      {
+        "side": "L",
+        "swing": 0.4875,
+        "time": 0.5294000000000001,
+        "footPitchDegrees": 1.6485394286056785,
+        "shankPitchDegrees": 75.05932135811577,
+        "relativeFlexionDegrees": -73.4107819295101
+      },
+      {
+        "side": "L",
+        "swing": 0.49375,
+        "time": 0.5327000000000001,
+        "footPitchDegrees": 1.0893649427222765,
+        "shankPitchDegrees": 74.29057220099031,
+        "relativeFlexionDegrees": -73.20120725826804
+      },
+      {
+        "side": "L",
+        "swing": 0.5,
+        "time": 0.536,
+        "footPitchDegrees": 0.5255870640701635,
+        "shankPitchDegrees": 73.46676320401492,
+        "relativeFlexionDegrees": -72.94117613994476
+      },
+      {
+        "side": "L",
+        "swing": 0.50625,
+        "time": 0.5393,
+        "footPitchDegrees": -0.04161665961851334,
+        "shankPitchDegrees": 72.67554795388021,
+        "relativeFlexionDegrees": -72.71716461349872
+      },
+      {
+        "side": "L",
+        "swing": 0.5125,
+        "time": 0.5426,
+        "footPitchDegrees": -0.6114593594392894,
+        "shankPitchDegrees": 71.92683494315817,
+        "relativeFlexionDegrees": -72.53829430259746
+      },
+      {
+        "side": "L",
+        "swing": 0.51875,
+        "time": 0.5459,
+        "footPitchDegrees": -1.1830705565521487,
+        "shankPitchDegrees": 71.1877699619756,
+        "relativeFlexionDegrees": -72.37084051852776
+      },
+      {
+        "side": "L",
+        "swing": 0.525,
+        "time": 0.5492,
+        "footPitchDegrees": -1.7549682858047515,
+        "shankPitchDegrees": 70.37003648326152,
+        "relativeFlexionDegrees": -72.12500476906627
+      },
+      {
+        "side": "L",
+        "swing": 0.53125,
+        "time": 0.5525,
+        "footPitchDegrees": -2.3252294096642836,
+        "shankPitchDegrees": 69.49004254664811,
+        "relativeFlexionDegrees": -71.8152719563124
+      },
+      {
+        "side": "L",
+        "swing": 0.5375,
+        "time": 0.5558000000000001,
+        "footPitchDegrees": -2.892568109515811,
+        "shankPitchDegrees": 68.54922025241049,
+        "relativeFlexionDegrees": -71.4417883619263
+      },
+      {
+        "side": "L",
+        "swing": 0.54375,
+        "time": 0.5590999999999999,
+        "footPitchDegrees": -3.455667695438036,
+        "shankPitchDegrees": 67.54767206685935,
+        "relativeFlexionDegrees": -71.00333976229739
+      },
+      {
+        "side": "L",
+        "swing": 0.55,
+        "time": 0.5624,
+        "footPitchDegrees": -4.01284732098326,
+        "shankPitchDegrees": 66.48338590594257,
+        "relativeFlexionDegrees": -70.49623322692582
+      },
+      {
+        "side": "L",
+        "swing": 0.55625,
+        "time": 0.5657000000000001,
+        "footPitchDegrees": -4.559648146129025,
+        "shankPitchDegrees": 65.34200681909773,
+        "relativeFlexionDegrees": -69.90165496522675
+      },
+      {
+        "side": "L",
+        "swing": 0.5625,
+        "time": 0.5690000000000001,
+        "footPitchDegrees": -5.096397509859065,
+        "shankPitchDegrees": 64.14446542834624,
+        "relativeFlexionDegrees": -69.2408629382053
+      },
+      {
+        "side": "L",
+        "swing": 0.56875,
+        "time": 0.5723,
+        "footPitchDegrees": -5.621639001052942,
+        "shankPitchDegrees": 62.892917228827805,
+        "relativeFlexionDegrees": -68.51455622988075
+      },
+      {
+        "side": "L",
+        "swing": 0.575,
+        "time": 0.5756,
+        "footPitchDegrees": -6.133923536790427,
+        "shankPitchDegrees": 61.58974058600276,
+        "relativeFlexionDegrees": -67.7236641227932
+      },
+      {
+        "side": "L",
+        "swing": 0.58125,
+        "time": 0.5789000000000001,
+        "footPitchDegrees": -6.629963953938831,
+        "shankPitchDegrees": 60.23274995657099,
+        "relativeFlexionDegrees": -66.86271391050983
+      },
+      {
+        "side": "L",
+        "swing": 0.5875,
+        "time": 0.5822,
+        "footPitchDegrees": -7.105060133667549,
+        "shankPitchDegrees": 58.82131447205103,
+        "relativeFlexionDegrees": -65.92637460571858
+      },
+      {
+        "side": "L",
+        "swing": 0.59375,
+        "time": 0.5855,
+        "footPitchDegrees": -7.561535286805855,
+        "shankPitchDegrees": 57.37103209015043,
+        "relativeFlexionDegrees": -64.93256737695629
+      },
+      {
+        "side": "L",
+        "swing": 0.6,
+        "time": 0.5888,
+        "footPitchDegrees": -7.99815390490119,
+        "shankPitchDegrees": 55.88563279866436,
+        "relativeFlexionDegrees": -63.88378670356555
+      },
+      {
+        "side": "L",
+        "swing": 0.60625,
+        "time": 0.5921000000000001,
+        "footPitchDegrees": -8.413731852125592,
+        "shankPitchDegrees": 54.368958028737175,
+        "relativeFlexionDegrees": -62.78268988086277
+      },
+      {
+        "side": "L",
+        "swing": 0.6125,
+        "time": 0.5954,
+        "footPitchDegrees": -8.802873872726874,
+        "shankPitchDegrees": 52.82143294896913,
+        "relativeFlexionDegrees": -61.62430682169601
+      },
+      {
+        "side": "L",
+        "swing": 0.61875,
+        "time": 0.5987,
+        "footPitchDegrees": -9.163855247683886,
+        "shankPitchDegrees": 51.250626577752804,
+        "relativeFlexionDegrees": -60.41448182543669
+      },
+      {
+        "side": "L",
+        "swing": 0.625,
+        "time": 0.6020000000000001,
+        "footPitchDegrees": -9.499959353093084,
+        "shankPitchDegrees": 49.665428286297455,
+        "relativeFlexionDegrees": -59.16538763939054
+      },
+      {
+        "side": "L",
+        "swing": 0.63125,
+        "time": 0.6053,
+        "footPitchDegrees": -9.810568929583262,
+        "shankPitchDegrees": 48.070008215568855,
+        "relativeFlexionDegrees": -57.88057714515212
+      },
+      {
+        "side": "L",
+        "swing": 0.6375,
+        "time": 0.6086,
+        "footPitchDegrees": -10.095162136330137,
+        "shankPitchDegrees": 46.46850611607004,
+        "relativeFlexionDegrees": -56.56366825240018
+      },
+      {
+        "side": "L",
+        "swing": 0.64375,
+        "time": 0.6119000000000001,
+        "footPitchDegrees": -10.346748936219596,
+        "shankPitchDegrees": 44.86635230772332,
+        "relativeFlexionDegrees": -55.213101243942916
+      },
+      {
+        "side": "L",
+        "swing": 0.65,
+        "time": 0.6152,
+        "footPitchDegrees": -10.568830098674596,
+        "shankPitchDegrees": 43.27023112834651,
+        "relativeFlexionDegrees": -53.839061227021105
+      },
+      {
+        "side": "L",
+        "swing": 0.65625,
+        "time": 0.6185,
+        "footPitchDegrees": -10.764564964975262,
+        "shankPitchDegrees": 41.68368825655888,
+        "relativeFlexionDegrees": -52.448253221534145
+      },
+      {
+        "side": "L",
+        "swing": 0.6625,
+        "time": 0.6218,
+        "footPitchDegrees": -10.934351875921624,
+        "shankPitchDegrees": 40.110007156457456,
+        "relativeFlexionDegrees": -51.04435903237908
+      },
+      {
+        "side": "L",
+        "swing": 0.66875,
+        "time": 0.6251,
+        "footPitchDegrees": -11.078728637718303,
+        "shankPitchDegrees": 38.5522877558958,
+        "relativeFlexionDegrees": -49.631016393614104
+      },
+      {
+        "side": "L",
+        "swing": 0.675,
+        "time": 0.6284000000000001,
+        "footPitchDegrees": -11.191353795745544,
+        "shankPitchDegrees": 37.02068642896439,
+        "relativeFlexionDegrees": -48.21204022470993
+      },
+      {
+        "side": "L",
+        "swing": 0.68125,
+        "time": 0.6317,
+        "footPitchDegrees": -11.28080714116596,
+        "shankPitchDegrees": 35.51312345674479,
+        "relativeFlexionDegrees": -46.79393059791075
+      },
+      {
+        "side": "L",
+        "swing": 0.6875,
+        "time": 0.635,
+        "footPitchDegrees": -11.349706269412703,
+        "shankPitchDegrees": 34.030781718497856,
+        "relativeFlexionDegrees": -45.380487987910556
+      },
+      {
+        "side": "L",
+        "swing": 0.69375,
+        "time": 0.6383000000000001,
+        "footPitchDegrees": -11.399862455059429,
+        "shankPitchDegrees": 32.57581269109692,
+        "relativeFlexionDegrees": -43.97567514615635
+      },
+      {
+        "side": "L",
+        "swing": 0.7,
+        "time": 0.6416,
+        "footPitchDegrees": -11.43291903271969,
+        "shankPitchDegrees": 31.151424516285854,
+        "relativeFlexionDegrees": -42.584343549005546
+      },
+      {
+        "side": "L",
+        "swing": 0.70625,
+        "time": 0.6449,
+        "footPitchDegrees": -11.448926002750724,
+        "shankPitchDegrees": 29.771232356158887,
+        "relativeFlexionDegrees": -41.220158358909615
+      },
+      {
+        "side": "L",
+        "swing": 0.7125,
+        "time": 0.6482000000000001,
+        "footPitchDegrees": -11.456514499412142,
+        "shankPitchDegrees": 28.427551501983448,
+        "relativeFlexionDegrees": -39.88406600139559
+      },
+      {
+        "side": "L",
+        "swing": 0.71875,
+        "time": 0.6515,
+        "footPitchDegrees": -11.458953962498372,
+        "shankPitchDegrees": 27.122318574851406,
+        "relativeFlexionDegrees": -38.581272537349776
+      },
+      {
+        "side": "L",
+        "swing": 0.725,
+        "time": 0.6548,
+        "footPitchDegrees": -11.458443050493887,
+        "shankPitchDegrees": 25.857233033355612,
+        "relativeFlexionDegrees": -37.315676083849496
+      },
+      {
+        "side": "L",
+        "swing": 0.73125,
+        "time": 0.6581,
+        "footPitchDegrees": -11.455453069432167,
+        "shankPitchDegrees": 24.63785432623709,
+        "relativeFlexionDegrees": -36.09330739566926
+      },
+      {
+        "side": "L",
+        "swing": 0.7375,
+        "time": 0.6614,
+        "footPitchDegrees": -11.445168708007348,
+        "shankPitchDegrees": 23.472408826362123,
+        "relativeFlexionDegrees": -34.91757753436947
+      },
+      {
+        "side": "L",
+        "swing": 0.74375,
+        "time": 0.6647000000000001,
+        "footPitchDegrees": -11.426311036879717,
+        "shankPitchDegrees": 22.350174535229957,
+        "relativeFlexionDegrees": -33.77648557210968
+      },
+      {
+        "side": "L",
+        "swing": 0.75,
+        "time": 0.668,
+        "footPitchDegrees": -11.397255924300502,
+        "shankPitchDegrees": 21.271038362315736,
+        "relativeFlexionDegrees": -32.66829428661624
+      },
+      {
+        "side": "L",
+        "swing": 0.75625,
+        "time": 0.6713,
+        "footPitchDegrees": -11.356559226924713,
+        "shankPitchDegrees": 20.234645614805764,
+        "relativeFlexionDegrees": -31.591204841730477
+      },
+      {
+        "side": "L",
+        "swing": 0.7625,
+        "time": 0.6746000000000001,
+        "footPitchDegrees": -11.300604506014752,
+        "shankPitchDegrees": 19.246903822835044,
+        "relativeFlexionDegrees": -30.547508328849794
+      },
+      {
+        "side": "L",
+        "swing": 0.76875,
+        "time": 0.6779000000000001,
+        "footPitchDegrees": -11.227549907374895,
+        "shankPitchDegrees": 18.305622867917563,
+        "relativeFlexionDegrees": -29.533172775292456
+      },
+      {
+        "side": "L",
+        "swing": 0.775,
+        "time": 0.6812,
+        "footPitchDegrees": -11.13954144083463,
+        "shankPitchDegrees": 17.39970218463123,
+        "relativeFlexionDegrees": -28.53924362546586
+      },
+      {
+        "side": "L",
+        "swing": 0.78125,
+        "time": 0.6845000000000001,
+        "footPitchDegrees": -11.036346451943437,
+        "shankPitchDegrees": 16.52567938896031,
+        "relativeFlexionDegrees": -27.562025840903747
+      },
+      {
+        "side": "L",
+        "swing": 0.7875,
+        "time": 0.6878,
+        "footPitchDegrees": -10.917865968077832,
+        "shankPitchDegrees": 15.679669669123733,
+        "relativeFlexionDegrees": -26.597535637201567
+      },
+      {
+        "side": "L",
+        "swing": 0.79375,
+        "time": 0.6911,
+        "footPitchDegrees": -10.780764884234717,
+        "shankPitchDegrees": 14.860285993136255,
+        "relativeFlexionDegrees": -25.641050877370972
+      },
+      {
+        "side": "L",
+        "swing": 0.8,
+        "time": 0.6944000000000001,
+        "footPitchDegrees": -10.627368175089131,
+        "shankPitchDegrees": 14.054850314441387,
+        "relativeFlexionDegrees": -24.68221848953052
+      },
+      {
+        "side": "L",
+        "swing": 0.80625,
+        "time": 0.6977,
+        "footPitchDegrees": -10.460191859354522,
+        "shankPitchDegrees": 13.251689751975674,
+        "relativeFlexionDegrees": -23.711881611330195
+      },
+      {
+        "side": "L",
+        "swing": 0.8125,
+        "time": 0.7010000000000001,
+        "footPitchDegrees": -10.279976998297595,
+        "shankPitchDegrees": 12.441673168910006,
+        "relativeFlexionDegrees": -22.7216501672076
+      },
+      {
+        "side": "L",
+        "swing": 0.81875,
+        "time": 0.7043,
+        "footPitchDegrees": -10.087551923044341,
+        "shankPitchDegrees": 11.615542175937454,
+        "relativeFlexionDegrees": -21.703094098981794
+      },
+      {
+        "side": "L",
+        "swing": 0.825,
+        "time": 0.7076,
+        "footPitchDegrees": -9.88112762756688,
+        "shankPitchDegrees": 10.755310841155891,
+        "relativeFlexionDegrees": -20.636438468722773
+      },
+      {
+        "side": "L",
+        "swing": 0.83125,
+        "time": 0.7109000000000001,
+        "footPitchDegrees": -9.665204784921682,
+        "shankPitchDegrees": 9.860206464278724,
+        "relativeFlexionDegrees": -19.525411249200406
+      },
+      {
+        "side": "L",
+        "swing": 0.8375,
+        "time": 0.7142000000000001,
+        "footPitchDegrees": -9.441630657629725,
+        "shankPitchDegrees": 8.929456499198093,
+        "relativeFlexionDegrees": -18.37108715682782
+      },
+      {
+        "side": "L",
+        "swing": 0.84375,
+        "time": 0.7175,
+        "footPitchDegrees": -9.211701791221754,
+        "shankPitchDegrees": 7.961548976868993,
+        "relativeFlexionDegrees": -17.173250768090746
+      },
+      {
+        "side": "L",
+        "swing": 0.85,
+        "time": 0.7208000000000001,
+        "footPitchDegrees": -8.976716977356256,
+        "shankPitchDegrees": 6.955202799804105,
+        "relativeFlexionDegrees": -15.93191977716036
+      },
+      {
+        "side": "L",
+        "swing": 0.85625,
+        "time": 0.7241,
+        "footPitchDegrees": -8.737963736014118,
+        "shankPitchDegrees": 5.8990013152635195,
+        "relativeFlexionDegrees": -14.636965051277638
+      },
+      {
+        "side": "L",
+        "swing": 0.8625,
+        "time": 0.7274,
+        "footPitchDegrees": -8.49859739473791,
+        "shankPitchDegrees": 4.8072097973996035,
+        "relativeFlexionDegrees": -13.305807192137515
+      },
+      {
+        "side": "L",
+        "swing": 0.86875,
+        "time": 0.7307000000000001,
+        "footPitchDegrees": -8.26006041076834,
+        "shankPitchDegrees": 3.679165536345303,
+        "relativeFlexionDegrees": -11.939225947113643
+      },
+      {
+        "side": "L",
+        "swing": 0.875,
+        "time": 0.734,
+        "footPitchDegrees": -8.02378589158894,
+        "shankPitchDegrees": 2.514788608310414,
+        "relativeFlexionDegrees": -10.538574499899354
+      },
+      {
+        "side": "L",
+        "swing": 0.88125,
+        "time": 0.7373000000000001,
+        "footPitchDegrees": -7.791696632477911,
+        "shankPitchDegrees": 1.3120207911662745,
+        "relativeFlexionDegrees": -9.103717423644186
+      },
+      {
+        "side": "L",
+        "swing": 0.8875,
+        "time": 0.7406,
+        "footPitchDegrees": -7.567261051866749,
+        "shankPitchDegrees": 0.07218597286121951,
+        "relativeFlexionDegrees": -7.639447024727969
+      },
+      {
+        "side": "L",
+        "swing": 0.89375,
+        "time": 0.7439,
+        "footPitchDegrees": -7.350677520070337,
+        "shankPitchDegrees": -1.1861396922371372,
+        "relativeFlexionDegrees": -6.1645378278332
+      },
+      {
+        "side": "L",
+        "swing": 0.9,
+        "time": 0.7472000000000001,
+        "footPitchDegrees": -7.1431530916917705,
+        "shankPitchDegrees": -2.452345059611628,
+        "relativeFlexionDegrees": -4.690808032080143
+      },
+      {
+        "side": "L",
+        "swing": 0.90625,
+        "time": 0.7505000000000001,
+        "footPitchDegrees": -6.945840111695991,
+        "shankPitchDegrees": -3.7139645605945475,
+        "relativeFlexionDegrees": -3.231875551101443
+      },
+      {
+        "side": "L",
+        "swing": 0.9125,
+        "time": 0.7538,
+        "footPitchDegrees": -6.7617970472489946,
+        "shankPitchDegrees": -4.948378558930654,
+        "relativeFlexionDegrees": -1.8134184883183408
+      },
+      {
+        "side": "L",
+        "swing": 0.91875,
+        "time": 0.7571,
+        "footPitchDegrees": -6.593356231647871,
+        "shankPitchDegrees": -6.1147254491263805,
+        "relativeFlexionDegrees": -0.47863078252149016
+      },
+      {
+        "side": "L",
+        "swing": 0.925,
+        "time": 0.7604000000000001,
+        "footPitchDegrees": -6.438798168012225,
+        "shankPitchDegrees": -7.186681250419012,
+        "relativeFlexionDegrees": 0.747883082406787
+      },
+      {
+        "side": "L",
+        "swing": 0.93125,
+        "time": 0.7637,
+        "footPitchDegrees": -6.298679603822176,
+        "shankPitchDegrees": -8.128316925182594,
+        "relativeFlexionDegrees": 1.8296373213604173
+      },
+      {
+        "side": "L",
+        "swing": 0.9375,
+        "time": 0.767,
+        "footPitchDegrees": -6.173458954847954,
+        "shankPitchDegrees": -8.899827546274954,
+        "relativeFlexionDegrees": 2.7263685914270006
+      },
+      {
+        "side": "L",
+        "swing": 0.94375,
+        "time": 0.7703,
+        "footPitchDegrees": -6.066843975752326,
+        "shankPitchDegrees": -9.38868750015626,
+        "relativeFlexionDegrees": 3.321843524403935
+      },
+      {
+        "side": "L",
+        "swing": 0.95,
+        "time": 0.7736000000000001,
+        "footPitchDegrees": -5.977565868179195,
+        "shankPitchDegrees": -9.536335023936152,
+        "relativeFlexionDegrees": 3.5587691557569565
+      },
+      {
+        "side": "L",
+        "swing": 0.95625,
+        "time": 0.7769,
+        "footPitchDegrees": -5.903172953551528,
+        "shankPitchDegrees": -9.356603172888825,
+        "relativeFlexionDegrees": 3.4534302193372968
+      },
+      {
+        "side": "L",
+        "swing": 0.9625,
+        "time": 0.7802,
+        "footPitchDegrees": -5.84315989965503,
+        "shankPitchDegrees": -8.850531598376888,
+        "relativeFlexionDegrees": 3.007371698721858
+      },
+      {
+        "side": "L",
+        "swing": 0.96875,
+        "time": 0.7835000000000001,
+        "footPitchDegrees": -5.796872166915679,
+        "shankPitchDegrees": -8.034391129008055,
+        "relativeFlexionDegrees": 2.237518962092376
+      },
+      {
+        "side": "L",
+        "swing": 0.975,
+        "time": 0.7868,
+        "footPitchDegrees": -5.76641517178353,
+        "shankPitchDegrees": -6.897440480307941,
+        "relativeFlexionDegrees": 1.1310253085244115
+      },
+      {
+        "side": "L",
+        "swing": 0.98125,
+        "time": 0.7901,
+        "footPitchDegrees": -5.746858739419189,
+        "shankPitchDegrees": -5.581468999653513,
+        "relativeFlexionDegrees": -0.16538973976567561
+      },
+      {
+        "side": "L",
+        "swing": 0.9875,
+        "time": 0.7934000000000001,
+        "footPitchDegrees": -5.735566177803935,
+        "shankPitchDegrees": -4.1539950539797,
+        "relativeFlexionDegrees": -1.5815711238242347
+      },
+      {
+        "side": "L",
+        "swing": 0.99375,
+        "time": 0.7967000000000001,
+        "footPitchDegrees": -5.7305379480980285,
+        "shankPitchDegrees": -2.6631832429718236,
+        "relativeFlexionDegrees": -3.067354705126205
+      },
+      {
+        "side": "L",
+        "swing": 1,
+        "time": 0.8,
+        "footPitchDegrees": -5.729577951308234,
+        "shankPitchDegrees": -1.1551871301232066,
+        "relativeFlexionDegrees": -4.574390821185027
+      },
+      {
+        "side": "R",
+        "swing": 0,
+        "time": 0.672,
+        "footPitchDegrees": 29.794005967944948,
+        "shankPitchDegrees": 45.3119314531233,
+        "relativeFlexionDegrees": -15.517925485178353
+      },
+      {
+        "side": "R",
+        "swing": 0.00625,
+        "time": 0.6753,
+        "footPitchDegrees": 30.174019218339456,
+        "shankPitchDegrees": 45.25453289726565,
+        "relativeFlexionDegrees": -15.080513678926192
+      },
+      {
+        "side": "R",
+        "swing": 0.0125,
+        "time": 0.6786000000000001,
+        "footPitchDegrees": 30.56244537467966,
+        "shankPitchDegrees": 45.24561152452638,
+        "relativeFlexionDegrees": -14.683166149846723
+      },
+      {
+        "side": "R",
+        "swing": 0.01875,
+        "time": 0.6819000000000001,
+        "footPitchDegrees": 30.966660392502153,
+        "shankPitchDegrees": 45.32886427875526,
+        "relativeFlexionDegrees": -14.36220388625311
+      },
+      {
+        "side": "R",
+        "swing": 0.025,
+        "time": 0.6852,
+        "footPitchDegrees": 31.38817833605441,
+        "shankPitchDegrees": 45.518830215994605,
+        "relativeFlexionDegrees": -14.130651879940196
+      },
+      {
+        "side": "R",
+        "swing": 0.03125,
+        "time": 0.6885000000000001,
+        "footPitchDegrees": 31.828668800193608,
+        "shankPitchDegrees": 45.83162115184923,
+        "relativeFlexionDegrees": -14.002952351655619
+      },
+      {
+        "side": "R",
+        "swing": 0.0375,
+        "time": 0.6918,
+        "footPitchDegrees": 32.28907320193465,
+        "shankPitchDegrees": 46.280131888780964,
+        "relativeFlexionDegrees": -13.991058686846316
+      },
+      {
+        "side": "R",
+        "swing": 0.04375,
+        "time": 0.6951,
+        "footPitchDegrees": 32.774660210639475,
+        "shankPitchDegrees": 46.91724924949034,
+        "relativeFlexionDegrees": -14.142589038850865
+      },
+      {
+        "side": "R",
+        "swing": 0.05,
+        "time": 0.6984,
+        "footPitchDegrees": 33.27795254535427,
+        "shankPitchDegrees": 47.70635549463235,
+        "relativeFlexionDegrees": -14.42840294927808
+      },
+      {
+        "side": "R",
+        "swing": 0.05625,
+        "time": 0.7017,
+        "footPitchDegrees": 33.79512849559715,
+        "shankPitchDegrees": 48.63267947691829,
+        "relativeFlexionDegrees": -14.837550981321144
+      },
+      {
+        "side": "R",
+        "swing": 0.0625,
+        "time": 0.7050000000000001,
+        "footPitchDegrees": 34.32308225069562,
+        "shankPitchDegrees": 49.68753061506174,
+        "relativeFlexionDegrees": -15.364448364366119
+      },
+      {
+        "side": "R",
+        "swing": 0.06875,
+        "time": 0.7083,
+        "footPitchDegrees": 34.85834930798225,
+        "shankPitchDegrees": 50.861522638660986,
+        "relativeFlexionDegrees": -16.003173330678734
+      },
+      {
+        "side": "R",
+        "swing": 0.075,
+        "time": 0.7116,
+        "footPitchDegrees": 35.394773186936064,
+        "shankPitchDegrees": 52.16468344844719,
+        "relativeFlexionDegrees": -16.76991026151113
+      },
+      {
+        "side": "R",
+        "swing": 0.08125,
+        "time": 0.7149000000000001,
+        "footPitchDegrees": 35.925172674769044,
+        "shankPitchDegrees": 53.54066333617229,
+        "relativeFlexionDegrees": -17.615490661403243
+      },
+      {
+        "side": "R",
+        "swing": 0.0875,
+        "time": 0.7182000000000001,
+        "footPitchDegrees": 36.44488725458331,
+        "shankPitchDegrees": 54.973708411862425,
+        "relativeFlexionDegrees": -18.52882115727912
+      },
+      {
+        "side": "R",
+        "swing": 0.09375,
+        "time": 0.7215,
+        "footPitchDegrees": 36.94926687006066,
+        "shankPitchDegrees": 56.44817805450412,
+        "relativeFlexionDegrees": -19.498911184443458
+      },
+      {
+        "side": "R",
+        "swing": 0.1,
+        "time": 0.7248000000000001,
+        "footPitchDegrees": 37.431403304311786,
+        "shankPitchDegrees": 57.94858364937798,
+        "relativeFlexionDegrees": -20.517180345066194
+      },
+      {
+        "side": "R",
+        "swing": 0.10625,
+        "time": 0.7281,
+        "footPitchDegrees": 37.878691130176314,
+        "shankPitchDegrees": 59.45051195057786,
+        "relativeFlexionDegrees": -21.57182082040155
+      },
+      {
+        "side": "R",
+        "swing": 0.1125,
+        "time": 0.7314,
+        "footPitchDegrees": 38.29303071083794,
+        "shankPitchDegrees": 60.93446610099635,
+        "relativeFlexionDegrees": -22.641435390158414
+      },
+      {
+        "side": "R",
+        "swing": 0.11875,
+        "time": 0.7347,
+        "footPitchDegrees": 38.67109214380545,
+        "shankPitchDegrees": 62.38823767193263,
+        "relativeFlexionDegrees": -23.717145528127176
+      },
+      {
+        "side": "R",
+        "swing": 0.125,
+        "time": 0.738,
+        "footPitchDegrees": 39.009915253369165,
+        "shankPitchDegrees": 63.80033298217125,
+        "relativeFlexionDegrees": -24.790417728802083
+      },
+      {
+        "side": "R",
+        "swing": 0.13125,
+        "time": 0.7413000000000001,
+        "footPitchDegrees": 39.30025018593382,
+        "shankPitchDegrees": 65.14975173395545,
+        "relativeFlexionDegrees": -25.849501548021635
+      },
+      {
+        "side": "R",
+        "swing": 0.1375,
+        "time": 0.7446,
+        "footPitchDegrees": 39.537447151154716,
+        "shankPitchDegrees": 66.41769049502959,
+        "relativeFlexionDegrees": -26.880243343874874
+      },
+      {
+        "side": "R",
+        "swing": 0.14375,
+        "time": 0.7479,
+        "footPitchDegrees": 39.73064119375554,
+        "shankPitchDegrees": 67.60977491762584,
+        "relativeFlexionDegrees": -27.879133723870304
+      },
+      {
+        "side": "R",
+        "swing": 0.15,
+        "time": 0.7512000000000001,
+        "footPitchDegrees": 39.88106746380923,
+        "shankPitchDegrees": 68.72163272661719,
+        "relativeFlexionDegrees": -28.840565262807957
+      },
+      {
+        "side": "R",
+        "swing": 0.15625,
+        "time": 0.7545000000000001,
+        "footPitchDegrees": 39.990689961781385,
+        "shankPitchDegrees": 69.7500835725736,
+        "relativeFlexionDegrees": -29.759393610792216
+      },
+      {
+        "side": "R",
+        "swing": 0.1625,
+        "time": 0.7578,
+        "footPitchDegrees": 40.05602939331167,
+        "shankPitchDegrees": 70.67533308345413,
+        "relativeFlexionDegrees": -30.619303690142466
+      },
+      {
+        "side": "R",
+        "swing": 0.16875,
+        "time": 0.7611000000000001,
+        "footPitchDegrees": 40.089415146596224,
+        "shankPitchDegrees": 71.50852979991018,
+        "relativeFlexionDegrees": -31.419114653313954
+      },
+      {
+        "side": "R",
+        "swing": 0.175,
+        "time": 0.7644,
+        "footPitchDegrees": 40.10374083972094,
+        "shankPitchDegrees": 72.26821233663169,
+        "relativeFlexionDegrees": -32.16447149691075
+      },
+      {
+        "side": "R",
+        "swing": 0.18125,
+        "time": 0.7677,
+        "footPitchDegrees": 40.105760700809995,
+        "shankPitchDegrees": 72.96284965292597,
+        "relativeFlexionDegrees": -32.85708895211597
+      },
+      {
+        "side": "R",
+        "swing": 0.1875,
+        "time": 0.771,
+        "footPitchDegrees": 40.10021146693115,
+        "shankPitchDegrees": 73.60220887275467,
+        "relativeFlexionDegrees": -33.50199740582352
+      },
+      {
+        "side": "R",
+        "swing": 0.19375,
+        "time": 0.7743,
+        "footPitchDegrees": 40.067900137139844,
+        "shankPitchDegrees": 74.1900618140032,
+        "relativeFlexionDegrees": -34.12216167686336
+      },
+      {
+        "side": "R",
+        "swing": 0.2,
+        "time": 0.7776000000000001,
+        "footPitchDegrees": 39.99272257850192,
+        "shankPitchDegrees": 74.75909621306609,
+        "relativeFlexionDegrees": -34.76637363456417
+      },
+      {
+        "side": "R",
+        "swing": 0.20625,
+        "time": 0.7809,
+        "footPitchDegrees": 39.86638277084567,
+        "shankPitchDegrees": 75.3220105104431,
+        "relativeFlexionDegrees": -35.45562773959744
+      },
+      {
+        "side": "R",
+        "swing": 0.2125,
+        "time": 0.7842,
+        "footPitchDegrees": 39.68017659453295,
+        "shankPitchDegrees": 75.88322733963061,
+        "relativeFlexionDegrees": -36.203050745097656
+      },
+      {
+        "side": "R",
+        "swing": 0.21875,
+        "time": 0.7875000000000001,
+        "footPitchDegrees": 39.426429749163,
+        "shankPitchDegrees": 76.4423499864206,
+        "relativeFlexionDegrees": -37.015920237257596
+      },
+      {
+        "side": "R",
+        "swing": 0.225,
+        "time": 0.7908000000000001,
+        "footPitchDegrees": 39.06944823828976,
+        "shankPitchDegrees": 76.99576102203444,
+        "relativeFlexionDegrees": -37.926312783744685
+      },
+      {
+        "side": "R",
+        "swing": 0.23125,
+        "time": 0.7941,
+        "footPitchDegrees": 38.63080321386528,
+        "shankPitchDegrees": 77.54260378419782,
+        "relativeFlexionDegrees": -38.911800570332545
+      },
+      {
+        "side": "R",
+        "swing": 0.2375,
+        "time": 0.7974000000000001,
+        "footPitchDegrees": 38.1087498827972,
+        "shankPitchDegrees": 78.08120909702596,
+        "relativeFlexionDegrees": -39.97245921422876
+      },
+      {
+        "side": "R",
+        "swing": 0.24375,
+        "time": 0.8007000000000001,
+        "footPitchDegrees": 37.50228049638682,
+        "shankPitchDegrees": 78.60977475898922,
+        "relativeFlexionDegrees": -41.1074942626024
+      },
+      {
+        "side": "R",
+        "swing": 0.25,
+        "time": 0.804,
+        "footPitchDegrees": 36.805503243900205,
+        "shankPitchDegrees": 79.12529043158465,
+        "relativeFlexionDegrees": -42.31978718768444
+      },
+      {
+        "side": "R",
+        "swing": 0.25625,
+        "time": 0.8073,
+        "footPitchDegrees": 36.00267985562674,
+        "shankPitchDegrees": 79.61972468418027,
+        "relativeFlexionDegrees": -43.61704482855353
+      },
+      {
+        "side": "R",
+        "swing": 0.2625,
+        "time": 0.8106,
+        "footPitchDegrees": 35.12141355979781,
+        "shankPitchDegrees": 80.09362966986252,
+        "relativeFlexionDegrees": -44.972216110064714
+      },
+      {
+        "side": "R",
+        "swing": 0.26875,
+        "time": 0.8139000000000001,
+        "footPitchDegrees": 34.16545077100625,
+        "shankPitchDegrees": 80.54417994567513,
+        "relativeFlexionDegrees": -46.37872917466888
+      },
+      {
+        "side": "R",
+        "swing": 0.275,
+        "time": 0.8172,
+        "footPitchDegrees": 33.138999620986944,
+        "shankPitchDegrees": 80.96860285895045,
+        "relativeFlexionDegrees": -47.829603237963504
+      },
+      {
+        "side": "R",
+        "swing": 0.28125,
+        "time": 0.8205,
+        "footPitchDegrees": 32.03911439606033,
+        "shankPitchDegrees": 81.35962894788489,
+        "relativeFlexionDegrees": -49.32051455182456
+      },
+      {
+        "side": "R",
+        "swing": 0.2875,
+        "time": 0.8238000000000001,
+        "footPitchDegrees": 30.871268663530703,
+        "shankPitchDegrees": 81.71021729001161,
+        "relativeFlexionDegrees": -50.838948626480914
+      },
+      {
+        "side": "R",
+        "swing": 0.29375,
+        "time": 0.8271000000000001,
+        "footPitchDegrees": 29.65620066972284,
+        "shankPitchDegrees": 82.02479133059704,
+        "relativeFlexionDegrees": -52.368590660874204
+      },
+      {
+        "side": "R",
+        "swing": 0.3,
+        "time": 0.8304,
+        "footPitchDegrees": 28.40066774074741,
+        "shankPitchDegrees": 82.30155382118302,
+        "relativeFlexionDegrees": -53.90088608043561
+      },
+      {
+        "side": "R",
+        "swing": 0.30625,
+        "time": 0.8337000000000001,
+        "footPitchDegrees": 27.111613667250648,
+        "shankPitchDegrees": 82.53890485791804,
+        "relativeFlexionDegrees": -55.42729119066739
+      },
+      {
+        "side": "R",
+        "swing": 0.3125,
+        "time": 0.8370000000000001,
+        "footPitchDegrees": 25.793607346994435,
+        "shankPitchDegrees": 82.72678431615817,
+        "relativeFlexionDegrees": -56.93317696916374
+      },
+      {
+        "side": "R",
+        "swing": 0.31875,
+        "time": 0.8403,
+        "footPitchDegrees": 24.4611500527208,
+        "shankPitchDegrees": 82.86614681159476,
+        "relativeFlexionDegrees": -58.40499675887396
+      },
+      {
+        "side": "R",
+        "swing": 0.325,
+        "time": 0.8436,
+        "footPitchDegrees": 23.125253307661104,
+        "shankPitchDegrees": 82.96311099116586,
+        "relativeFlexionDegrees": -59.83785768350476
+      },
+      {
+        "side": "R",
+        "swing": 0.33125,
+        "time": 0.8469,
+        "footPitchDegrees": 21.793205123733227,
+        "shankPitchDegrees": 83.01785373803702,
+        "relativeFlexionDegrees": -61.22464861430379
+      },
+      {
+        "side": "R",
+        "swing": 0.3375,
+        "time": 0.8502000000000001,
+        "footPitchDegrees": 20.472204698447463,
+        "shankPitchDegrees": 83.03078675016643,
+        "relativeFlexionDegrees": -62.558582051718965
+      },
+      {
+        "side": "R",
+        "swing": 0.34375,
+        "time": 0.8535,
+        "footPitchDegrees": 19.177851252134214,
+        "shankPitchDegrees": 82.99201158853586,
+        "relativeFlexionDegrees": -63.81416033640164
+      },
+      {
+        "side": "R",
+        "swing": 0.35,
+        "time": 0.8568,
+        "footPitchDegrees": 17.916964617093793,
+        "shankPitchDegrees": 82.91150982033336,
+        "relativeFlexionDegrees": -64.99454520323957
+      },
+      {
+        "side": "R",
+        "swing": 0.35625,
+        "time": 0.8601000000000001,
+        "footPitchDegrees": 16.69354564590112,
+        "shankPitchDegrees": 82.79436801508764,
+        "relativeFlexionDegrees": -66.10082236918652
+      },
+      {
+        "side": "R",
+        "swing": 0.3625,
+        "time": 0.8634000000000001,
+        "footPitchDegrees": 15.512932776272818,
+        "shankPitchDegrees": 82.6424675428822,
+        "relativeFlexionDegrees": -67.12953476660938
+      },
+      {
+        "side": "R",
+        "swing": 0.36875,
+        "time": 0.8667,
+        "footPitchDegrees": 14.38010039368037,
+        "shankPitchDegrees": 82.45782697367471,
+        "relativeFlexionDegrees": -68.07772657999435
+      },
+      {
+        "side": "R",
+        "swing": 0.375,
+        "time": 0.8700000000000001,
+        "footPitchDegrees": 13.319683478178122,
+        "shankPitchDegrees": 82.23383638115864,
+        "relativeFlexionDegrees": -68.91415290298052
+      },
+      {
+        "side": "R",
+        "swing": 0.38125,
+        "time": 0.8733000000000001,
+        "footPitchDegrees": 12.318501195108261,
+        "shankPitchDegrees": 81.98384698198812,
+        "relativeFlexionDegrees": -69.66534578687987
+      },
+      {
+        "side": "R",
+        "swing": 0.3875,
+        "time": 0.8766,
+        "footPitchDegrees": 11.377380112440832,
+        "shankPitchDegrees": 81.71065529205136,
+        "relativeFlexionDegrees": -70.33327517961052
+      },
+      {
+        "side": "R",
+        "swing": 0.39375,
+        "time": 0.8799,
+        "footPitchDegrees": 10.497228975558997,
+        "shankPitchDegrees": 81.41662677964501,
+        "relativeFlexionDegrees": -70.91939780408602
+      },
+      {
+        "side": "R",
+        "swing": 0.4,
+        "time": 0.8832000000000001,
+        "footPitchDegrees": 9.681537966761088,
+        "shankPitchDegrees": 81.10328980226717,
+        "relativeFlexionDegrees": -71.42175183550609
+      },
+      {
+        "side": "R",
+        "swing": 0.40625,
+        "time": 0.8865000000000001,
+        "footPitchDegrees": 8.942352433435175,
+        "shankPitchDegrees": 80.77054046921884,
+        "relativeFlexionDegrees": -71.82818803578367
+      },
+      {
+        "side": "R",
+        "swing": 0.4125,
+        "time": 0.8898,
+        "footPitchDegrees": 8.257139594012086,
+        "shankPitchDegrees": 80.44124300201281,
+        "relativeFlexionDegrees": -72.18410340800072
+      },
+      {
+        "side": "R",
+        "swing": 0.41875,
+        "time": 0.8931,
+        "footPitchDegrees": 7.620830288588427,
+        "shankPitchDegrees": 80.14594526958005,
+        "relativeFlexionDegrees": -72.52511498099163
+      },
+      {
+        "side": "R",
+        "swing": 0.425,
+        "time": 0.8964000000000001,
+        "footPitchDegrees": 7.027423737864976,
+        "shankPitchDegrees": 79.88749361737356,
+        "relativeFlexionDegrees": -72.86006987950859
+      },
+      {
+        "side": "R",
+        "swing": 0.43125,
+        "time": 0.8997,
+        "footPitchDegrees": 6.472368109638252,
+        "shankPitchDegrees": 79.60485143162562,
+        "relativeFlexionDegrees": -73.13248332198737
+      },
+      {
+        "side": "R",
+        "swing": 0.4375,
+        "time": 0.903,
+        "footPitchDegrees": 5.9409605393972935,
+        "shankPitchDegrees": 79.28443189152094,
+        "relativeFlexionDegrees": -73.34347135212364
+      },
+      {
+        "side": "R",
+        "swing": 0.44375,
+        "time": 0.9063,
+        "footPitchDegrees": 5.414849114808047,
+        "shankPitchDegrees": 78.9259860195252,
+        "relativeFlexionDegrees": -73.51113690471715
+      },
+      {
+        "side": "R",
+        "swing": 0.45,
+        "time": 0.9096000000000001,
+        "footPitchDegrees": 4.889292312736911,
+        "shankPitchDegrees": 78.52600799261042,
+        "relativeFlexionDegrees": -73.6367156798735
+      },
+      {
+        "side": "R",
+        "swing": 0.45625,
+        "time": 0.9129,
+        "footPitchDegrees": 4.361462489268778,
+        "shankPitchDegrees": 78.08176295723668,
+        "relativeFlexionDegrees": -73.7203004679679
+      },
+      {
+        "side": "R",
+        "swing": 0.4625,
+        "time": 0.9162,
+        "footPitchDegrees": 3.8293517949319535,
+        "shankPitchDegrees": 77.58196088145142,
+        "relativeFlexionDegrees": -73.75260908651947
+      },
+      {
+        "side": "R",
+        "swing": 0.46875,
+        "time": 0.9195000000000001,
+        "footPitchDegrees": 3.291851626664246,
+        "shankPitchDegrees": 77.02572334792094,
+        "relativeFlexionDegrees": -73.7338717212567
+      },
+      {
+        "side": "R",
+        "swing": 0.475,
+        "time": 0.9228000000000001,
+        "footPitchDegrees": 2.749288472523202,
+        "shankPitchDegrees": 76.42014153286411,
+        "relativeFlexionDegrees": -73.6708530603409
+      },
+      {
+        "side": "R",
+        "swing": 0.48125,
+        "time": 0.9261,
+        "footPitchDegrees": 2.2015219498722596,
+        "shankPitchDegrees": 75.7647735793005,
+        "relativeFlexionDegrees": -73.56325162942824
+      },
+      {
+        "side": "R",
+        "swing": 0.4875,
+        "time": 0.9294000000000001,
+        "footPitchDegrees": 1.648539428605687,
+        "shankPitchDegrees": 75.0593213581158,
+        "relativeFlexionDegrees": -73.41078192951011
+      },
+      {
+        "side": "R",
+        "swing": 0.49375,
+        "time": 0.9327000000000001,
+        "footPitchDegrees": 1.0893649427222272,
+        "shankPitchDegrees": 74.29057220099031,
+        "relativeFlexionDegrees": -73.20120725826808
+      },
+      {
+        "side": "R",
+        "swing": 0.5,
+        "time": 0.936,
+        "footPitchDegrees": 0.5255870640701635,
+        "shankPitchDegrees": 73.46676320401492,
+        "relativeFlexionDegrees": -72.94117613994476
+      },
+      {
+        "side": "R",
+        "swing": 0.50625,
+        "time": 0.9393,
+        "footPitchDegrees": -0.041616659618513324,
+        "shankPitchDegrees": 72.67554795388021,
+        "relativeFlexionDegrees": -72.71716461349872
+      },
+      {
+        "side": "R",
+        "swing": 0.5125,
+        "time": 0.9426,
+        "footPitchDegrees": -0.6114593594392925,
+        "shankPitchDegrees": 71.92683494315817,
+        "relativeFlexionDegrees": -72.53829430259746
+      },
+      {
+        "side": "R",
+        "swing": 0.51875,
+        "time": 0.9459000000000001,
+        "footPitchDegrees": -1.1830705565521498,
+        "shankPitchDegrees": 71.18776996197556,
+        "relativeFlexionDegrees": -72.37084051852771
+      },
+      {
+        "side": "R",
+        "swing": 0.525,
+        "time": 0.9492,
+        "footPitchDegrees": -1.754968285804756,
+        "shankPitchDegrees": 70.37003648326152,
+        "relativeFlexionDegrees": -72.12500476906627
+      },
+      {
+        "side": "R",
+        "swing": 0.53125,
+        "time": 0.9525,
+        "footPitchDegrees": -2.3252294096642934,
+        "shankPitchDegrees": 69.4900425466481,
+        "relativeFlexionDegrees": -71.81527195631239
+      },
+      {
+        "side": "R",
+        "swing": 0.5375,
+        "time": 0.9558000000000001,
+        "footPitchDegrees": -2.8925681095158153,
+        "shankPitchDegrees": 68.54922025241048,
+        "relativeFlexionDegrees": -71.4417883619263
+      },
+      {
+        "side": "R",
+        "swing": 0.54375,
+        "time": 0.9591,
+        "footPitchDegrees": -3.4556676954381,
+        "shankPitchDegrees": 67.54767206685933,
+        "relativeFlexionDegrees": -71.00333976229743
+      },
+      {
+        "side": "R",
+        "swing": 0.55,
+        "time": 0.9624,
+        "footPitchDegrees": -4.012847320983278,
+        "shankPitchDegrees": 66.48338590594257,
+        "relativeFlexionDegrees": -70.49623322692585
+      },
+      {
+        "side": "R",
+        "swing": 0.55625,
+        "time": 0.9657000000000001,
+        "footPitchDegrees": -4.5596481461290255,
+        "shankPitchDegrees": 65.34200681909773,
+        "relativeFlexionDegrees": -69.90165496522675
+      },
+      {
+        "side": "R",
+        "swing": 0.5625,
+        "time": 0.9690000000000001,
+        "footPitchDegrees": -5.09639750985904,
+        "shankPitchDegrees": 64.1444654283463,
+        "relativeFlexionDegrees": -69.24086293820534
+      },
+      {
+        "side": "R",
+        "swing": 0.56875,
+        "time": 0.9723,
+        "footPitchDegrees": -5.6216390010529285,
+        "shankPitchDegrees": 62.892917228827805,
+        "relativeFlexionDegrees": -68.51455622988074
+      },
+      {
+        "side": "R",
+        "swing": 0.575,
+        "time": 0.9756,
+        "footPitchDegrees": -6.13392353679042,
+        "shankPitchDegrees": 61.58974058600273,
+        "relativeFlexionDegrees": -67.72366412279315
+      },
+      {
+        "side": "R",
+        "swing": 0.58125,
+        "time": 0.9789000000000001,
+        "footPitchDegrees": -6.629963953938774,
+        "shankPitchDegrees": 60.232749956571055,
+        "relativeFlexionDegrees": -66.86271391050983
+      },
+      {
+        "side": "R",
+        "swing": 0.5875,
+        "time": 0.9822000000000001,
+        "footPitchDegrees": -7.105060133667568,
+        "shankPitchDegrees": 58.82131447205098,
+        "relativeFlexionDegrees": -65.92637460571855
+      },
+      {
+        "side": "R",
+        "swing": 0.59375,
+        "time": 0.9855,
+        "footPitchDegrees": -7.561535286805796,
+        "shankPitchDegrees": 57.37103209015046,
+        "relativeFlexionDegrees": -64.93256737695626
+      },
+      {
+        "side": "R",
+        "swing": 0.6,
+        "time": 0.9888,
+        "footPitchDegrees": -7.99815390490119,
+        "shankPitchDegrees": 55.88563279866436,
+        "relativeFlexionDegrees": -63.88378670356555
+      },
+      {
+        "side": "R",
+        "swing": 0.60625,
+        "time": 0.9921000000000001,
+        "footPitchDegrees": -8.413731852125592,
+        "shankPitchDegrees": 54.368958028737175,
+        "relativeFlexionDegrees": -62.78268988086277
+      },
+      {
+        "side": "R",
+        "swing": 0.6125,
+        "time": 0.9954000000000001,
+        "footPitchDegrees": -8.802873872726861,
+        "shankPitchDegrees": 52.82143294896918,
+        "relativeFlexionDegrees": -61.624306821696045
+      },
+      {
+        "side": "R",
+        "swing": 0.61875,
+        "time": 0.9987,
+        "footPitchDegrees": -9.163855247683873,
+        "shankPitchDegrees": 51.25062657775282,
+        "relativeFlexionDegrees": -60.414481825436695
+      },
+      {
+        "side": "R",
+        "swing": 0.625,
+        "time": 1.0020000000000002,
+        "footPitchDegrees": -9.499959353093109,
+        "shankPitchDegrees": 49.66542828629739,
+        "relativeFlexionDegrees": -59.1653876393905
+      },
+      {
+        "side": "R",
+        "swing": 0.63125,
+        "time": 1.0053,
+        "footPitchDegrees": -9.81056892958322,
+        "shankPitchDegrees": 48.07000821556884,
+        "relativeFlexionDegrees": -57.88057714515206
+      },
+      {
+        "side": "R",
+        "swing": 0.6375,
+        "time": 1.0086,
+        "footPitchDegrees": -10.09516213633014,
+        "shankPitchDegrees": 46.468506116070074,
+        "relativeFlexionDegrees": -56.56366825240021
+      },
+      {
+        "side": "R",
+        "swing": 0.64375,
+        "time": 1.0119000000000002,
+        "footPitchDegrees": -10.346748936219582,
+        "shankPitchDegrees": 44.86635230772328,
+        "relativeFlexionDegrees": -55.213101243942866
+      },
+      {
+        "side": "R",
+        "swing": 0.65,
+        "time": 1.0152,
+        "footPitchDegrees": -10.568830098674631,
+        "shankPitchDegrees": 43.27023112834646,
+        "relativeFlexionDegrees": -53.83906122702109
+      },
+      {
+        "side": "R",
+        "swing": 0.65625,
+        "time": 1.0185,
+        "footPitchDegrees": -10.764564964975271,
+        "shankPitchDegrees": 41.68368825655894,
+        "relativeFlexionDegrees": -52.44825322153421
+      },
+      {
+        "side": "R",
+        "swing": 0.6625,
+        "time": 1.0218,
+        "footPitchDegrees": -10.934351875921626,
+        "shankPitchDegrees": 40.11000715645741,
+        "relativeFlexionDegrees": -51.044359032379035
+      },
+      {
+        "side": "R",
+        "swing": 0.66875,
+        "time": 1.0251000000000001,
+        "footPitchDegrees": -11.078728637718248,
+        "shankPitchDegrees": 38.55228775589578,
+        "relativeFlexionDegrees": -49.63101639361403
+      },
+      {
+        "side": "R",
+        "swing": 0.675,
+        "time": 1.0284,
+        "footPitchDegrees": -11.191353795745554,
+        "shankPitchDegrees": 37.02068642896445,
+        "relativeFlexionDegrees": -48.21204022471001
+      },
+      {
+        "side": "R",
+        "swing": 0.68125,
+        "time": 1.0317,
+        "footPitchDegrees": -11.280807141165985,
+        "shankPitchDegrees": 35.51312345674476,
+        "relativeFlexionDegrees": -46.793930597910744
+      },
+      {
+        "side": "R",
+        "swing": 0.6875,
+        "time": 1.0350000000000001,
+        "footPitchDegrees": -11.34970626941266,
+        "shankPitchDegrees": 34.03078171849785,
+        "relativeFlexionDegrees": -45.38048798791051
+      },
+      {
+        "side": "R",
+        "swing": 0.69375,
+        "time": 1.0383,
+        "footPitchDegrees": -11.399862455059424,
+        "shankPitchDegrees": 32.57581269109702,
+        "relativeFlexionDegrees": -43.97567514615645
+      },
+      {
+        "side": "R",
+        "swing": 0.7,
+        "time": 1.0415999999999999,
+        "footPitchDegrees": -11.432919032719703,
+        "shankPitchDegrees": 31.151424516285935,
+        "relativeFlexionDegrees": -42.58434354900564
+      },
+      {
+        "side": "R",
+        "swing": 0.70625,
+        "time": 1.0449000000000002,
+        "footPitchDegrees": -11.44892600275071,
+        "shankPitchDegrees": 29.77123235615883,
+        "relativeFlexionDegrees": -41.22015835890954
+      },
+      {
+        "side": "R",
+        "swing": 0.7125,
+        "time": 1.0482,
+        "footPitchDegrees": -11.456514499412176,
+        "shankPitchDegrees": 28.42755150198343,
+        "relativeFlexionDegrees": -39.88406600139561
+      },
+      {
+        "side": "R",
+        "swing": 0.71875,
+        "time": 1.0514999999999999,
+        "footPitchDegrees": -11.458953962498352,
+        "shankPitchDegrees": 27.12231857485146,
+        "relativeFlexionDegrees": -38.58127253734981
+      },
+      {
+        "side": "R",
+        "swing": 0.725,
+        "time": 1.0548000000000002,
+        "footPitchDegrees": -11.458443050493885,
+        "shankPitchDegrees": 25.85723303335555,
+        "relativeFlexionDegrees": -37.31567608384943
+      },
+      {
+        "side": "R",
+        "swing": 0.73125,
+        "time": 1.0581,
+        "footPitchDegrees": -11.455453069432167,
+        "shankPitchDegrees": 24.63785432623709,
+        "relativeFlexionDegrees": -36.09330739566926
+      },
+      {
+        "side": "R",
+        "swing": 0.7375,
+        "time": 1.0614,
+        "footPitchDegrees": -11.445168708007358,
+        "shankPitchDegrees": 23.47240882636215,
+        "relativeFlexionDegrees": -34.917577534369514
+      },
+      {
+        "side": "R",
+        "swing": 0.74375,
+        "time": 1.0647000000000002,
+        "footPitchDegrees": -11.426311036879705,
+        "shankPitchDegrees": 22.350174535229925,
+        "relativeFlexionDegrees": -33.77648557210963
+      },
+      {
+        "side": "R",
+        "swing": 0.75,
+        "time": 1.068,
+        "footPitchDegrees": -11.397255924300502,
+        "shankPitchDegrees": 21.27103836231574,
+        "relativeFlexionDegrees": -32.668294286616245
+      },
+      {
+        "side": "R",
+        "swing": 0.75625,
+        "time": 1.0713,
+        "footPitchDegrees": -11.356559226924714,
+        "shankPitchDegrees": 20.234645614805803,
+        "relativeFlexionDegrees": -31.591204841730516
+      },
+      {
+        "side": "R",
+        "swing": 0.7625,
+        "time": 1.0746000000000002,
+        "footPitchDegrees": -11.300604506014762,
+        "shankPitchDegrees": 19.246903822835044,
+        "relativeFlexionDegrees": -30.54750832884981
+      },
+      {
+        "side": "R",
+        "swing": 0.76875,
+        "time": 1.0779,
+        "footPitchDegrees": -11.227549907374913,
+        "shankPitchDegrees": 18.305622867917567,
+        "relativeFlexionDegrees": -29.533172775292478
+      },
+      {
+        "side": "R",
+        "swing": 0.775,
+        "time": 1.0812,
+        "footPitchDegrees": -11.139541440834645,
+        "shankPitchDegrees": 17.399702184631245,
+        "relativeFlexionDegrees": -28.53924362546589
+      },
+      {
+        "side": "R",
+        "swing": 0.78125,
+        "time": 1.0845000000000002,
+        "footPitchDegrees": -11.036346451943414,
+        "shankPitchDegrees": 16.525679388960288,
+        "relativeFlexionDegrees": -27.5620258409037
+      },
+      {
+        "side": "R",
+        "swing": 0.7875,
+        "time": 1.0878,
+        "footPitchDegrees": -10.91786596807782,
+        "shankPitchDegrees": 15.679669669123777,
+        "relativeFlexionDegrees": -26.597535637201595
+      },
+      {
+        "side": "R",
+        "swing": 0.79375,
+        "time": 1.0911,
+        "footPitchDegrees": -10.780764884234742,
+        "shankPitchDegrees": 14.860285993136324,
+        "relativeFlexionDegrees": -25.641050877371065
+      },
+      {
+        "side": "R",
+        "swing": 0.8,
+        "time": 1.0944000000000003,
+        "footPitchDegrees": -10.627368175089114,
+        "shankPitchDegrees": 14.054850314441387,
+        "relativeFlexionDegrees": -24.6822184895305
+      },
+      {
+        "side": "R",
+        "swing": 0.80625,
+        "time": 1.0977000000000001,
+        "footPitchDegrees": -10.460191859354511,
+        "shankPitchDegrees": 13.251689751975649,
+        "relativeFlexionDegrees": -23.71188161133016
+      },
+      {
+        "side": "R",
+        "swing": 0.8125,
+        "time": 1.101,
+        "footPitchDegrees": -10.279976998297622,
+        "shankPitchDegrees": 12.441673168910045,
+        "relativeFlexionDegrees": -22.721650167207667
+      },
+      {
+        "side": "R",
+        "swing": 0.81875,
+        "time": 1.1043,
+        "footPitchDegrees": -10.087551923044305,
+        "shankPitchDegrees": 11.615542175937552,
+        "relativeFlexionDegrees": -21.703094098981857
+      },
+      {
+        "side": "R",
+        "swing": 0.825,
+        "time": 1.1076000000000001,
+        "footPitchDegrees": -9.881127627566867,
+        "shankPitchDegrees": 10.755310841155827,
+        "relativeFlexionDegrees": -20.636438468722694
+      },
+      {
+        "side": "R",
+        "swing": 0.83125,
+        "time": 1.1109,
+        "footPitchDegrees": -9.665204784921704,
+        "shankPitchDegrees": 9.860206464278718,
+        "relativeFlexionDegrees": -19.525411249200424
+      },
+      {
+        "side": "R",
+        "swing": 0.8375,
+        "time": 1.1142,
+        "footPitchDegrees": -9.441630657629725,
+        "shankPitchDegrees": 8.929456499198093,
+        "relativeFlexionDegrees": -18.37108715682782
+      },
+      {
+        "side": "R",
+        "swing": 0.84375,
+        "time": 1.1175000000000002,
+        "footPitchDegrees": -9.211701791221774,
+        "shankPitchDegrees": 7.961548976868931,
+        "relativeFlexionDegrees": -17.173250768090703
+      },
+      {
+        "side": "R",
+        "swing": 0.85,
+        "time": 1.1208,
+        "footPitchDegrees": -8.976716977356274,
+        "shankPitchDegrees": 6.955202799804119,
+        "relativeFlexionDegrees": -15.931919777160392
+      },
+      {
+        "side": "R",
+        "swing": 0.85625,
+        "time": 1.1240999999999999,
+        "footPitchDegrees": -8.737963736014123,
+        "shankPitchDegrees": 5.899001315263554,
+        "relativeFlexionDegrees": -14.636965051277677
+      },
+      {
+        "side": "R",
+        "swing": 0.8625,
+        "time": 1.1274000000000002,
+        "footPitchDegrees": -8.498597394737926,
+        "shankPitchDegrees": 4.807209797399547,
+        "relativeFlexionDegrees": -13.305807192137472
+      },
+      {
+        "side": "R",
+        "swing": 0.86875,
+        "time": 1.1307,
+        "footPitchDegrees": -8.260060410768334,
+        "shankPitchDegrees": 3.6791655363453564,
+        "relativeFlexionDegrees": -11.939225947113691
+      },
+      {
+        "side": "R",
+        "swing": 0.875,
+        "time": 1.134,
+        "footPitchDegrees": -8.023785891588942,
+        "shankPitchDegrees": 2.514788608310463,
+        "relativeFlexionDegrees": -10.538574499899404
+      },
+      {
+        "side": "R",
+        "swing": 0.88125,
+        "time": 1.1373000000000002,
+        "footPitchDegrees": -7.791696632477919,
+        "shankPitchDegrees": 1.3120207911662953,
+        "relativeFlexionDegrees": -9.103717423644214
+      },
+      {
+        "side": "R",
+        "swing": 0.8875,
+        "time": 1.1406,
+        "footPitchDegrees": -7.567261051866746,
+        "shankPitchDegrees": 0.07218597286130435,
+        "relativeFlexionDegrees": -7.63944702472805
+      },
+      {
+        "side": "R",
+        "swing": 0.89375,
+        "time": 1.1439,
+        "footPitchDegrees": -7.350677520070351,
+        "shankPitchDegrees": -1.1861396922370808,
+        "relativeFlexionDegrees": -6.1645378278332705
+      },
+      {
+        "side": "R",
+        "swing": 0.9,
+        "time": 1.1472000000000002,
+        "footPitchDegrees": -7.143153091691775,
+        "shankPitchDegrees": -2.452345059611692,
+        "relativeFlexionDegrees": -4.690808032080083
+      },
+      {
+        "side": "R",
+        "swing": 0.90625,
+        "time": 1.1505,
+        "footPitchDegrees": -6.945840111695991,
+        "shankPitchDegrees": -3.7139645605945333,
+        "relativeFlexionDegrees": -3.2318755511014574
+      },
+      {
+        "side": "R",
+        "swing": 0.9125,
+        "time": 1.1538,
+        "footPitchDegrees": -6.7617970472490265,
+        "shankPitchDegrees": -4.9483785589306395,
+        "relativeFlexionDegrees": -1.813418488318387
+      },
+      {
+        "side": "R",
+        "swing": 0.91875,
+        "time": 1.1571,
+        "footPitchDegrees": -6.593356231647851,
+        "shankPitchDegrees": -6.114725449126369,
+        "relativeFlexionDegrees": -0.47863078252148217
+      },
+      {
+        "side": "R",
+        "swing": 0.925,
+        "time": 1.1604,
+        "footPitchDegrees": -6.438798168012228,
+        "shankPitchDegrees": -7.186681250419028,
+        "relativeFlexionDegrees": 0.7478830824067995
+      },
+      {
+        "side": "R",
+        "swing": 0.93125,
+        "time": 1.1637,
+        "footPitchDegrees": -6.298679603822205,
+        "shankPitchDegrees": -8.128316925182586,
+        "relativeFlexionDegrees": 1.8296373213603818
+      },
+      {
+        "side": "R",
+        "swing": 0.9375,
+        "time": 1.167,
+        "footPitchDegrees": -6.173458954847973,
+        "shankPitchDegrees": -8.899827546274906,
+        "relativeFlexionDegrees": 2.726368591426933
+      },
+      {
+        "side": "R",
+        "swing": 0.94375,
+        "time": 1.1703000000000001,
+        "footPitchDegrees": -6.066843975752287,
+        "shankPitchDegrees": -9.388687500156246,
+        "relativeFlexionDegrees": 3.321843524403959
+      },
+      {
+        "side": "R",
+        "swing": 0.95,
+        "time": 1.1736,
+        "footPitchDegrees": -5.977565868179181,
+        "shankPitchDegrees": -9.536335023936138,
+        "relativeFlexionDegrees": 3.5587691557569565
+      },
+      {
+        "side": "R",
+        "swing": 0.95625,
+        "time": 1.1769,
+        "footPitchDegrees": -5.903172953551532,
+        "shankPitchDegrees": -9.356603172888827,
+        "relativeFlexionDegrees": 3.453430219337295
+      },
+      {
+        "side": "R",
+        "swing": 0.9625,
+        "time": 1.1802000000000001,
+        "footPitchDegrees": -5.843159899655035,
+        "shankPitchDegrees": -8.850531598376872,
+        "relativeFlexionDegrees": 3.007371698721837
+      },
+      {
+        "side": "R",
+        "swing": 0.96875,
+        "time": 1.1835,
+        "footPitchDegrees": -5.796872166915652,
+        "shankPitchDegrees": -8.034391129008062,
+        "relativeFlexionDegrees": 2.23751896209241
+      },
+      {
+        "side": "R",
+        "swing": 0.975,
+        "time": 1.1868,
+        "footPitchDegrees": -5.7664151717835335,
+        "shankPitchDegrees": -6.8974404803079175,
+        "relativeFlexionDegrees": 1.131025308524384
+      },
+      {
+        "side": "R",
+        "swing": 0.98125,
+        "time": 1.1901000000000002,
+        "footPitchDegrees": -5.746858739419198,
+        "shankPitchDegrees": -5.581468999653465,
+        "relativeFlexionDegrees": -0.16538973976573335
+      },
+      {
+        "side": "R",
+        "swing": 0.9875,
+        "time": 1.1934,
+        "footPitchDegrees": -5.7355661778039195,
+        "shankPitchDegrees": -4.153995053979732,
+        "relativeFlexionDegrees": -1.5815711238241876
+      },
+      {
+        "side": "R",
+        "swing": 0.99375,
+        "time": 1.1967,
+        "footPitchDegrees": -5.730537948098035,
+        "shankPitchDegrees": -2.663183242971827,
+        "relativeFlexionDegrees": -3.0673547051262076
+      },
+      {
+        "side": "R",
+        "swing": 1,
+        "time": 1.2000000000000002,
+        "footPitchDegrees": -5.72957795130822,
+        "shankPitchDegrees": -1.1551871301231291,
+        "relativeFlexionDegrees": -4.574390821185091
+      }
+    ]
+  }
+}

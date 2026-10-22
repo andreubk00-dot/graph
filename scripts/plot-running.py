@@ -2,7 +2,7 @@
 MPLCONFIGDIR=/tmp/graph-matplotlib python3 scripts/plot-running.py [examples/cyborg]
 """
 from pathlib import Path
-import json,sys
+import json,sys,hashlib
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -26,3 +26,17 @@ for ax,(label,target,response) in zip(axes,channels):
 axes[0].legend();axes[-1].set_xlabel('Time (s), one leg cycle');fig.suptitle('VANGUARD: separate second-order channels, not full-body simulation')
 fig.tight_layout();fig.savefig(out/'run-upper-body.png',dpi=130);plt.close(fig)
 print('Saved authored vertical and secondary-response plots')
+if (out/'ankle-review.json').exists():
+ review=json.loads((out/'ankle-review.json').read_text());assert review['current']['sourceSha256']==hashlib.sha256((out/'cyborg.graph.json').read_bytes()).hexdigest(),'Stale ankle review';current=[s for s in review['current']['samples'] if s['side']=='L']
+ fig,axes=plt.subplots(2,1,figsize=(9,6),sharex=True)
+ q=[s['swing'] for s in current]
+ axes[0].plot(q,[s['shankPitchDegrees'] for s in current],label='Shank pitch')
+ axes[0].plot(q,[s['footPitchDegrees'] for s in current],label='Foot pitch after correction')
+ axes[1].plot(q,[s['relativeFlexionDegrees'] for s in current],label='After: foot relative to shank')
+ if 'previous' in review:
+  previous=[s for s in review['previous']['samples'] if s['side']=='L']
+  axes[1].plot([s['swing'] for s in previous],[s['relativeFlexionDegrees'] for s in previous],'--',label='Before: world-pitch cancellation',color='gray')
+ for ax in axes:ax.axvspan(.25,.5,color='#63c7e8',alpha=.13);ax.grid(alpha=.2);ax.legend();ax.set_ylabel('Degrees, sagittal projection')
+ axes[1].axhline(0,color='black',alpha=.3,linewidth=.7);axes[1].set_xlabel('Swing fraction: toe-off 0 -> landing 1')
+ fig.suptitle('Actual Graph Forge poses: ankle projection, not clinical ROM or mocap')
+ fig.tight_layout();fig.savefig(out/'ankle-review.png',dpi=130);plt.close(fig)
