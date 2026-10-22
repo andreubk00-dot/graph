@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import * as T from 'three';
 import {emptyDocument,validateDocument,applyCommands,poseFor} from '../src/document.js';
 import {geometryFor,createGLB} from '../src/scene.js';
-import {runCycle} from '../src/locomotion.js';
+import {COMBAT_RUN_PROFILE,runningBody,runningFoot,createSoleRoll} from '../src/running-motion.js';
 import {assetBuilder,loft,bodyRings,solveLimb,downTo,V,euler} from './lib/game-asset.js';
 const out=process.argv[2]??'examples/cyborg';await fs.mkdir(out,{recursive:true});
 let doc=emptyDocument();doc.name='VANGUARD M-07 · Armed cyborg run';doc.duration=1.6;doc.fps=30;
@@ -208,7 +208,7 @@ for(const n of doc.nodes)if(n._bind){
 }
 doc=applyCommands(doc,bindings);
 // The add() helper closed over the original document; no nodes are added afterward.
-const cycle=.8,stride=1.8,duty=.30,footPoints={};
+const cycle=COMBAT_RUN_PROFILE.cycle,stride=COMBAT_RUN_PROFILE.distance,duty=COMBAT_RUN_PROFILE.duty,footPoints={},soles={};
 for(const tag of ['L','R']) {
   footPoints[tag]=[];
   for(const n of doc.nodes.filter(n=>n.parent===`foot-${tag}`&&n.type==='mesh')) {
@@ -216,21 +216,26 @@ for(const tag of ['L','R']) {
     for(let i=0;i<g.attributes.position.count;i++)footPoints[tag].push(new T.Vector3().fromBufferAttribute(g.attributes.position,i).applyMatrix4(m));
     g.dispose();
   }
+  soles[tag]=createSoleRoll(footPoints[tag].map(v=>v.toArray()));
 }
-const moving=['hips','spine','head','thigh-L','shin-L','foot-L','thigh-R','shin-R','foot-R','piston-L','pistonrod-L','piston-end-L','piston-R','pistonrod-R','piston-end-R'];
+const moving=['hips','spine','head','thigh-L','shin-L','foot-L','thigh-R','shin-R','foot-R','piston-L','pistonrod-L','piston-end-L','piston-R','pistonrod-R','piston-end-R','rifle','upperarm-L','forearm-L','hand-L','upperarm-R','forearm-R','hand-R'];
 function motion(time,forward=false) {
-  const p=time/cycle,phase=p%1,w=phase*Math.PI*2;
-  const hy=.965-.025*Math.cos(4*Math.PI*(phase-.13)),hx=.012*Math.sin(w);
-  const result={hips:{position:[hx,hy,0],rotation:[0,0,0]},spine:{rotation:[.13,.035*Math.sin(w),-.020*Math.sin(w)]},head:{rotation:[-.075,-.025*Math.sin(w),.012*Math.sin(w)]}};
+  const body=runningBody(time),hipRotation=[0,body.pelvisYaw,body.pelvisRoll];
+  const hipQ=new T.Quaternion().setFromEuler(new T.Euler(...hipRotation));
+  const hipPosition=V([body.lateral,body.height,0]);
+  const gunBase=V([.055,.20,.28]),gunPosition=gunBase.clone().add(V(body.weaponOffset));
+  const gunQ=new T.Quaternion().setFromEuler(new T.Euler(...body.weaponRotation));
+  const result={hips:{position:hipPosition.toArray(),rotation:hipRotation},
+    spine:{rotation:[body.chestPitch,body.chestYaw,body.chestRoll]},
+    head:{rotation:[-.08,body.headYaw,body.headRoll]},
+    rifle:{position:gunPosition.toArray(),rotation:body.weaponRotation}};
   for(const s of [-1,1]) {
-    const tag=s<0?'L':'R',gait=runCycle(p+(tag==='R'?.5:0),{distance:stride,duty,lift:.30});
-    const pitch=gait.contact?0:(.22*Math.sin(2*Math.PI*gait.swing)-.18*Math.sin(Math.PI*gait.swing));
-    const footQ=new T.Quaternion().setFromEuler(new T.Euler(pitch,0,0));
-    const minY=Math.min(...footPoints[tag].map(p=>p.clone().applyQuaternion(footQ).y));
-    const hip=V([hx+s*.105,hy,0]),ankle=V([s*.105,gait.height-minY,gait.forward]);
+    const tag=s<0?'L':'R',gait=runningFoot(time,tag,soles[tag]);
+    const footQ=new T.Quaternion().setFromAxisAngle(V([0,1,0]),gait.yaw).multiply(new T.Quaternion().setFromAxisAngle(V([1,0,0]),gait.pitch));
+    const hip=V([s*.105,0,0]).applyQuaternion(hipQ).add(hipPosition),ankle=V([gait.lateral,gait.height,gait.forward]);
     const knee=solveLimb(hip,ankle,lengths.upper,lengths.lower,V([0,0,1]));
     const upperQ=downTo(knee.clone().sub(hip)),lowerQ=downTo(ankle.clone().sub(knee));
-    result[`thigh-${tag}`]={rotation:euler(upperQ)};
+    result[`thigh-${tag}`]={rotation:euler(hipQ.clone().invert().multiply(upperQ))};
     const lowerLocal=upperQ.clone().invert().multiply(lowerQ);
     result[`shin-${tag}`]={rotation:euler(lowerLocal)};
     result[`foot-${tag}`]={rotation:euler(lowerQ.clone().invert().multiply(footQ))};
@@ -241,6 +246,12 @@ function motion(time,forward=false) {
     result[`piston-${tag}`]={rotation:euler(downTo(vector))};
     result[`pistonrod-${tag}`]={scale:[1,length-.14,1]};
     result[`piston-end-${tag}`]={position:[0,-length,0]};
+    const shoulder=V([s*.25,.38,.025]),hand=V(grips[tag]).sub(gunBase).applyQuaternion(gunQ).add(gunPosition);
+    const elbow=solveLimb(shoulder,hand,lengths.arm,lengths.forearm,V([s*.9,-.25,-.3]));
+    const armQ=downTo(elbow.clone().sub(shoulder)),foreQ=downTo(hand.clone().sub(elbow));
+    result[`upperarm-${tag}`]={rotation:euler(armQ)};
+    result[`forearm-${tag}`]={rotation:euler(armQ.clone().invert().multiply(foreQ))};
+    result[`hand-${tag}`]={rotation:euler(foreQ.clone().invert().multiply(gunQ))};
   }
   if(forward)result.vanguard={position:[0,0,time/cycle*stride]};
   return result;
@@ -249,8 +260,8 @@ const clips=[];
 for(const [id,name,forward] of [['run','Combat run · in place',false],['run-forward','Combat run · root motion +Z',true]]) {
   const tracks={};
   for(const id of [...moving,...(forward?['vanguard']:[])])tracks[id]=[];
-  for(let i=0;i<=192;i++) {
-    const time=i/120,pose=motion(time,forward);
+  for(let i=0;i<=384;i++) {
+    const time=i/240,pose=motion(time,forward);
     for(const id of Object.keys(tracks)) {
       const n=doc.nodes.find(n=>n.id===id);
       tracks[id].push({time,position:[...n.position],rotation:[...n.rotation],scale:[1,1,1],...pose[id]});
@@ -266,11 +277,32 @@ for(const tag of ['L','R']) {
   landmarks[`${tag}-hand`]={node:`hand-${tag}`,point:[0,0,0]};
   landmarks[`${tag}-grip`]={node:'rifle',point:V(grips[tag]).sub(V([.055,.20,.28])).toArray()};
 }
+// A rolling foot does not pin one heel landmark throughout toe-off. Declare
+// actual support-feature intervals, preserving the original audit tolerances.
+const feet=[];
+for(const tag of ['L','R']) {
+  const contacts=[],supportIds=[];let feature=null,start=0,key;
+  const parts=[];
+  for(let i=0;i<=800;i++) {
+    const u=Math.min(i/800,1-1e-10),time=u*duty*cycle;
+    const localTime=tag==='R'?time+cycle*.5:time;
+    const point=runningFoot(localTime,tag,soles[tag]).supportPoint;
+    const current=point.map(x=>Math.round(x*1e6)/1e6).join(',');
+    if(current!==feature) {
+      if(feature!==null)parts.push({start,end:i/800,landmark:key});
+      key=`${tag}-support-${supportIds.length}`;supportIds.push(key);landmarks[key]={node:`foot-${tag}`,point};
+      feature=current;start=i/800;
+    }
+  }
+  parts.push({start,end:1,landmark:key});
+  for(const base of tag==='L'?[0,.5]:[.25,.75])for(const p of parts)
+    contacts.push({start:base+p.start*duty/2,end:base+p.end*duty/2,landmark:p.landmark});
+  feet.push({id:tag,sole:[`${tag}-heel`,`${tag}-toe`,`${tag}-outer`,...supportIds],contacts});
+}
 doc.review={version:1,landmarks,measurements:['L','R'].map(tag=>({id:`grip-${tag}`,between:[`${tag}-hand`,`${tag}-grip`],range:[0,.0002]})),symmetry:[],motion:{
   root:'vanguard',clip:'run',forward:[0,0,1],facingAxis:[0,0,1],mode:'inPlace',distance:stride*2,groundY:0,requireFlight:true,flightHeight:.007,
   tolerances:{slip:.004,ground:.003,penetration:.003,travel:.005,facingAngle:1,directionAngle:1},
-  feet:[{id:'L',sole:['L-heel','L-toe','L-outer'],contacts:[{start:0,end:.15,landmark:'L-heel'},{start:.5,end:.65,landmark:'L-heel'}]},
-    {id:'R',sole:['R-heel','R-toe','R-outer'],contacts:[{start:.25,end:.40,landmark:'R-heel'},{start:.75,end:.90,landmark:'R-heel'}]}],
+  feet,
 }};
 doc=validateDocument(doc);
 await fs.writeFile(`${out}/cyborg.graph.json`,JSON.stringify(doc));
@@ -281,4 +313,5 @@ for(let i=0;i<32;i++)frames.push(Object.fromEntries(moving.map(id=>{const n=doc.
 await fs.writeFile(`${out}/run-samples.json`,JSON.stringify({fps:20,duration:1.6,cycle,stride,frames}));
 let triangles=0,vertices=0;for(const n of doc.nodes.filter(n=>n.type==='mesh')){const g=geometryFor(n);triangles+=(g.index?.count??g.attributes.position.count)/3;vertices+=g.attributes.position.count;g.dispose();}
 await fs.writeFile(`${out}/manifest.json`,JSON.stringify({name:doc.name,nodes:doc.nodes.length,bones:doc.nodes.filter(n=>n.type==='bone').length,skins:doc.nodes.filter(n=>n.skin).length,triangles,vertices,glbBytes:bytes.byteLength,cycle,stride,speed:stride/cycle,forward:'+Z',up:'+Y',grips,lengths},null,2));
+await fs.writeFile(`${out}/motion-style.json`,JSON.stringify({profile:COMBAT_RUN_PROFILE,model:'Authored stance-force / ballistic pelvis proxy; C2 foot arcs and sole rolling; baked 3D IK',samples:Array.from({length:121},(_,i)=>({time:i/120,...runningBody(i/120)}))},null,2));
 console.log(JSON.stringify({out,nodes:doc.nodes.length,triangles,vertices,skins:2,bytes:bytes.byteLength}));

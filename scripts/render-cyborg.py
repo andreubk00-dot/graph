@@ -1,6 +1,6 @@
 """Render the actual exported GLB and its imported skeletal animation in Blender.
 No character geometry or animation is authored here. Lighting/track are presentation.
-blender -b --factory-startup --python scripts/render-cyborg.py -- examples/cyborg [preview|hero|animate|views]
+blender -b --factory-startup --python scripts/render-cyborg.py -- examples/cyborg [preview|hero|animate|views|side-cycle]
 """
 import bpy, math, sys
 from pathlib import Path
@@ -53,7 +53,12 @@ def frame(index):
     for i,o in enumerate(track): o.location.y=((i*.45-3.6+distance+3.6)%7.2)-3.6
 def render(path):
     scene.render.filepath=str(path);bpy.ops.render.render(write_still=True)
-if mode=='animate':
+if mode=='side-cycle':
+    (out/'side-frames').mkdir(exist_ok=True)
+    camera((-6,0,1.1))
+    for i in range(8):
+        frame(i*2);render(out/'side-frames'/f'{i:03d}.png')
+elif mode=='animate':
     (out/'frames').mkdir(exist_ok=True)
     for i in range(32):
         frame(i);render(out/'frames'/f'{i:03d}.png');print(f'CYBORG frame {i+1}/32',flush=True)

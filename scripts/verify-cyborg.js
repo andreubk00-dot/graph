@@ -69,7 +69,7 @@ try {
     }
   }
   assert.ok(report.maxMatrixError<2e-5);assert.ok(report.maxSkinPositionError<2e-5);
-  assert.ok(report.maxGripError<1e-6);assert.ok(report.maxPistonEndpointError<.001);
+  assert.ok(report.maxGripError<1e-6,`Interpolated grip error: ${report.maxGripError}`);assert.ok(report.maxPistonEndpointError<.001);
   assert.ok(report.maxLimbLengthError<1e-8);assert.ok(report.minFootSurfaceY>-.003);
   const motion=auditLocomotion(d);assert.deepEqual(motion.issues,[]);
   assert.deepEqual(auditMeasurements(d,{pose:'clip',clip:'run',time:.317}).issues,[]);
