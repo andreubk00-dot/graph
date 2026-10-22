@@ -1,0 +1,23 @@
+{
+  "name": "HELIOS · Autonomous solar reliquary",
+  "nodes": 206,
+  "vertices": 37834,
+  "triangles": 31324,
+  "clips": [
+    {
+      "id": "orbit",
+      "duration": 6,
+      "tracks": 9
+    },
+    {
+      "id": "deploy",
+      "duration": 3,
+      "tracks": 4
+    }
+  ],
+  "glbBytes": 1690328,
+  "units": "meters",
+  "forward": "+Z",
+  "up": "+Y",
+  "preview": "Render of the actual GLB; studio and labels are presentation-only."
+}

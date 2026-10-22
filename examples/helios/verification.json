@@ -1,0 +1,20 @@
+{
+  "nodes": 206,
+  "meshCount": 197,
+  "triangles": 31324,
+  "topologyIssues": [],
+  "maxAnimationMatrixError": 7.922901157364493e-8,
+  "clips": [
+    {
+      "id": "orbit",
+      "duration": 6,
+      "sampledTimes": 5
+    },
+    {
+      "id": "deploy",
+      "duration": 3,
+      "sampledTimes": 5
+    }
+  ],
+  "pixelFrames": 16
+}

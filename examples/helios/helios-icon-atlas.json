@@ -1,0 +1,380 @@
+{
+  "width": 800,
+  "height": 200,
+  "frames": [
+    {
+      "filename": "Charge 1-0.png",
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    {
+      "filename": "Charge 2-1.png",
+      "frame": {
+        "x": 102,
+        "y": 2,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    {
+      "filename": "Charge 3-2.png",
+      "frame": {
+        "x": 202,
+        "y": 2,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    {
+      "filename": "Charge 4-3.png",
+      "frame": {
+        "x": 302,
+        "y": 2,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    {
+      "filename": "Charge 5-4.png",
+      "frame": {
+        "x": 402,
+        "y": 2,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    {
+      "filename": "Charge 6-5.png",
+      "frame": {
+        "x": 502,
+        "y": 2,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    {
+      "filename": "Charge 7-6.png",
+      "frame": {
+        "x": 602,
+        "y": 2,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    {
+      "filename": "Charge 8-7.png",
+      "frame": {
+        "x": 702,
+        "y": 2,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    {
+      "filename": "Charge 9-8.png",
+      "frame": {
+        "x": 2,
+        "y": 102,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    {
+      "filename": "Charge 10-9.png",
+      "frame": {
+        "x": 102,
+        "y": 102,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    {
+      "filename": "Charge 11-10.png",
+      "frame": {
+        "x": 202,
+        "y": 102,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    {
+      "filename": "Charge 12-11.png",
+      "frame": {
+        "x": 302,
+        "y": 102,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    {
+      "filename": "Charge 13-12.png",
+      "frame": {
+        "x": 402,
+        "y": 102,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    {
+      "filename": "Charge 14-13.png",
+      "frame": {
+        "x": 502,
+        "y": 102,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    {
+      "filename": "Charge 15-14.png",
+      "frame": {
+        "x": 602,
+        "y": 102,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    },
+    {
+      "filename": "Charge 16-15.png",
+      "frame": {
+        "x": 702,
+        "y": 102,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      },
+      "duration": 125
+    }
+  ],
+  "meta": {
+    "app": "Graph Forge",
+    "version": "1",
+    "image": "HELIOS · reactor inventory icon-atlas.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 800,
+      "h": 200
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "Animation",
+        "from": 0,
+        "to": 15,
+        "direction": "forward"
+      }
+    ],
+    "kind": "pixel",
+    "padding": 2,
+    "origin": "top-left"
+  }
+}
